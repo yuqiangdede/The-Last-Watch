@@ -7,7 +7,7 @@
   "totalVolumes": 6,
   "fullBookTargetChapters": 170,
   "currentPhase": "第一卷（青隘日常·孤峰三人）",
-  "minWordsPerChapter": 3000,
+  "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
   "updatedAt": "2026-10-25T10:40:00.000000",
   "status": "planning",
@@ -155,7 +155,7 @@
     },
     {
       "chapterNumber": 15,
-      "title": "第015章 断崖守岁",
+      "title": "第015章 断崖守夜",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第015章.md",
       "status": "pending",
