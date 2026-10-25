@@ -9,7 +9,7 @@
   "currentPhase": "第一卷（青隘日常·孤峰三人）",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-25T10:41:12.405Z",
+  "updatedAt": "2026-10-25T10:50:13.753Z",
   "status": "planning",
   "writingMode": "serial",
   "chapters": [
@@ -19,7 +19,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第001章.md",
       "status": "completed",
-      "wordCount": 8090,
+      "wordCount": 5099,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -28,9 +28,9 @@
       "title": "第002章 暗火与蛛网",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第002章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 5274,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
