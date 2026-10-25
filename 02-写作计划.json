@@ -9,7 +9,7 @@
   "currentPhase": "第一卷（青隘日常·孤峰三人）",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-25T13:27:52.978Z",
+  "updatedAt": "2026-10-25T13:59:08.108Z",
   "status": "planning",
   "writingMode": "serial",
   "chapters": [
@@ -88,9 +88,9 @@
       "title": "第008章 避风港的泥泞",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第008章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4112,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -98,9 +98,9 @@
       "title": "第009章 黑梁之殇",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第009章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4743,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -108,9 +108,9 @@
       "title": "第010章 补给与新药",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第010章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4318,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -118,9 +118,9 @@
       "title": "第011章 崖头的晨光",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第011章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4769,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -128,9 +128,9 @@
       "title": "第012章 迷途的流民群",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第012章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4174,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -138,9 +138,9 @@
       "title": "第013章 探针的秘密",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第013章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4470,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -148,9 +148,9 @@
       "title": "第014章 冷风中的试探",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第014章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4485,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
