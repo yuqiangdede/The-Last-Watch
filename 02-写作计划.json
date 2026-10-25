@@ -1,0 +1,217 @@
+{
+  "version": 2,
+  "novelName": "崖边戍卒",
+  "architectureMode": "deep",
+  "projectPath": "C:/Users/yuqiang2/Documents/小说/测试小说/chinese-novelist/20261025-崖边戍卒",
+  "totalChapters": 20,
+  "totalVolumes": 6,
+  "fullBookTargetChapters": 170,
+  "currentPhase": "第一卷（青隘日常·孤峰三人）",
+  "minWordsPerChapter": 3000,
+  "createdAt": "2026-10-25T08:47:34.059266",
+  "updatedAt": "2026-10-25T10:40:00.000000",
+  "status": "planning",
+  "writingMode": "serial",
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "title": "第001章 寒风七折岩",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第001章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 2,
+      "title": "第002章 暗火与蛛网",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第002章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 3,
+      "title": "第003章 岩窟夜话",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第003章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 4,
+      "title": "第004章 裂隙的低吼",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第004章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 5,
+      "title": "第005章 巡道拔除战",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第005章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 6,
+      "title": "第006章 南下青隘城",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第006章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 7,
+      "title": "第007章 杜衡的铁券",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第007章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 8,
+      "title": "第008章 避风港的泥泞",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第008章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 9,
+      "title": "第009章 黑梁之殇",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第009章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 10,
+      "title": "第010章 补给与新药",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第010章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 11,
+      "title": "第011章 崖头的晨光",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第011章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 12,
+      "title": "第012章 迷途的流民群",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第012章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 13,
+      "title": "第013章 探针的秘密",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第013章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 14,
+      "title": "第014章 冷风中的试探",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第014章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 15,
+      "title": "第015章 断崖守岁",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第015章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 16,
+      "title": "第016章 修械匠的枪",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第016章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 17,
+      "title": "第017章 西南方的雷鸣",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第017章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 18,
+      "title": "第018章 逃出白汀的骑手",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第018章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 19,
+      "title": "第019章 杜衡的调令",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第019章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 20,
+      "title": "第020章 出塞孤骑",
+      "volume": "第一卷",
+      "filePath": "06-正文/第一卷/第020章.md",
+      "status": "pending",
+      "wordCount": null,
+      "wordCountPass": null,
+      "retryCount": 0
+    }
+  ]
+}

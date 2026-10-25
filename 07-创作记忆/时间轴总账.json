@@ -1,0 +1,77 @@
+{
+  "worldBaseline": {
+    "epochName": "公元纪年",
+    "currentYear": 2145,
+    "currentMonth": 2,
+    "currentDay": 18,
+    "season": "晚冬",
+    "temperature": "-12℃",
+    "weather": "阴沉寒风，暴风雪前兆",
+    "worldMajorEvent": "七强局部冷战均势破裂，青隘中立缓冲带面临暗流绞杀"
+  },
+  "charactersTimeline": {
+    "陈渡": {
+      "birthYear": 2111,
+      "currentAge": 34,
+      "currentAgeDisplay": "三十四岁",
+      "currentLocation": "青隘北峡·七折岩断崖哨所",
+      "lastActiveTimestamp": "第001章起点·拂晓"
+    },
+    "林霰": {
+      "birthYear": 2125,
+      "currentAge": 20,
+      "currentAgeDisplay": "二十岁",
+      "currentLocation": "悬崖顶端三号观察岩柱",
+      "lastActiveTimestamp": "第001章起点·拂晓"
+    },
+    "霍山": {
+      "birthYear": 2097,
+      "currentAge": 48,
+      "currentAgeDisplay": "四十八岁",
+      "currentLocation": "哨所地堡机械台前",
+      "lastActiveTimestamp": "第001章起点·拂晓"
+    },
+    "严恪": {
+      "birthYear": 2114,
+      "currentAge": 31,
+      "currentAgeDisplay": "三十一岁",
+      "currentLocation": "西南四十公里·白汀戍区防御前沿（第二卷登场）",
+      "lastActiveTimestamp": "第二卷白汀救援战"
+    },
+    "江小年": {
+      "birthYear": 2121,
+      "currentAge": 24,
+      "currentAgeDisplay": "二十四岁",
+      "currentLocation": "西南四十公里·白汀戍区野战诊所（第二卷登场）",
+      "lastActiveTimestamp": "第二卷白汀救援战"
+    },
+    "杜川": {
+      "birthYear": 2127,
+      "currentAge": 18,
+      "currentAgeDisplay": "十八岁",
+      "currentLocation": "青隘主城·联防区司令部参谋室",
+      "lastActiveTimestamp": "第一卷见习参谋"
+    },
+    "杜衡": {
+      "birthYear": 2087,
+      "currentAge": 58,
+      "currentAgeDisplay": "五十八岁",
+      "currentLocation": "青隘主城·联防区指挥部",
+      "lastActiveTimestamp": "第一卷总防长"
+    }
+  },
+  "travelConstraintMatrix": {
+    "七折岩断崖哨所_to_青隘主城": {
+      "distanceKm": 24,
+      "walkHours": 6,
+      "vehicleHours": 1.5,
+      "terrain": "崎岖碎石山道、峡谷地堑裂谷"
+    },
+    "青隘联防区_to_白汀中立戍区": {
+      "distanceKm": 40,
+      "walkHours": 10,
+      "vehicleHours": 2.5,
+      "terrain": "地脉裂隙荒原、盐碱碎石带"
+    }
+  }
+}
