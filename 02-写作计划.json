@@ -9,7 +9,7 @@
   "currentPhase": "第一卷（青隘日常·孤峰三人）",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-25T10:40:00.000000",
+  "updatedAt": "2026-10-25T10:41:12.405Z",
   "status": "planning",
   "writingMode": "serial",
   "chapters": [
@@ -18,9 +18,9 @@
       "title": "第001章 寒风七折岩",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第001章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 8090,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
