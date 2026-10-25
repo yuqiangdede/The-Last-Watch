@@ -158,9 +158,9 @@
       "title": "第015章 断崖守夜",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第015章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4227,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -168,9 +168,9 @@
       "title": "第016章 修械匠的枪",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第016章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4148,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -178,9 +178,9 @@
       "title": "第017章 西南方的雷鸣",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第017章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4335,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -188,9 +188,9 @@
       "title": "第018章 逃出白汀的骑手",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第018章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4125,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -198,9 +198,9 @@
       "title": "第019章 杜衡的调令",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第019章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4066,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -208,9 +208,9 @@
       "title": "第020章 出塞孤骑",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第020章.md",
-      "status": "pending",
-      "wordCount": null,
-      "wordCountPass": null,
+      "status": "completed",
+      "wordCount": 4078,
+      "wordCountPass": true,
       "retryCount": 0
     }
   ]
