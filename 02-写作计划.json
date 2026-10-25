@@ -19,7 +19,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第001章.md",
       "status": "completed",
-      "wordCount": 5099,
+      "wordCount": 4370,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -29,7 +29,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第002章.md",
       "status": "completed",
-      "wordCount": 5274,
+      "wordCount": 4190,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -39,7 +39,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第003章.md",
       "status": "completed",
-      "wordCount": 4792,
+      "wordCount": 4049,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -49,7 +49,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第004章.md",
       "status": "completed",
-      "wordCount": 4434,
+      "wordCount": 4745,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -58,6 +58,11 @@
       "title": "第005章 巡道拔除战",
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第005章.md",
+      "status": "completed",
+      "wordCount": 4144,
+      "wordCountPass": true,
+      "retryCount": 0
+    },
       "status": "completed",
       "wordCount": 4145,
       "wordCountPass": true,
