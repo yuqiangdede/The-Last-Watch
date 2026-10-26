@@ -85,7 +85,7 @@
 
 4. **创建章节文件** — 文件名格式：`第{XX}章-{章节标题}.md`（或 `06-正文/第X卷/第{XX}章-{章节标题}.md`，路径以 `02-写作计划.json` 中的 `filePath` 为准），使用 [chapter-template.md](../guides/chapter-template.md) 模板
 5. **撰写章首引子** — 按大纲或任务卡中的章首引子类型，参考 [hook-techniques.md](../guides/hook-techniques.md)「章首引子七式」，创作 50-150 字的引子文字
-6. **撰写正文** — **每章必须达到 3000-5000 字**，硬性要求：
+6. **撰写正文** — **每章必须达到 4000—5000 字（硬性红线，低于 4000 或超过 5000 一律 BLOCKED）**，硬性要求：
    - 正文开头：第一段必须使用 [chapter-guide.md](../guides/chapter-guide.md) 十种开头技巧之一，建立即时冲突
    - 张力节奏：全章至少 2 个张力波峰，连续 500 字以上无冲突时必须引入新张力（参考 [hook-techniques.md](../guides/hook-techniques.md) 悬念强度等级）
    - 对话要求：每章至少 30% 对话内容，每段对话必须有潜台词或推进情节目的（参考 [dialogue-writing.md](../guides/dialogue-writing.md)）
@@ -173,8 +173,8 @@
    - **底层动机遵循**：角色决断必须符合其性格核心与行为底层逻辑。
    - **负面禁令（禁止偏离清单）**：严格核对小传文档中的【禁止偏离清单】，严禁触犯任何一条明确禁止的行为。
    - **已知情报边界（严防全知剧透）**：角色对话与心理活动严格受限于已知信息，严禁以全知视角泄漏未解开的深层伏笔。
-4. **维度四：字数硬指标（≥3000字）**：
-   - 汉字正文字数必须达标，不足 3000 字必须使用 [content-expansion.md](../guides/content-expansion.md) 扩充。
+4. **维度四：字数硬指标（4000—5000 字，越界一票否决）**：
+   - 汉字正文字数必须落在 4000—5000 字区间：不足 4000 字必须使用 [content-expansion.md](../guides/content-expansion.md) 扩充，超过 5000 字必须拆章重写，不得强行塞入单章或注水裁剪。
 
 #### 自动化质检脚本调用与阻断规则
 
@@ -185,7 +185,7 @@ python {skillBaseDir}/scripts/verify_chapter_consistency.py <章节文件路径>
 
 可选：单独执行机械性字数与套式快速预扫描：
 ```bash
-python {skillBaseDir}/scripts/scan_chapter.py <章节文件路径> --min-words 3000
+python {skillBaseDir}/scripts/scan_chapter.py <章节文件路径> --min-words 4000
 ```
 
 - **若判定为 `BLOCKED`（存在阻断性问题）**：
