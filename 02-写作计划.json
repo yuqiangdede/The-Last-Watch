@@ -3,10 +3,10 @@
   "novelName": "崖边戍卒",
   "architectureMode": "deep",
   "projectPath": "C:/Users/yuqiang2/Documents/小说/测试小说/chinese-novelist/20261025-崖边戍卒",
-  "totalChapters": 20,
+  "totalChapters": 37,
   "totalVolumes": 6,
   "fullBookTargetChapters": 177,
-  "currentPhase": "第一卷（青隘日常·孤峰三人）",
+  "currentPhase": "第二卷（白汀浩劫·迫立铁幕，规划中）",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
   "updatedAt": "2026-10-25T13:59:08.108Z",
@@ -211,6 +211,176 @@
       "status": "completed",
       "wordCount": 4078,
       "wordCountPass": true,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 21,
+      "title": "第021章 西南四十公里",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第021章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 22,
+      "title": "第022章 断桥之下",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第022章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 23,
+      "title": "第023章 未熄的诊所",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第023章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 24,
+      "title": "第024章 最后一张名单",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第024章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 25,
+      "title": "第025章 倒下的铁砧",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第025章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 26,
+      "title": "第026章 烟火回廊",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第026章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 27,
+      "title": "第027章 峡口的枪声",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第027章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 28,
+      "title": "第028章 雨后的清点",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第028章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 29,
+      "title": "第029章 无处可去的人",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第029章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 30,
+      "title": "第030章 拆下的钢臂",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第030章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 31,
+      "title": "第031章 五个人的第一次任务",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第031章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 32,
+      "title": "第032章 两万人的粮仓",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第032章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 33,
+      "title": "第033章 断掉的商路",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第033章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 34,
+      "title": "第034章 带印的条件",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第034章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 35,
+      "title": "第035章 青隘的议事厅",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第035章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 36,
+      "title": "第036章 旗帜还在风里",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第036章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
+      "retryCount": 0
+    },
+    {
+      "chapterNumber": 37,
+      "title": "第037章 铁幕之下",
+      "volume": "第二卷",
+      "filePath": "06-正文/第二卷/第037章.md",
+      "status": "planned",
+      "wordCount": 0,
+      "wordCountPass": false,
       "retryCount": 0
     }
   ]
