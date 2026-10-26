@@ -212,6 +212,8 @@ python {skillBaseDir}/scripts/scan_chapter.py <章节文件路径> --min-words 3
     - **正文高光段落萃取**：本章定稿后，从正文中遴选 1 段（300-500字）最具本书特色、最生动的黄金段落（如高张力战斗动作白描、极具个性与毛边感的角色对话、沉浸氛围段），追加或置换至 `03-文风基准.md`（深度模式同步更新 `04-文风/原创文风样例.md`）的「本书自生正文黄金沉淀库」中；
     - **刷新双源权重指示牌**：在第 13 步执行 `python {skillBaseDir}/scripts/sync_novel_memory.py <项目目录> --compile-views` 时，系统将自动核算最新正文总字数与已定稿章节，更新 `03-文风基准.md` 中的动态权重指示牌，使下一章创作时参考自身正文的权重自动递增！
 
+17. **TXT 双格式交付（不可跳过）**：本章 Markdown 定稿并通过质量门槛后，运行 python {skillBaseDir}/scripts/export_reading_txt.py --project-dir <项目目录> --chapter <本章MD路径>。检查同名 TXT 是否生成、完整章节标题和自然段是否保留、段首是否双全角缩进、是否没有堆积的空行；同时更新所属卷合订本。若该章后续再编辑或审稿回修，重复执行本步骤。TXT 不能成为事实回写或续写输入。
+
 ---
 
 完成后，按当前写作模式认领下一章（详见 [phase3-writing.md](phase3-writing.md)）。
