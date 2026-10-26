@@ -9,7 +9,7 @@
   "currentPhase": "第二卷（白汀浩劫·迫立铁幕，规划中）",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-26T20:44:00+08:00",
+  "updatedAt": "2026-10-26T21:56:21.053523",
   "status": "planning",
   "writingMode": "serial",
   "chapters": [
@@ -218,9 +218,9 @@
       "title": "第021章 采石场火线",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第021章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4193,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -228,9 +228,9 @@
       "title": "第022章 矿洞的两辆卡车",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第022章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4838,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -238,9 +238,9 @@
       "title": "第023章 未熄的诊所",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第023章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4517,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -248,9 +248,9 @@
       "title": "第024章 最后一张名单",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第024章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4163,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -258,9 +258,9 @@
       "title": "第025章 倒下的铁砧",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第025章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4742,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
