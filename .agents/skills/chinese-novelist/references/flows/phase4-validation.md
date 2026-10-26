@@ -22,7 +22,12 @@
    python {skillBaseDir}/scripts/check_chapter_wordcount.py --all <项目文件夹路径> --json
    ```
    退出码：0=全部达标，1=有不达标，2=错误。从 `--json` 输出的 `results[]` 读取各章 `word_count` 与 `status`
-3. **更新 JSON**：将 `wordCount` 和 `wordCountPass` 写入对应章节记录
+3. **去 AI 味四关复检**（全书口径）：对每一章重跑四关机械合检，确认没有在合并/修补时把 AI 套式带回来：
+   ```bash
+   python {skillBaseDir}/scripts/scan_ai_tone.py <章节文件路径> --project-dir <项目文件夹路径> --auto-report --json
+   ```
+   退出码：0=无阻断，1=BLOCKED，2=错误。任一章节 `overall_status == "BLOCKED"` 视为该章不通过，进入步骤 4 定向重修，并核对 `08-审稿/第{XX}章-去AI味四关报告.md` 是否存在且含【人工四关执行记录】。
+4. **更新 JSON**：将 `wordCount` 和 `wordCountPass` 写入对应章节记录
 
 ### 3. 汇总结果
 
