@@ -43,6 +43,15 @@
 - 超过3次仍不合格的章节，保留记录但不阻塞流程
 - 所有修复完成后更新项目 `status` 为 `"completed"`
 
+### 4.5 TXT 阅读版生成与同步校验（强制）
+
+全部 Markdown 章节完成最终修复后，执行：
+
+    python {skillBaseDir}/scripts/export_reading_txt.py --project-dir <项目目录> --all
+    python {skillBaseDir}/scripts/export_reading_txt.py --project-dir <项目目录> --all --check
+
+逐章 TXT 和分卷合订本必须全部存在且与 Markdown 同步。若校验退出码非 0，不得宣称完成双格式交付；只修复 TXT 副本，不更改已经审稿通过的源正文。本地、串行、并行模式都必须执行。
+
 ### 5. 完成报告
 
 向用户展示创作完成总结：

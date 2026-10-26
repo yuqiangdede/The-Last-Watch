@@ -87,6 +87,14 @@
 
 ---
 
+## 正文 MD + TXT 双格式交付（全局强制）
+
+1. 正文唯一权威源是 06-正文/ 内的 Markdown 文件（.md）。所有创作、审稿、事实回写及续写均以 MD 为准，禁止把 TXT 作为第二份可编辑正文。
+2. 每次新增、定稿、续写或定向修改章节 MD，必须同时生成同名 TXT 副本：06-正文/第一卷/第001章.md → 06-正文-TXT/第一卷/第001章.txt，并刷新该卷《崖边戍卒》第一卷.txt 合订本。两份均须实际落盘。
+3. TXT 为 UTF-8 无 Markdown 标记的纯文本阅读/TTS 版；章标题清晰，段首两个全角空格，普通段落之间仅一个换行；只在场景切换或标题后留一个空白行，不产生连续空行；不得删改、缩写或润色正文。
+4. 本地单章定稿：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --chapter 06-正文/第一卷/第001章.md。全量同步：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --all。交付检查：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --all --check。
+5. 本规则适用于 chinese-novelist Skill 的串行、并行、多 Agent、本地执行、自动审稿后的回修。若 TXT 缺失或与 MD 不同步，不得报告双格式交付成功。源 MD 更新后应再次同步。
+
 ## 四、写后 8 项质检与事实回写协议
 
 1. **单章 8 项严格质检**：章节初稿完成后，依据 `08-审稿/章节审稿与质检标准.md` 逐项核验（1. 可读性、2. 人设一致、3. 去说教去AI味、4. 时空自洽、5. 科技合规、6. 大纲连续性、**7. 篇幅字数与实质推进【4000-5000字一票否决】**、8. 自然阅读期待）。若命中任意红线或字数越界（<4000或>5000），判定为 BLOCKED 严禁归档，必须定向重写/拆章直至 PASS。
