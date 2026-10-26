@@ -4,12 +4,12 @@
   "architectureMode": "deep",
   "projectPath": "C:/Users/yuqiang2/Documents/小说/测试小说/chinese-novelist/20261025-崖边戍卒",
   "totalChapters": 135,
-  "totalVolumes": 6,
-  "fullBookTargetChapters": 215,
+  "totalVolumes": 20,
+  "fullBookTargetChapters": null,
   "currentPhase": "第二卷（白汀浩劫·迫立铁幕，规划中）",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-25T13:59:08.108Z",
+  "updatedAt": "2026-10-26T12:56:47.771Z",
   "status": "planning",
   "writingMode": "serial",
   "chapters": [
@@ -1362,6 +1362,178 @@
       "wordCount": 0,
       "wordCountPass": false,
       "retryCount": 0
+    }
+  ],
+  "plannedChapterScope": "当前chapters仅覆盖第一至第四卷的135条现有规划；全书总章数尚未确定。",
+  "phasePlan": [
+    {
+      "name": "前期",
+      "volumeStart": 1,
+      "volumeEnd": 4,
+      "arc": "守护、失去、叛逃",
+      "chapterCountInCurrentPlan": 135,
+      "status": "detailed",
+      "ending": "第四卷末带林霰遗体保存设备、严恪骨灰与幸存队员出逃"
+    },
+    {
+      "name": "中期",
+      "volumeStart": 5,
+      "volumeEnd": 12,
+      "arc": "寻找复生可能、希望幻灭、救回江小年、安葬林霰",
+      "chapterCount": null,
+      "status": "outline_only",
+      "ending": "第十二卷末陈渡营救江小年后重伤，正式安葬林霰，两人彼此接纳"
+    },
+    {
+      "name": "后期",
+      "volumeStart": 13,
+      "volumeEnd": 20,
+      "arc": "重返青隘、重建防区、地区第三势力、世界第八势力",
+      "chapterCount": null,
+      "status": "outline_only",
+      "ending": "第二十卷新青隘发展为世界第八大势力"
+    }
+  ],
+  "volumeFramework": [
+    {
+      "volumeNumber": 1,
+      "title": "青隘日常·孤峰三人",
+      "phase": "前期",
+      "chapterCount": 20,
+      "status": "chapters_planned"
+    },
+    {
+      "volumeNumber": 2,
+      "title": "白汀浩劫·迫立铁幕",
+      "phase": "前期",
+      "chapterCount": 17,
+      "status": "chapters_planned"
+    },
+    {
+      "volumeNumber": 3,
+      "title": "铁幕远征·丰壤之眸",
+      "phase": "前期",
+      "chapterCount": 43,
+      "status": "chapters_planned"
+    },
+    {
+      "volumeNumber": 4,
+      "title": "血染残土·孤军叛逃",
+      "phase": "前期",
+      "chapterCount": 55,
+      "status": "chapters_planned"
+    },
+    {
+      "volumeNumber": 5,
+      "title": "荒原流亡·残火未熄",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 6,
+      "title": "锐科深城·意识之价",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 7,
+      "title": "丰壤生土·活着的代价",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 8,
+      "title": "旧世残机·冷舱长途",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 9,
+      "title": "七方交易·人命筹码",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 10,
+      "title": "归途未定·活人的争执",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 11,
+      "title": "最后的证据·希望尽处",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 12,
+      "title": "归于尘土·活着的人",
+      "phase": "中期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 13,
+      "title": "归来青隘·旧地新人",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 14,
+      "title": "重立边墙·一隘之守",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 15,
+      "title": "粮仓与军籍·新防区",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 16,
+      "title": "两强之间·不肯弃守",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 17,
+      "title": "群山结盟·远近之争",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 18,
+      "title": "第三旗帜·边界存亡",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 19,
+      "title": "七方棋局·立足天下",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
+    },
+    {
+      "volumeNumber": 20,
+      "title": "第八之名·崖边有人",
+      "phase": "后期",
+      "chapterCount": null,
+      "status": "outline_only"
     }
   ]
 }
