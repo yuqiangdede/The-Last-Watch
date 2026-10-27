@@ -6,11 +6,11 @@
   "totalChapters": 143,
   "totalVolumes": 20,
   "fullBookTargetChapters": null,
-  "currentPhase": "第二卷（白汀浩劫·迫立铁幕，规划中）",
+  "currentPhase": "第二卷已写至第039章；第三卷第040章待写",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-26T21:56:21.053523",
-  "status": "planning",
+  "updatedAt": "2026-10-27",
+  "status": "writing",
   "writingMode": "serial",
   "chapters": [
     {
@@ -19,7 +19,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第001章.md",
       "status": "completed",
-      "wordCount": 4370,
+      "wordCount": 4369,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -29,7 +29,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第002章.md",
       "status": "completed",
-      "wordCount": 4439,
+      "wordCount": 4678,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -39,7 +39,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第003章.md",
       "status": "completed",
-      "wordCount": 4129,
+      "wordCount": 4090,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -49,7 +49,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第004章.md",
       "status": "completed",
-      "wordCount": 4379,
+      "wordCount": 4498,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -59,7 +59,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第005章.md",
       "status": "completed",
-      "wordCount": 4833,
+      "wordCount": 4993,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -69,7 +69,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第006章.md",
       "status": "completed",
-      "wordCount": 4210,
+      "wordCount": 4237,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -79,7 +79,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第007章.md",
       "status": "completed",
-      "wordCount": 4742,
+      "wordCount": 4809,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -89,7 +89,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第008章.md",
       "status": "completed",
-      "wordCount": 4112,
+      "wordCount": 4093,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -99,7 +99,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第009章.md",
       "status": "completed",
-      "wordCount": 4743,
+      "wordCount": 4568,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -109,7 +109,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第010章.md",
       "status": "completed",
-      "wordCount": 4318,
+      "wordCount": 4662,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -119,7 +119,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第011章.md",
       "status": "completed",
-      "wordCount": 4769,
+      "wordCount": 4729,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -129,7 +129,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第012章.md",
       "status": "completed",
-      "wordCount": 4174,
+      "wordCount": 4372,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -139,7 +139,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第013章.md",
       "status": "completed",
-      "wordCount": 4470,
+      "wordCount": 4349,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -149,7 +149,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第014章.md",
       "status": "completed",
-      "wordCount": 4485,
+      "wordCount": 4407,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -159,7 +159,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第015章.md",
       "status": "completed",
-      "wordCount": 4227,
+      "wordCount": 4100,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -169,7 +169,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第016章.md",
       "status": "completed",
-      "wordCount": 4148,
+      "wordCount": 4204,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -179,7 +179,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第017章.md",
       "status": "completed",
-      "wordCount": 4335,
+      "wordCount": 4387,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -189,7 +189,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第018章.md",
       "status": "completed",
-      "wordCount": 4125,
+      "wordCount": 4042,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -199,7 +199,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第019章.md",
       "status": "completed",
-      "wordCount": 4066,
+      "wordCount": 4502,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -209,7 +209,7 @@
       "volume": "第一卷",
       "filePath": "06-正文/第一卷/第020章.md",
       "status": "completed",
-      "wordCount": 4078,
+      "wordCount": 4786,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -219,7 +219,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第021章.md",
       "status": "completed",
-      "wordCount": 4193,
+      "wordCount": 4263,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -229,7 +229,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第022章.md",
       "status": "completed",
-      "wordCount": 4838,
+      "wordCount": 4402,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -239,7 +239,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第023章.md",
       "status": "completed",
-      "wordCount": 4517,
+      "wordCount": 4397,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -249,7 +249,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第024章.md",
       "status": "completed",
-      "wordCount": 4163,
+      "wordCount": 4024,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -259,7 +259,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第025章.md",
       "status": "completed",
-      "wordCount": 4742,
+      "wordCount": 4348,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -269,7 +269,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第026章.md",
       "status": "completed",
-      "wordCount": 4169,
+      "wordCount": 4283,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -279,7 +279,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第027章.md",
       "status": "planned",
-      "wordCount": 0,
+      "wordCount": 4085,
       "wordCountPass": false,
       "retryCount": 0
     },
@@ -289,7 +289,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第028章.md",
       "status": "completed",
-      "wordCount": 4409,
+      "wordCount": 4388,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -299,7 +299,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第029章.md",
       "status": "completed",
-      "wordCount": 4121,
+      "wordCount": 4110,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -309,7 +309,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第030章.md",
       "status": "completed",
-      "wordCount": 4533,
+      "wordCount": 4463,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -319,7 +319,7 @@
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第031章.md",
       "status": "completed",
-      "wordCount": 4066,
+      "wordCount": 4159,
       "wordCountPass": true,
       "retryCount": 0
     },
@@ -338,9 +338,9 @@
       "title": "第033章 两万人的粮仓",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第033章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4023,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -348,9 +348,9 @@
       "title": "第034章 断掉的商路",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第034章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4005,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -358,9 +358,9 @@
       "title": "第035章 带印的条件",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第035章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4062,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -368,9 +368,9 @@
       "title": "第036章 青隘的议事厅",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第036章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4028,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -378,9 +378,9 @@
       "title": "第037章 签字之前",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第037章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4026,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -388,9 +388,9 @@
       "title": "第038章 旗帜还在风里",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第038章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4077,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -398,9 +398,9 @@
       "title": "第039章 铁幕之下",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第039章.md",
-      "status": "planned",
-      "wordCount": 0,
-      "wordCountPass": false,
+      "status": "completed",
+      "wordCount": 4061,
+      "wordCountPass": true,
       "retryCount": 0
     },
     {
@@ -1444,14 +1444,14 @@
       "retryCount": 0
     }
   ],
-  "plannedChapterScope": "当前chapters仅覆盖第一至第四卷的135条现有规划；全书总章数尚未确定。",
+  "plannedChapterScope": "当前chapters覆盖第一至第四卷143章；第5—20卷总章数尚未确定。",
   "phasePlan": [
     {
       "name": "前期",
       "volumeStart": 1,
       "volumeEnd": 4,
       "arc": "守护、失去、叛逃",
-      "chapterCountInCurrentPlan": 135,
+      "chapterCountInCurrentPlan": 143,
       "status": "detailed",
       "ending": "第四卷末带林霰遗体保存设备、严恪骨灰与幸存队员出逃"
     },
@@ -1486,8 +1486,8 @@
       "volumeNumber": 2,
       "title": "白汀浩劫·迫立铁幕",
       "phase": "前期",
-      "chapterCount": 17,
-      "status": "chapters_planned"
+      "chapterCount": 19,
+      "status": "body_completed"
     },
     {
       "volumeNumber": 3,
@@ -1500,7 +1500,7 @@
       "volumeNumber": 4,
       "title": "血染残土·孤军叛逃",
       "phase": "前期",
-      "chapterCount": 55,
+      "chapterCount": 61,
       "status": "chapters_planned"
     },
     {

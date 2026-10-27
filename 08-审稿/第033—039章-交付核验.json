@@ -1,0 +1,938 @@
+{
+  "scope": "第033—039章新增正文；既有章节另行回修不据本报告宣告全卷重审通过",
+  "chapterCount": 7,
+  "hanTotal": 28282,
+  "allCurrentMdTotal": 168404,
+  "chapters": [
+    {
+      "chapter": 33,
+      "han": 4023,
+      "visible": 4757,
+      "sha256": "63cfaf6d9591ff5bcebc84931720ec5cb9c98ac2952d6f9fcf1eee817402d140",
+      "tone": {
+        "file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第033章.md",
+        "chapter_number": 33,
+        "han_characters": 4023,
+        "min_words_required": 4000,
+        "length_status": "PASS",
+        "length_issues": [],
+        "gates": {
+          "G0": {
+            "block": 0,
+            "warn": 0
+          },
+          "G1": {
+            "block": 0,
+            "warn": 0
+          },
+          "G2": {
+            "block": 0,
+            "warn": 0
+          },
+          "G3": {
+            "block": 0,
+            "warn": 0
+          },
+          "G4": {
+            "block": 0,
+            "warn": 1
+          }
+        },
+        "block_count": 0,
+        "warn_count": 1,
+        "overall_status": "PASS_WITH_WARNINGS",
+        "issues": [
+          {
+            "gate": "G4",
+            "rule_id": "G4-03",
+            "rule": "相邻句结构同款",
+            "severity": "WARN",
+            "line": 0,
+            "match": "共 3 组连续三句以上同构（逗号数相同、长度接近）",
+            "context": "杜川刚要回到桌旁，杜衡指了指纸。… / 陈渡没有留下陪算，拿着路线便笺回老营。… / 严恪刚抬起肩，小年便将纸移到他左手旁。…",
+            "note": "连续三句以上同一句法骨架（逗号数相同、成分顺序相同、长度接近），像在填表。",
+            "fix": "打散其中一句的句法：合并、拆分、换语序；只改句内，不动段落顺序。"
+          }
+        ],
+        "metrics": {
+          "dash_total": 0,
+          "dash_narration": 0,
+          "dash_per_1000": 0.0,
+          "same_structure_groups": 3,
+          "dunhao_count": 9,
+          "colon_count": 15
+        },
+        "disclaimer": "机械合检只报可定位标记，不构成 AI 作者鉴定；四关人工复核仍需逐条执行，见 references/ai-tone/chapter-gate-runbook.md"
+      },
+      "consistency": {
+        "chapter_file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第033章.md",
+        "chapter_title": "第033章 两万人的粮仓",
+        "chapter_number": 33,
+        "han_words": 4023,
+        "non_space_chars": 4757,
+        "min_words_required": 3000,
+        "max_words_suggested": 5000,
+        "overall_status": "PASS",
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": [],
+        "scoring": {
+          "dimension_scores": {
+            "plot_causality": 10,
+            "spacetime_tactics": 10,
+            "continuity_setting": 9,
+            "character_depth": 10,
+            "pacing_readability": 9,
+            "language_naturalness": 10,
+            "suspense_foreshadow": 9
+          },
+          "total_score": 96.5
+        },
+        "dimensions": {
+          "word_count_check": {
+            "status": "pass",
+            "han_words": 4023,
+            "non_space_chars": 4757,
+            "min_words": 3000,
+            "max_words": 5000,
+            "issues": [],
+            "warnings": []
+          },
+          "timeline_check": {
+            "status": "PASS",
+            "chapter_world_year": 2145,
+            "baseline_season": "早春（高地风寒未退）",
+            "detected_ages": [],
+            "issues": [],
+            "warnings": [],
+            "info": [
+              "当前章节锚定世界年份: 公元 2145 年 | 基线季节: 早春（高地风寒未退）"
+            ]
+          },
+          "plot_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "persona_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "language_check": {
+            "status": "pass",
+            "patterns_hits": [],
+            "patterns_count": 0,
+            "ai_score": 0,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "chapter": 34,
+      "han": 4005,
+      "visible": 4635,
+      "sha256": "7a71f1215d1a305989a1d1f25bcaffc91764867666b188df9cbdcb1b681a1a98",
+      "tone": {
+        "file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第034章.md",
+        "chapter_number": 34,
+        "han_characters": 4005,
+        "min_words_required": 4000,
+        "length_status": "PASS",
+        "length_issues": [],
+        "gates": {
+          "G0": {
+            "block": 0,
+            "warn": 0
+          },
+          "G1": {
+            "block": 0,
+            "warn": 0
+          },
+          "G2": {
+            "block": 0,
+            "warn": 0
+          },
+          "G3": {
+            "block": 0,
+            "warn": 0
+          },
+          "G4": {
+            "block": 0,
+            "warn": 1
+          }
+        },
+        "block_count": 0,
+        "warn_count": 1,
+        "overall_status": "PASS_WITH_WARNINGS",
+        "issues": [
+          {
+            "gate": "G4",
+            "rule_id": "G4-03",
+            "rule": "相邻句结构同款",
+            "severity": "WARN",
+            "line": 0,
+            "match": "共 2 组连续三句以上同构（逗号数相同、长度接近）",
+            "context": "走回半途，他扶着岩石停下，胸口喘息又重了。… / 车主过来取钥匙，霍山没急着交，领他看了一遍车斗。…",
+            "note": "连续三句以上同一句法骨架（逗号数相同、成分顺序相同、长度接近），像在填表。",
+            "fix": "打散其中一句的句法：合并、拆分、换语序；只改句内，不动段落顺序。"
+          }
+        ],
+        "metrics": {
+          "dash_total": 0,
+          "dash_narration": 0,
+          "dash_per_1000": 0.0,
+          "same_structure_groups": 2,
+          "dunhao_count": 1,
+          "colon_count": 13
+        },
+        "disclaimer": "机械合检只报可定位标记，不构成 AI 作者鉴定；四关人工复核仍需逐条执行，见 references/ai-tone/chapter-gate-runbook.md"
+      },
+      "consistency": {
+        "chapter_file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第034章.md",
+        "chapter_title": "第034章 断掉的商路",
+        "chapter_number": 34,
+        "han_words": 4005,
+        "non_space_chars": 4635,
+        "min_words_required": 3000,
+        "max_words_suggested": 5000,
+        "overall_status": "PASS",
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": [],
+        "scoring": {
+          "dimension_scores": {
+            "plot_causality": 10,
+            "spacetime_tactics": 10,
+            "continuity_setting": 9,
+            "character_depth": 10,
+            "pacing_readability": 9,
+            "language_naturalness": 10,
+            "suspense_foreshadow": 9
+          },
+          "total_score": 96.5
+        },
+        "dimensions": {
+          "word_count_check": {
+            "status": "pass",
+            "han_words": 4005,
+            "non_space_chars": 4635,
+            "min_words": 3000,
+            "max_words": 5000,
+            "issues": [],
+            "warnings": []
+          },
+          "timeline_check": {
+            "status": "PASS",
+            "chapter_world_year": 2145,
+            "baseline_season": "早春（高地风寒未退）",
+            "detected_ages": [],
+            "issues": [],
+            "warnings": [],
+            "info": [
+              "当前章节锚定世界年份: 公元 2145 年 | 基线季节: 早春（高地风寒未退）"
+            ]
+          },
+          "plot_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "persona_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "language_check": {
+            "status": "pass",
+            "patterns_hits": [],
+            "patterns_count": 0,
+            "ai_score": 0,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "chapter": 35,
+      "han": 4062,
+      "visible": 4737,
+      "sha256": "745b72289e60537924b9eab4c5922f8efee5cd7adfdd7a016383222b17680614",
+      "tone": {
+        "file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第035章.md",
+        "chapter_number": 35,
+        "han_characters": 4062,
+        "min_words_required": 4000,
+        "length_status": "PASS",
+        "length_issues": [],
+        "gates": {
+          "G0": {
+            "block": 0,
+            "warn": 0
+          },
+          "G1": {
+            "block": 0,
+            "warn": 0
+          },
+          "G2": {
+            "block": 0,
+            "warn": 0
+          },
+          "G3": {
+            "block": 0,
+            "warn": 0
+          },
+          "G4": {
+            "block": 0,
+            "warn": 3
+          }
+        },
+        "block_count": 0,
+        "warn_count": 3,
+        "overall_status": "PASS_WITH_WARNINGS",
+        "issues": [
+          {
+            "gate": "G4",
+            "rule_id": "G4-03",
+            "rule": "相邻句结构同款",
+            "severity": "WARN",
+            "line": 0,
+            "match": "共 2 组连续三句以上同构（逗号数相同、长度接近）",
+            "context": "杜衡请邵征继续，随员便摊开军籍册。… / 邵征收走需要报批的部分，留下一套加盖收文骑缝印的…",
+            "note": "连续三句以上同一句法骨架（逗号数相同、成分顺序相同、长度接近），像在填表。",
+            "fix": "打散其中一句的句法：合并、拆分、换语序；只改句内，不动段落顺序。"
+          },
+          {
+            "gate": "G4",
+            "rule_id": "G4-02",
+            "rule": "顿号罗列过密",
+            "severity": "WARN",
+            "line": 53,
+            "match": "粮食、燃料、净水耗材与常用药各有",
+            "context": "邵征将下一册推近，里头是定额军需。粮食、燃料、净水耗材与常用药各有计量办法，装备配件则要附旧件号和适配清单",
+            "note": "三项以上同构并列塞进一句；材料本身必须完整列出时（装备清单、条令）合法。",
+            "fix": "概括成一项，或改变其中一项的句法，不让它们排成同一结构。"
+          },
+          {
+            "gate": "G4",
+            "rule_id": "G4-02",
+            "rule": "顿号罗列过密",
+            "severity": "WARN",
+            "line": 91,
+            "match": "姓名、原属、专长",
+            "context": "姓名、原属、专长、旧伤，几栏横着排过去。陈渡看到最后那栏",
+            "note": "三项以上同构并列塞进一句；材料本身必须完整列出时（装备清单、条令）合法。",
+            "fix": "概括成一项，或改变其中一项的句法，不让它们排成同一结构。"
+          }
+        ],
+        "metrics": {
+          "dash_total": 0,
+          "dash_narration": 0,
+          "dash_per_1000": 0.0,
+          "same_structure_groups": 2,
+          "dunhao_count": 16,
+          "colon_count": 14
+        },
+        "disclaimer": "机械合检只报可定位标记，不构成 AI 作者鉴定；四关人工复核仍需逐条执行，见 references/ai-tone/chapter-gate-runbook.md"
+      },
+      "consistency": {
+        "chapter_file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第035章.md",
+        "chapter_title": "第035章 带印的条件",
+        "chapter_number": 35,
+        "han_words": 4062,
+        "non_space_chars": 4737,
+        "min_words_required": 3000,
+        "max_words_suggested": 5000,
+        "overall_status": "PASS",
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": [],
+        "scoring": {
+          "dimension_scores": {
+            "plot_causality": 10,
+            "spacetime_tactics": 10,
+            "continuity_setting": 9,
+            "character_depth": 10,
+            "pacing_readability": 9,
+            "language_naturalness": 10,
+            "suspense_foreshadow": 9
+          },
+          "total_score": 96.5
+        },
+        "dimensions": {
+          "word_count_check": {
+            "status": "pass",
+            "han_words": 4062,
+            "non_space_chars": 4737,
+            "min_words": 3000,
+            "max_words": 5000,
+            "issues": [],
+            "warnings": []
+          },
+          "timeline_check": {
+            "status": "PASS",
+            "chapter_world_year": 2145,
+            "baseline_season": "早春（高地风寒未退）",
+            "detected_ages": [],
+            "issues": [],
+            "warnings": [],
+            "info": [
+              "当前章节锚定世界年份: 公元 2145 年 | 基线季节: 早春（高地风寒未退）"
+            ]
+          },
+          "plot_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "persona_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "language_check": {
+            "status": "pass",
+            "patterns_hits": [],
+            "patterns_count": 0,
+            "ai_score": 0,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "chapter": 36,
+      "han": 4028,
+      "visible": 4597,
+      "sha256": "53ca289f243ff706320633e981c0de57b803d213a5b61d619348738c37a79214",
+      "tone": {
+        "file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第036章.md",
+        "chapter_number": 36,
+        "han_characters": 4028,
+        "min_words_required": 4000,
+        "length_status": "PASS",
+        "length_issues": [],
+        "gates": {
+          "G0": {
+            "block": 0,
+            "warn": 0
+          },
+          "G1": {
+            "block": 0,
+            "warn": 0
+          },
+          "G2": {
+            "block": 0,
+            "warn": 0
+          },
+          "G3": {
+            "block": 0,
+            "warn": 0
+          },
+          "G4": {
+            "block": 0,
+            "warn": 1
+          }
+        },
+        "block_count": 0,
+        "warn_count": 1,
+        "overall_status": "PASS_WITH_WARNINGS",
+        "issues": [
+          {
+            "gate": "G4",
+            "rule_id": "G4-02",
+            "rule": "顿号罗列过密",
+            "severity": "WARN",
+            "line": 27,
+            "match": "地方守备里得留出值岗、修道、运输和伤停的人",
+            "context": "住两处翘起的角。图上没有多添的援军。他说地方守备里得留出值岗、修道、运输和伤停的人，不能按名册上的八百骨干就当八百人同时上",
+            "note": "三项以上同构并列塞进一句；材料本身必须完整列出时（装备清单、条令）合法。",
+            "fix": "概括成一项，或改变其中一项的句法，不让它们排成同一结构。"
+          }
+        ],
+        "metrics": {
+          "dash_total": 0,
+          "dash_narration": 0,
+          "dash_per_1000": 0.0,
+          "same_structure_groups": 0,
+          "dunhao_count": 7,
+          "colon_count": 9
+        },
+        "disclaimer": "机械合检只报可定位标记，不构成 AI 作者鉴定；四关人工复核仍需逐条执行，见 references/ai-tone/chapter-gate-runbook.md"
+      },
+      "consistency": {
+        "chapter_file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第036章.md",
+        "chapter_title": "第036章 青隘的议事厅",
+        "chapter_number": 36,
+        "han_words": 4028,
+        "non_space_chars": 4597,
+        "min_words_required": 3000,
+        "max_words_suggested": 5000,
+        "overall_status": "PASS",
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": [],
+        "scoring": {
+          "dimension_scores": {
+            "plot_causality": 10,
+            "spacetime_tactics": 10,
+            "continuity_setting": 9,
+            "character_depth": 10,
+            "pacing_readability": 9,
+            "language_naturalness": 10,
+            "suspense_foreshadow": 9
+          },
+          "total_score": 96.5
+        },
+        "dimensions": {
+          "word_count_check": {
+            "status": "pass",
+            "han_words": 4028,
+            "non_space_chars": 4597,
+            "min_words": 3000,
+            "max_words": 5000,
+            "issues": [],
+            "warnings": []
+          },
+          "timeline_check": {
+            "status": "PASS",
+            "chapter_world_year": 2145,
+            "baseline_season": "早春（高地风寒未退）",
+            "detected_ages": [],
+            "issues": [],
+            "warnings": [],
+            "info": [
+              "当前章节锚定世界年份: 公元 2145 年 | 基线季节: 早春（高地风寒未退）"
+            ]
+          },
+          "plot_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "persona_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "language_check": {
+            "status": "pass",
+            "patterns_hits": [],
+            "patterns_count": 0,
+            "ai_score": 0,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "chapter": 37,
+      "han": 4026,
+      "visible": 4558,
+      "sha256": "b3529032459197e9f749cc31f02ad13328db40e10bbb14d1d6b208ea42b46d13",
+      "tone": {
+        "file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第037章.md",
+        "chapter_number": 37,
+        "han_characters": 4026,
+        "min_words_required": 4000,
+        "length_status": "PASS",
+        "length_issues": [],
+        "gates": {
+          "G0": {
+            "block": 0,
+            "warn": 0
+          },
+          "G1": {
+            "block": 0,
+            "warn": 0
+          },
+          "G2": {
+            "block": 0,
+            "warn": 0
+          },
+          "G3": {
+            "block": 0,
+            "warn": 0
+          },
+          "G4": {
+            "block": 0,
+            "warn": 1
+          }
+        },
+        "block_count": 0,
+        "warn_count": 1,
+        "overall_status": "PASS_WITH_WARNINGS",
+        "issues": [
+          {
+            "gate": "G4",
+            "rule_id": "G4-03",
+            "rule": "相邻句结构同款",
+            "severity": "WARN",
+            "line": 0,
+            "match": "共 4 组连续三句以上同构（逗号数相同、长度接近）",
+            "context": "霍山守着机旁看接缝，林霰去帮排队的人空出搬运道。… / 他请当班的人停机重查，没有让新装的便算完工。… / 次日上午，邵征拿来前一日送审后的几项授权。…",
+            "note": "连续三句以上同一句法骨架（逗号数相同、成分顺序相同、长度接近），像在填表。",
+            "fix": "打散其中一句的句法：合并、拆分、换语序；只改句内，不动段落顺序。"
+          }
+        ],
+        "metrics": {
+          "dash_total": 0,
+          "dash_narration": 0,
+          "dash_per_1000": 0.0,
+          "same_structure_groups": 4,
+          "dunhao_count": 7,
+          "colon_count": 4
+        },
+        "disclaimer": "机械合检只报可定位标记，不构成 AI 作者鉴定；四关人工复核仍需逐条执行，见 references/ai-tone/chapter-gate-runbook.md"
+      },
+      "consistency": {
+        "chapter_file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第037章.md",
+        "chapter_title": "第037章 签字之前",
+        "chapter_number": 37,
+        "han_words": 4026,
+        "non_space_chars": 4558,
+        "min_words_required": 3000,
+        "max_words_suggested": 5000,
+        "overall_status": "PASS",
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": [],
+        "scoring": {
+          "dimension_scores": {
+            "plot_causality": 10,
+            "spacetime_tactics": 10,
+            "continuity_setting": 9,
+            "character_depth": 10,
+            "pacing_readability": 9,
+            "language_naturalness": 10,
+            "suspense_foreshadow": 9
+          },
+          "total_score": 96.5
+        },
+        "dimensions": {
+          "word_count_check": {
+            "status": "pass",
+            "han_words": 4026,
+            "non_space_chars": 4558,
+            "min_words": 3000,
+            "max_words": 5000,
+            "issues": [],
+            "warnings": []
+          },
+          "timeline_check": {
+            "status": "PASS",
+            "chapter_world_year": 2145,
+            "baseline_season": "早春（高地风寒未退）",
+            "detected_ages": [],
+            "issues": [],
+            "warnings": [],
+            "info": [
+              "当前章节锚定世界年份: 公元 2145 年 | 基线季节: 早春（高地风寒未退）"
+            ]
+          },
+          "plot_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "persona_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "language_check": {
+            "status": "pass",
+            "patterns_hits": [],
+            "patterns_count": 0,
+            "ai_score": 0,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "chapter": 38,
+      "han": 4077,
+      "visible": 4605,
+      "sha256": "ef24d6d472ac6d284e13a807a14be061ca6f3e59828dbda715891e14f629b72d",
+      "tone": {
+        "file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第038章.md",
+        "chapter_number": 38,
+        "han_characters": 4077,
+        "min_words_required": 4000,
+        "length_status": "PASS",
+        "length_issues": [],
+        "gates": {
+          "G0": {
+            "block": 0,
+            "warn": 0
+          },
+          "G1": {
+            "block": 0,
+            "warn": 0
+          },
+          "G2": {
+            "block": 0,
+            "warn": 0
+          },
+          "G3": {
+            "block": 0,
+            "warn": 0
+          },
+          "G4": {
+            "block": 0,
+            "warn": 2
+          }
+        },
+        "block_count": 0,
+        "warn_count": 2,
+        "overall_status": "PASS_WITH_WARNINGS",
+        "issues": [
+          {
+            "gate": "G4",
+            "rule_id": "G4-03",
+            "rule": "相邻句结构同款",
+            "severity": "WARN",
+            "line": 0,
+            "match": "共 2 组连续三句以上同构（逗号数相同、长度接近）",
+            "context": "老韩请来接收的人签过新册，转头就叫人去灶上核今日… / 陈渡帮着搬空架，右肩用不上整劲，霍山让他只扶这一…",
+            "note": "连续三句以上同一句法骨架（逗号数相同、成分顺序相同、长度接近），像在填表。",
+            "fix": "打散其中一句的句法：合并、拆分、换语序；只改句内，不动段落顺序。"
+          },
+          {
+            "gate": "G4",
+            "rule_id": "G4-02",
+            "rule": "顿号罗列过密",
+            "severity": "WARN",
+            "line": 13,
+            "match": "管水、粮配、医护",
+            "context": "杜衡看了那张岗位表。管水、粮配、医护，还有维持地方出入和安置的经办人，各有来",
+            "note": "三项以上同构并列塞进一句；材料本身必须完整列出时（装备清单、条令）合法。",
+            "fix": "概括成一项，或改变其中一项的句法，不让它们排成同一结构。"
+          }
+        ],
+        "metrics": {
+          "dash_total": 0,
+          "dash_narration": 0,
+          "dash_per_1000": 0.0,
+          "same_structure_groups": 2,
+          "dunhao_count": 7,
+          "colon_count": 2
+        },
+        "disclaimer": "机械合检只报可定位标记，不构成 AI 作者鉴定；四关人工复核仍需逐条执行，见 references/ai-tone/chapter-gate-runbook.md"
+      },
+      "consistency": {
+        "chapter_file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第038章.md",
+        "chapter_title": "第038章 旗帜还在风里",
+        "chapter_number": 38,
+        "han_words": 4077,
+        "non_space_chars": 4605,
+        "min_words_required": 3000,
+        "max_words_suggested": 5000,
+        "overall_status": "PASS",
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": [],
+        "scoring": {
+          "dimension_scores": {
+            "plot_causality": 10,
+            "spacetime_tactics": 10,
+            "continuity_setting": 9,
+            "character_depth": 10,
+            "pacing_readability": 9,
+            "language_naturalness": 10,
+            "suspense_foreshadow": 9
+          },
+          "total_score": 96.5
+        },
+        "dimensions": {
+          "word_count_check": {
+            "status": "pass",
+            "han_words": 4077,
+            "non_space_chars": 4605,
+            "min_words": 3000,
+            "max_words": 5000,
+            "issues": [],
+            "warnings": []
+          },
+          "timeline_check": {
+            "status": "PASS",
+            "chapter_world_year": 2145,
+            "baseline_season": "早春（高地风寒未退）",
+            "detected_ages": [],
+            "issues": [],
+            "warnings": [],
+            "info": [
+              "当前章节锚定世界年份: 公元 2145 年 | 基线季节: 早春（高地风寒未退）"
+            ]
+          },
+          "plot_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "persona_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "language_check": {
+            "status": "pass",
+            "patterns_hits": [],
+            "patterns_count": 0,
+            "ai_score": 0,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "chapter": 39,
+      "han": 4061,
+      "visible": 4577,
+      "sha256": "46cc9048dceac16b032caa4172a5b05538f25bb0ccd30b94ae332dffdededa5e",
+      "tone": {
+        "file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第039章.md",
+        "chapter_number": 39,
+        "han_characters": 4061,
+        "min_words_required": 4000,
+        "length_status": "PASS",
+        "length_issues": [],
+        "gates": {
+          "G0": {
+            "block": 0,
+            "warn": 0
+          },
+          "G1": {
+            "block": 0,
+            "warn": 0
+          },
+          "G2": {
+            "block": 0,
+            "warn": 0
+          },
+          "G3": {
+            "block": 0,
+            "warn": 0
+          },
+          "G4": {
+            "block": 0,
+            "warn": 1
+          }
+        },
+        "block_count": 0,
+        "warn_count": 1,
+        "overall_status": "PASS_WITH_WARNINGS",
+        "issues": [
+          {
+            "gate": "G4",
+            "rule_id": "G4-03",
+            "rule": "相邻句结构同款",
+            "severity": "WARN",
+            "line": 0,
+            "match": "共 2 组连续三句以上同构（逗号数相同、长度接近）",
+            "context": "三月六日，严恪没能把那只空桶提过门槛。… / 林霰站在外圈观察，看到他左脚回移，便喊停。…",
+            "note": "连续三句以上同一句法骨架（逗号数相同、成分顺序相同、长度接近），像在填表。",
+            "fix": "打散其中一句的句法：合并、拆分、换语序；只改句内，不动段落顺序。"
+          }
+        ],
+        "metrics": {
+          "dash_total": 0,
+          "dash_narration": 0,
+          "dash_per_1000": 0.0,
+          "same_structure_groups": 2,
+          "dunhao_count": 7,
+          "colon_count": 1
+        },
+        "disclaimer": "机械合检只报可定位标记，不构成 AI 作者鉴定；四关人工复核仍需逐条执行，见 references/ai-tone/chapter-gate-runbook.md"
+      },
+      "consistency": {
+        "chapter_file": "C:\\Users\\yuqiang2\\Documents\\小说\\测试小说\\chinese-novelist\\20261025-崖边戍卒\\06-正文\\第二卷\\第039章.md",
+        "chapter_title": "第039章 铁幕之下",
+        "chapter_number": 39,
+        "han_words": 4061,
+        "non_space_chars": 4577,
+        "min_words_required": 3000,
+        "max_words_suggested": 5000,
+        "overall_status": "PASS",
+        "issues_count": 0,
+        "warnings_count": 0,
+        "issues": [],
+        "warnings": [],
+        "scoring": {
+          "dimension_scores": {
+            "plot_causality": 10,
+            "spacetime_tactics": 10,
+            "continuity_setting": 9,
+            "character_depth": 10,
+            "pacing_readability": 9,
+            "language_naturalness": 10,
+            "suspense_foreshadow": 9
+          },
+          "total_score": 96.5
+        },
+        "dimensions": {
+          "word_count_check": {
+            "status": "pass",
+            "han_words": 4061,
+            "non_space_chars": 4577,
+            "min_words": 3000,
+            "max_words": 5000,
+            "issues": [],
+            "warnings": []
+          },
+          "timeline_check": {
+            "status": "PASS",
+            "chapter_world_year": 2145,
+            "baseline_season": "早春（高地风寒未退）",
+            "detected_ages": [],
+            "issues": [],
+            "warnings": [],
+            "info": [
+              "当前章节锚定世界年份: 公元 2145 年 | 基线季节: 早春（高地风寒未退）"
+            ]
+          },
+          "plot_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "persona_check": {
+            "status": "pass",
+            "issues": [],
+            "warnings": [],
+            "info": []
+          },
+          "language_check": {
+            "status": "pass",
+            "patterns_hits": [],
+            "patterns_count": 0,
+            "ai_score": 0,
+            "warnings": []
+          }
+        }
+      }
+    }
+  ],
+  "humanReview": "各章四关人工裁决及八项／协同语义复核见同名报告；脚本打分不替代人工结论"
+}

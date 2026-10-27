@@ -534,7 +534,7 @@ def check_persona_and_constraints(content: dict, project_dir: Path, chapter_path
                     cand_pure = re.sub(r'[（\(].*?[）\)]', '', cand_name).strip()
                     if cand_pure in ["主角", "配角", "辅助角色", "出场人物", "待定", "无"] or len(cand_pure) < 2:
                         continue
-                    has_profile = any(char_dir.rglob(f"*{cand_pure}*.md"))
+                    has_profile = any(cand_pure in profile.name for profile in char_dir.rglob("*.md"))
                     if not has_profile and (cand_pure in raw_text or cand_name in raw_text):
                         warnings.append(
                             f"写前小传核验提示: 本章出场角色 [{cand_pure}] 在 02-人物/ 下未找到独立档案。"
