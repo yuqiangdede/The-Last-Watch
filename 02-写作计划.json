@@ -1627,20 +1627,15 @@
   "volumeAppendices": {
     "第一卷": [
       {
-        "id": "v1-epilogue-01",
-        "title": "第一卷尾声（一） 南境的账",
-        "filePath": "06-正文/第一卷/尾声01-南境的账.md",
+        "id": "v1-interlude-after-014",
+        "title": "插章：南境的账",
+        "filePath": "06-正文/第一卷/插章014-南境的账.md",
         "status": "completed",
-        "wordCount": 4024,
-        "nonNumbered": true
-      },
-      {
-        "id": "v1-epilogue-02",
-        "title": "第一卷尾声（二） 没有白汀的一栏",
-        "filePath": "06-正文/第一卷/尾声02-没有白汀的一栏.md",
-        "status": "completed",
-        "wordCount": 4325,
-        "nonNumbered": true
+        "wordCount": 3210,
+        "nonNumbered": true,
+        "insertAfterChapter": 14,
+        "viewpoint": "宋颐（弘毅南境民政）",
+        "lengthPolicy": "不限字数；不计入常规章节字数评分或门禁"
       }
     ]
   }
