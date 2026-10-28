@@ -1661,6 +1661,56 @@
         "viewpoint": "宋颐（弘毅南境民政）",
         "lengthPolicy": "不限字数；不计入常规章节字数评分或门禁"
       }
+    ],
+    "第二卷": [
+      {
+        "id": "v2-interlude-after-024",
+        "title": "插章·【白汀视角】撤不走的名单",
+        "filePath": "06-正文/第二卷/插章024-白汀视角-撤不走的名单.md",
+        "txtPath": "06-正文-TXT/第二卷/插章024-白汀视角-撤不走的名单.txt",
+        "status": "written_pending_review",
+        "nonNumbered": true,
+        "insertAfterChapter": 24,
+        "viewpoint": "方苇（白汀撤民登记员）",
+        "lengthPolicy": "不限字数；不计入编号常规章门禁",
+        "reviewAuthorization": "2026-10-28用户明确要求按四篇既定规划写正文；未逐篇审核单独500字简写；待自动四关与独立反方复核"
+      },
+      {
+        "id": "v2-interlude-after-028",
+        "title": "插章·【锐科视角】没有完成的战报",
+        "filePath": "06-正文/第二卷/插章028-锐科视角-没有完成的战报.md",
+        "txtPath": "06-正文-TXT/第二卷/插章028-锐科视角-没有完成的战报.txt",
+        "status": "written_pending_review",
+        "nonNumbered": true,
+        "insertAfterChapter": 28,
+        "viewpoint": "戚湛（锐科战报校核员）",
+        "lengthPolicy": "不限字数；不计入编号常规章门禁",
+        "reviewAuthorization": "2026-10-28用户明确要求按四篇既定规划写正文；未逐篇审核单独500字简写；待自动四关与独立反方复核"
+      },
+      {
+        "id": "v2-interlude-after-034",
+        "title": "插章·【商路视角】最后一笔运费",
+        "filePath": "06-正文/第二卷/插章034-商路视角-最后一笔运费.md",
+        "txtPath": "06-正文-TXT/第二卷/插章034-商路视角-最后一笔运费.txt",
+        "status": "written_pending_review",
+        "nonNumbered": true,
+        "insertAfterChapter": 34,
+        "viewpoint": "何掌柜（中立商会）",
+        "lengthPolicy": "不限字数；不计入编号常规章门禁",
+        "reviewAuthorization": "2026-10-28用户明确要求按四篇既定规划写正文；未逐篇审核单独500字简写；待自动四关与独立反方复核"
+      },
+      {
+        "id": "v2-interlude-after-037",
+        "title": "插章·【弘毅领视角】有限的保障",
+        "filePath": "06-正文/第二卷/插章037-弘毅领视角-有限的保障.md",
+        "txtPath": "06-正文-TXT/第二卷/插章037-弘毅领视角-有限的保障.txt",
+        "status": "written_pending_review",
+        "nonNumbered": true,
+        "insertAfterChapter": 37,
+        "viewpoint": "宋颐（南境民政安置处主任）",
+        "lengthPolicy": "不限字数；不计入编号常规章门禁",
+        "reviewAuthorization": "2026-10-28用户明确要求按四篇既定规划写正文；未逐篇审核单独500字简写；待自动四关与独立反方复核"
+      }
     ]
   }
 }
