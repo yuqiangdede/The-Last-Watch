@@ -6,10 +6,17 @@ import re
 from pathlib import Path
 
 CHAPTER = re.compile(r"^第(\d+)章(?:[-_ ].*)?\.md$")
+INTERLUDE = re.compile(r"^插章(\d{3})(?:[-_ ].*)?\.md$")  # 数字表示该章后插入，不占全局章号
 SCENE = re.compile(r"^(?:\*\s*\*\s*\*+|-{3,}|_{3,})$")
 
 def order(path):
-    return int(CHAPTER.match(path.name).group(1)), path.name
+    chapter = CHAPTER.fullmatch(path.name)
+    if chapter:
+        return int(chapter.group(1)), 0, path.name
+    insert = INTERLUDE.fullmatch(path.name)
+    if insert:
+        return int(insert.group(1)), 1, path.name
+    raise ValueError("无法识别章节/插章文件名: " + path.name)
 
 def inline(text):
     text = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"\1", text)
@@ -31,7 +38,7 @@ def chapter_txt(markdown, fallback):
         h = re.match(r"^#{1,6}\s+(.+?)\s*#*\s*$", value)
         if h:
             value = h.group(1).strip()
-            if not seen and re.match(r"^第\d+章", value):
+            if not seen and (re.match(r"^第\d+章", value) or value.startswith("插章")):
                 title, seen = inline(value), True
                 continue
         body.append("\u3000\u3000" + inline(value))
@@ -70,7 +77,7 @@ def main():
         p.error("正文目录不存在: " + str(src))
     if src == out or src in out.parents or out in src.parents:
         p.error("输出目录不能与源目录重叠")
-    chapters = sorted([f for f in src.rglob("*.md") if CHAPTER.fullmatch(f.name)], key=lambda f: (str(f.parent.relative_to(src)), order(f)))
+    chapters = sorted([f for f in src.rglob("*.md") if CHAPTER.fullmatch(f.name) or INTERLUDE.fullmatch(f.name)], key=lambda f: (str(f.parent.relative_to(src)), order(f)))
     if not chapters:
         p.error("没有找到 Markdown 章节")
     if a.chapter:
@@ -100,8 +107,8 @@ def main():
             names = {f.stem + ".txt" for f in members}
             folder = out / relative
             if folder.is_dir():
-                for stale in folder.glob("第*章*.txt"):
-                    if re.match(r"^第\d+章", stale.name) and stale.name not in names:
+                for stale in list(folder.glob("第*章*.txt")) + list(folder.glob("插章*.txt")):
+                    if (re.match(r"^第\d+章", stale.name) or INTERLUDE.fullmatch(stale.name.replace(".txt", ".md"))) and stale.name not in names:
                         if a.check:
                             print("过期副本:", stale)
                             ok = False
