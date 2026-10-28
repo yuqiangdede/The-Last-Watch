@@ -9,7 +9,7 @@
   "currentPhase": "第二卷已写至第039章；第三卷第040章待写",
   "minWordsPerChapter": 4000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "status": "writing",
   "writingMode": "serial",
   "chapters": [
@@ -1623,5 +1623,25 @@
     "第三卷": 43,
     "第四卷": 61
   },
-  "futureStructure": "第五至十二卷寻求林霰复活并逐步释怀；第十三至二十卷回青隘建立第三方乃至第八大势力"
+  "futureStructure": "第五至十二卷寻求林霰复活并逐步释怀；第十三至二十卷回青隘建立第三方乃至第八大势力",
+  "volumeAppendices": {
+    "第一卷": [
+      {
+        "id": "v1-epilogue-01",
+        "title": "第一卷尾声（一） 南境的账",
+        "filePath": "06-正文/第一卷/尾声01-南境的账.md",
+        "status": "completed",
+        "wordCount": 4024,
+        "nonNumbered": true
+      },
+      {
+        "id": "v1-epilogue-02",
+        "title": "第一卷尾声（二） 没有白汀的一栏",
+        "filePath": "06-正文/第一卷/尾声02-没有白汀的一栏.md",
+        "status": "completed",
+        "wordCount": 4325,
+        "nonNumbered": true
+      }
+    ]
+  }
 }
