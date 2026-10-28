@@ -9,6 +9,12 @@ metadata:
 
 # Chinese Novelist: 中文小说创作助手
 
+
+## 小说工作台工具入口（webnovel-writer 八能力适配）
+
+当用户提出项目查询、学习、体检、面板时，先读 [webnovel-writer-bridge](../webnovel-writer-bridge/SKILL.md) 的“八能力适配与可执行入口”；本仓脚本 `scripts/novel_workbench.py` 提供 `query`、`learn`、`doctor`、`dashboard` 四个子命令。初始化、规划、写作和审查继续沿用本 Skill 已有规则，不重复造轮子。**切勿称这些子命令为已安装的原版斜杠命令**。查询仅给证据不自动确认事实；学习先候选待作者审批；面板静态只读；体检不等于 RAG/依赖/原生服务检查。所有新能力须遵循既有审核和净收益门禁。
+
+
 ## 双轨质量审查：简写与正文分离（强制）
 
 - **简写／章纲／分卷概要**：按 [简写剧情审查协议](references/guides/outline-review.md) 检查剧情因果、钩子、世界运行、情节AI化、节奏及跨章伏笔，采用专用七维评分。**禁止沿用 G1—G4 语言AI检测、词频、副词、文采及字数门禁**；反方专攻情节套路而非字句。
