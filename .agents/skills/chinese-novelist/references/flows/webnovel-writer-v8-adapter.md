@@ -34,7 +34,7 @@
 
 离线打包工具（只读取真源，写临时文件，不写正文）：
 
-    python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 40 --volume 第三卷 --source "02-人物/主角/陈渡.md"
+    python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 39 --volume 第二卷 --source "02-人物/主角/陈渡.md"
 
 插章用 --interlude-task 传入 05-写作计划/插章任务卡/ 中准确路径；--source 可重复追加本章实际人物小传及世界专题。材料包写入 .novel-work/，来源清单提供 SHA256 和缺项；**打包成功不代表简写已审核**。应人工核对批准记录与本章全部关键材料，不能只把文件路径发给隔离子 Agent。
 
@@ -68,3 +68,5 @@
 ## 6. 对接和升级
 
 以 v8 正式版为流程来源，**不把 master(v6) 的 Claude Code 插件当 v8 调用**。v8 依赖 DSH，未验证存在旧书仓直接迁移能力，不得自动迁移和覆盖第一卷插章及已完成第001—039章。升级 v8 需先检查 release、工具契约、GPL-3.0 依赖与备份，再调整本适配层。
+
+**示例说明**：上述第039章命令只用于核验已有任务卡的只读备料，不是重写第039章的许可；后续新章必须先存在任务卡并完成简写审批。脚本输出的 author_approval_verified 永远为 false，必须由主控另行核对实际作者批准记录。
