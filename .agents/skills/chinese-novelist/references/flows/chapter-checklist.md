@@ -1,5 +1,8 @@
 # 逐章创作流程（所有写作模式共用）
 
+> **v8 新增详写门禁**：执行阶段 A 与本章概要/约500字简写用户审核后，改走 [webnovel-writer v8 正文适配协议](webnovel-writer-v8-adapter.md)：十段材料→单章草稿→八维审读→定向改稿→候选事实核对。必须继续本清单的四关去AI味、独立反方、设定时间轴和 MD/TXT 交付；两套质检交叉验证而不重复扣分，插章不限制字数。
+
+
 > 本文件是逐章创作流程的**单一事实源**。串行模式、子Agent并行模式、Agent Teams 模式均执行本清单，各模式仅"如何认领下一章"不同（见 [phase3-writing.md](phase3-writing.md)）。
 >
 > `{skillBaseDir}` 为 skill 安装根目录占位符，由主 Agent 在派生子 Agent 时替换为实际绝对路径。

@@ -27,3 +27,11 @@
 - `02-写作计划.json` — 机器可读调度状态核心
 - `03-文风基准.md` — 从 `04-文风/` 提取的上下文锚点
 - `99-章节摘要.md` — 逐章连贯性追踪摘要
+
+## 正文生产引擎（Webnovel Writer v8 工作流融合）
+
+本仓 chinese-novelist 总控在章节简写审核通过后，路由至 [webnovel-writer-bridge](.agents/skills/webnovel-writer-bridge/SKILL.md)，使用 [v8 适配协议](.agents/skills/chinese-novelist/references/flows/webnovel-writer-v8-adapter.md) 完成十段带哈希备料、单章起草、八维审读、逐项改稿和事实核对。现有去 AI 味四关、独立反方、世界观／人物账本和 MD/TXT 交付全部保留。
+
+上游 [webnovel-writer v8](https://github.com/lingfengQAQ/webnovel-writer/tree/v8) 是依赖 DSH 的 Scriptor 工作台；本仓目前提供可独立运行的**流程适配**，并未自动安装其原生服务。备料工具：`python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 39 --volume 第二卷`；仅生成 .novel-work/ 临时材料包，不代表作者审核已通过。
+
+上例使用已有第039章任务卡，只用于验证材料打包；**不能据此重写已有正文**。以后第040章要先建立任务卡、完成概要与简写并获作者批准，才可作为写作输入。
