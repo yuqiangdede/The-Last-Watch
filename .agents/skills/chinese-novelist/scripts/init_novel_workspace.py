@@ -47,6 +47,7 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
         "03-剧情",
         "04-文风",
         "05-写作计划/章节任务卡",
+        "05-写作计划/插章任务卡",
         "06-正文/第一卷",
         "07-创作记忆",
         "08-审稿",
