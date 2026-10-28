@@ -1,5 +1,14 @@
 # 《崖边戍卒》全局创作约束与 Agent 协作指南
 
+## 正文生产链：Webnovel Writer v8 × chinese-novelist（强制）
+
+- **职责分离**：现有 chinese-novelist 继续总控设定、章节规划与最终质检；从某章概要和约500字简写经用户明确批准后，进入新增的 webnovel-writer-bridge Skill，按十段备料、单章起草、v8 八维审读、逐项改稿、候选事实对账，再执行本仓 G1—G4／独立反方审稿、状态核验与 MD/TXT 交付。
+- **唯一权威不变**：所有世界观、人物主档、时间线、阵营、结局、任务卡和正式正文仍使用本仓 01—09 目录；不迁移成 v8 默认真源目录、不自动重写已完成章节、不将草稿候选事实直接入账。第三视角插章不限字数且需独立人物档案。
+- **真实工具边界**：v8 Scriptor 8.3.2 是 DSH 写作工作台，原生 novel_* 工具只在已安装、可访问且书仓映射核准时调用；其他环境按本仓 v8 流程适配运行，不得假称原生工具已执行。入口 .agents/skills/webnovel-writer-bridge/SKILL.md；执行细则 .agents/skills/chinese-novelist/references/flows/webnovel-writer-v8-adapter.md。
+
+---
+
+
 ## 对抗式 AI 味审稿（全审稿入口强制执行）
 
 - 无论使用项目 `chinese-novelist` Skill、新章写后质检、单章/多章审稿、还是改稿复审，都在四关与常规质量评价基础上启动一次独立 `ai-style-red-team-reviewer` 子智能体，专门反驳“原稿没有 AI 味”，复用 G1—G4、重复频率、程式化动作、修饰词密度、场景冗余、人物声口检查。必须举原文与邻章证据，也须提出反证和应该保留的写法。

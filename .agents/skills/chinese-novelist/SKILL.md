@@ -10,6 +10,11 @@ metadata:
 # Chinese Novelist: 中文小说创作助手
 
 ## 每章三步写作（强制流程）
+## Webnovel Writer v8 正文引擎（强制接入）
+
+章节概要与约500字简写获作者明确批准后，**详写不再直接按任务卡一稿定稿**：立即加载 [webnovel-writer-bridge](../webnovel-writer-bridge/SKILL.md) 和 [v8 工作流适配协议](references/flows/webnovel-writer-v8-adapter.md)，执行十段来源备料→单章起草与草稿版本→v8 八维审读→定向改稿复核→候选事实对账→原 G1-G4、反方和本仓质量门禁→MD/TXT。原书的建档、时间线、动态编组、插章不限字数等硬约束全部保留。备料可用 scripts/make_webnovel_write_pack.py；打包成功不等于作者批准。没有真实 DSH Scriptor novel_* 工具时只执行本仓 v8 流程适配，不虚报调用或提交。
+
+
 
 后续每章统一按 **概要设定 → 简写 → 详写** 执行，已有大纲、任务卡也不得跳过。
 
