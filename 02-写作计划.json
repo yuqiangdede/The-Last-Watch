@@ -1631,12 +1631,14 @@
         "title": "插章·【锐科视角】没有回报的测绘队",
         "filePath": "06-正文/第一卷/插章005-锐科视角-没有回报的测绘队.md",
         "planningFile": "05-写作计划/插章005-锐科视角-没有回报的测绘队-概要与简写待审核.md",
-        "status": "pending_review",
+        "status": "completed",
         "nonNumbered": true,
         "insertAfterChapter": 5,
-        "viewpoint": "锐科边境工程数据协调人员（具体身份待审）",
+        "viewpoint": "许临（锐科北缘工程回传站数据协调员）",
         "lengthPolicy": "不限字数；不计入常规章节字数评分或门禁",
-        "narrativeBoundary": "不预先证实巴老汉遇害责任、两组武装人员指挥链、弘毅通行证真假、第013章深层探针来源"
+        "narrativeBoundary": "不预先证实巴老汉遇害责任、两组武装人员指挥链、弘毅通行证真假、第013章深层探针来源",
+        "wordCount": 4498,
+        "reviewAuthorization": "2026-10-28用户明确要求编写待审核插章"
       },
       {
         "id": "v1-interlude-after-010",
