@@ -9,6 +9,8 @@ description: 项目内以 webnovel-writer v8 流程组织正文备料、起草�
 
 先阅读仓库 AGENTS.md、../chinese-novelist/SKILL.md，再读 ../chinese-novelist/references/flows/webnovel-writer-v8-adapter.md。所有细节以适配协议为准，本入口不创建第二套重复规则。
 
+**改稿前置条件**：详写初稿之外的任何分项修订，逐项执行 [改稿净收益评估门禁](../chinese-novelist/references/guides/change-benefit-gate.md)：记录原文价值、收益与潜在副作用；只有收益明确大于损害才改，否则保留原稿或寻找更小替代方案。P0/P1 硬伤未解决不能交付 PASS；改后复验负收益须回滚。禁止为满足八维审读或 AI 味扫描而强行磨平人物与叙事。
+
 严格执行：核对审批与人物档案 → 十段来源备料 → 单章候选起草（子 Agent 可用才真的派）→ v8 八维审读 → 现有 G1—G4 + 独立 AI 味反方与一致性校验 → 分项改稿复审 → 候选事实对账 → 权威 MD 与 TXT 交付。
 
 离线备料：python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 39 --volume 第二卷。正式稿不可包含草稿元数据和候选事实。独立插章无字数限制。
