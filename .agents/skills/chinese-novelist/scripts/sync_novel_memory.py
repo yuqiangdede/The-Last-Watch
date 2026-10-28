@@ -55,13 +55,18 @@ def extract_character_summary(char_file: Path, project_dir: Path) -> dict:
         pure_name = name
 
     # 2. 判定类别 (主角 / 配角 / 辅助角色)
-    parent_name = char_file.parent.name
+    # 人物目录允许在 配角/ 和 辅助角色/ 下继续增加初始阵营子目录；
+    # 因此不能再依赖 char_file.parent.name（它现在通常是 青隘联防区/锐科合众 等）。
+    try:
+        classification_parts = char_file.relative_to(project_dir / "02-人物").parts
+    except ValueError:
+        classification_parts = char_file.parts
     category = "配角"
-    if "主角" in parent_name:
+    if "主角" in classification_parts:
         category = "主角"
-    elif "辅助" in parent_name:
+    elif "辅助角色" in classification_parts:
         category = "辅助角色"
-    elif "配角" in parent_name:
+    elif "配角" in classification_parts:
         category = "配角"
     else:
         # 从内容或文件名判定
