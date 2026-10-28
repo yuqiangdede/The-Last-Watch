@@ -47,8 +47,8 @@ def extract_character_summary(char_file: Path, project_dir: Path) -> dict:
     if title_match:
         raw_name = title_match.group(1).strip()
 
-    # 剥离章节前缀如 第001章-王猎户 -> 王猎户
-    name = re.sub(r'^第\d+章[-_]', '', raw_name).strip()
+    # 剥离编号章或不编号插章前缀，避免将「第一卷插章005-许临」当作人物本名。
+    name = re.sub(r'^(?:第\d+章|第?[一二三四五六七八九十百0-9]+卷(?:插章|尾声)\d+)[-_]', '', raw_name).strip()
     # 剥离可能包含的括号别名如 陈渡（老渡） -> 陈渡
     pure_name = re.sub(r'[（\(].*?[）\)]', '', name).strip()
     if not pure_name:
@@ -84,6 +84,8 @@ def extract_character_summary(char_file: Path, project_dir: Path) -> dict:
         ch_stem_match = re.search(r'(第\d+章)', char_file.stem)
         if ch_stem_match:
             first_ch = ch_stem_match.group(1)
+        elif re.search(r'^第?[一二三四五六七八九十百0-9]+卷(?:插章|尾声)\d+', char_file.stem):
+            first_ch = re.search(r'^第?[一二三四五六七八九十百0-9]+卷(?:插章|尾声)\d+', char_file.stem).group(0)
         elif category == "主角":
             first_ch = "第一卷/第001章"
         else:
