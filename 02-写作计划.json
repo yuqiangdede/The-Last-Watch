@@ -1627,6 +1627,28 @@
   "volumeAppendices": {
     "第一卷": [
       {
+        "id": "v1-interlude-after-005",
+        "title": "插章·【锐科视角】没有回报的测绘队",
+        "filePath": "06-正文/第一卷/插章005-锐科视角-没有回报的测绘队.md",
+        "planningFile": "05-写作计划/插章005-锐科视角-没有回报的测绘队-概要与简写待审核.md",
+        "status": "pending_review",
+        "nonNumbered": true,
+        "insertAfterChapter": 5,
+        "viewpoint": "锐科边境工程数据协调人员（具体身份待审）",
+        "lengthPolicy": "不限字数；不计入常规章节字数评分或门禁",
+        "narrativeBoundary": "不预先证实巴老汉遇害责任、两组武装人员指挥链、弘毅通行证真假、第013章深层探针来源"
+      },
+      {
+        "id": "v1-interlude-after-010",
+        "title": "插章·【白汀视角】最后一趟商车",
+        "filePath": "06-正文/第一卷/插章010-白汀视角-最后一趟商车.md",
+        "status": "completed",
+        "nonNumbered": true,
+        "insertAfterChapter": 10,
+        "viewpoint": "梁舟（白汀运务站）",
+        "lengthPolicy": "不限字数；不计入常规章节字数评分或门禁"
+      },
+      {
         "id": "v1-interlude-after-014",
         "title": "插章：南境的账",
         "filePath": "06-正文/第一卷/插章014-南境的账.md",
