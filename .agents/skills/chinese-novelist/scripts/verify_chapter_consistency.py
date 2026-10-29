@@ -652,8 +652,8 @@ def compute_seven_dimensions(wc_res, time_res, plot_res, persona_res, lang_res) 
 
     # 5. 节奏、可读性与追更欲 (权重 15)
     score_rhythm = 9
-    if wc_res["issues"]:
-        score_rhythm -= 3
+    # 字数是工程交付条件，不得直接扣减「节奏与可读性」文学质量分。
+    # 以下分数仅为历史兼容的机械参考，不能冒充完整语义审稿。
     scores["pacing_readability"] = max(3, min(10, score_rhythm))
 
     # 6. 语言自然度与AI式模式控制 (权重 15)
@@ -679,7 +679,9 @@ def compute_seven_dimensions(wc_res, time_res, plot_res, persona_res, lang_res) 
     total_score = sum(scores[k] * weights[k] / 10 for k in weights)
     return {
         "dimension_scores": scores,
-        "total_score": round(total_score, 1)
+        "total_score": round(total_score, 1),
+        "scoring_kind": "MECHANICAL_REFERENCE_ONLY",
+        "quality_review_status": "NOT_EVALUATED"
     }
 
 
@@ -700,23 +702,24 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
     project_name = project_dir.name
 
     report = []
-    report.append(f"# 《{project_name}》章节质量审查报告｜第{ch_num:03d}章\n")
+    report.append(f"# 《{project_name}》章节机械质检参考报告｜第{ch_num:03d}章\n")
     report.append("## 0. 审查元信息\n")
     report.append(f"- **章节标题**：{ch_title}")
     report.append(f"- **审查日期**：{today_str}")
     report.append(f"- **正文计数**：正文汉字数 **{han_count}** 字（达标线：{min_words}-{max_words} 字）｜非空白字符数 {result['non_space_chars']} 字")
-    report.append(f"- **综合发布判定**：**{'✅ PASS' if overall_status == 'PASS' else '❌ BLOCKED'}**")
+    report.append(f"- **工程交付门禁（机械）**：**{overall_status}**")
+    report.append("- **完整小说质量审稿判定**：**未执行／待全文及设定人工核验**（字数不属于质量P级）")
     report.append(f"- **阻断原因**：{'无' if not result['issues'] else '存在 ' + str(len(result['issues'])) + ' 项阻断性问题（必须修改）'}\n")
 
     report.append("## 1. 核心维度量化评价\n")
-    report.append(f"- **综合质量总分**：**{total_score}/100**")
+    report.append(f"- **机器指标参考（非完整质量总分）**：**{total_score}/100**；须以0—10节人工审查报告为正式质量评分")
     report.append(f"- **时空、物理与战术合理性**：{dim_scores['spacetime_tactics']}/10（世界主线时间、主角理论年龄、天候位移吻合）")
     report.append(f"- **剧情因果与信息证据链**：{dim_scores['plot_causality']}/10（任务决策闭环、战术摩擦、无机械降神）")
     report.append(f"- **人物动机与小传合规性**：{dim_scores['character_depth']}/10（符合小传性格底色、未触犯禁止偏离清单）")
     report.append(f"- **设定/装备与跨章连续性**：{dim_scores['continuity_setting']}/10（装备与伤病继承合规）")
     report.append(f"- **节奏、可读性与追更欲**：{dim_scores['pacing_readability']}/10（张弛有度、推进明确）")
     report.append(f"- **语言自然度与AI式模式控制**：{dim_scores['language_naturalness']}/10（动作具象、说人话）")
-    report.append(f"- **AI式痕迹显著度**：**{ai_score}/5**（越高越明显，0为纯自然表达）\n")
+    report.append(f"- **机器模式候选显著度**：**{ai_score}/5**（仅参考；非正式语义审稿、非作者概率）\n")
 
     report.append("## 2. 逐项核验细节对账\n")
     report.append("### 1. 时间轴与多主角年龄/主线事件合规性核验")
@@ -728,11 +731,11 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
     report.append("### 2. 生理伤病与因果连续性")
     for inf in result["dimensions"]["plot_check"]["info"]:
         report.append(f"  - [x] {inf}")
-    report.append("  - [x] 弹药消耗与装备状态符合动态账本约束。\n")
+    report.append("  - [ ] 弹药消耗与装备状态：**待审稿人核对动态账本**。\n")
 
     report.append("### 3. 人物小传合规性与负面禁令")
-    report.append("  - [x] 遵从冰山原则：言行符合小传性格底色，未触碰【禁止偏离清单】条款。")
-    report.append("  - [x] 情报边界：角色对话严格受限于已知信息，无上帝视角剧透。\n")
+    report.append("  - [ ] 人物行为与小传禁止偏离清单：**待真实语义核验**。")
+    report.append("  - [ ] 情报边界与人物实际所知：**待真实语义核验**。\n")
 
     report.append("### 4. 语言打磨与套式控制")
     report.append(f"  - 扫描到候选模式命中：{result['dimensions']['language_check']['patterns_count']} 处")
@@ -793,6 +796,8 @@ def verify_chapter(
         "min_words_required": min_words,
         "max_words_suggested": max_words,
         "overall_status": overall_status,
+        "delivery_gate_status": overall_status,
+        "quality_review_status": "NOT_EVALUATED",
         "issues_count": len(all_issues),
         "warnings_count": len(all_warnings),
         "issues": all_issues,
