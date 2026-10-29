@@ -47,6 +47,12 @@ class ConfigTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             load_project_config(self.root)
 
+    def test_story_terms_are_isolated(self):
+        self.write_config()
+        review = load_project_config(self.root)["review"]
+        self.assertEqual(review["travel_location_terms"], ["虚构港口"])
+        self.assertEqual(review["repeated_equipment_terms"], ["装备A"])
+
     def test_path_restriction(self):
         self.write_config()
         cfg = json.loads((self.root / "novel.project.json").read_text(encoding="utf-8"))

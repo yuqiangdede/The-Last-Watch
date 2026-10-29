@@ -21,7 +21,7 @@
 
 用法:
   python scan_ai_tone.py <章节路径> [<章节路径2> ...] [--project-dir 项目根] [--json]
-                         [--auto-report] [--report 指定报告路径] [--min-words 4000]
+                         [--auto-report] [--report 指定报告路径] [--min-words 项目配置覆盖]
 """
 
 import argparse

@@ -28,6 +28,10 @@
 - `03-文风基准.md` — 从 `04-文风/` 提取的上下文锚点
 - `99-章节摘要.md` — 逐章连贯性追踪摘要
 
+## 小说专属配置与通用 Skill 解耦
+
+本书现在由根目录 [`novel.project.json`](novel.project.json) 管理简写目标、编号章篇幅、插章豁免与候选地名/装备；项目专属人物、势力、章节剧情和写作锚点存于 [`04-文风/项目专属写作规则.md`](04-文风/项目专属写作规则.md) 以及原有 `01—09` 权威目录。通用 Skill 只包含方法、检查器与可复用规范，项目的第017/023/029章经验已归档至 `08-审稿/经验案例/`。配置方法见 [Skill 配置说明](.agents/skills/chinese-novelist/references/guides/project-config.md)。
+
 ## 正文生产引擎（Webnovel Writer v8 工作流融合）
 
 本仓统一使用 [chinese-novelist Skill](.agents/skills/chinese-novelist/SKILL.md)；章节简写审核通过后，由其内置 [v8 适配协议](.agents/skills/chinese-novelist/references/flows/webnovel-writer-v8-adapter.md) 完成十段带哈希备料、单章起草、八维审读、逐项改稿和事实核对。现有去 AI 味四关、独立反方、世界观／人物账本和 MD/TXT 交付全部保留。

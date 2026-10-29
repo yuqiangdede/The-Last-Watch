@@ -9,7 +9,7 @@
 4. 输出候选证据列表与行号上下文，供质检核查
 
 用法:
-  python scan_chapter.py <章节路径> [<章节路径2> ...] [--min-words 3000] [--max-words 5000] [--json]
+  python scan_chapter.py <章节路径> [<章节路径2> ...] [--min-words 配置覆盖] [--max-words 配置覆盖] [--json]
 """
 
 import argparse
