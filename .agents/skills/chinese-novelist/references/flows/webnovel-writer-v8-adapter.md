@@ -1,4 +1,4 @@
-# Webnovel Writer v8 与《崖边戍卒》正文写作合并协议
+# Webnovel Writer v8 与通用中文小说工作流适配协议
 
 来源：[lingfengQAQ/webnovel-writer v8](https://github.com/lingfengQAQ/webnovel-writer/tree/v8)，Scriptor 8.3.2；此处借鉴工作流并作独立适配，不复制其 GPL-3.0 源码，也不假定 DSH 工具已安装。
 
@@ -15,7 +15,7 @@
 2. 执行现有“概要设定→约500字简写→逐章用户审核”，核对**该章**作者明确批准的依据。没有证据就止于简写，不能用上游默认自动流程跳过审核，也不能把上一章的通过延续到下一章。
 3. 出场人物需要小传（多次出现、关键行动、插章有限视角主角、稳定匿名职能角色同等处理）；按初始所属阵营建档。战争/救援/撤民需核对真实人数、指挥权、装备能力、情报边界和后勤限制。
 4. 将输入区别为：A 已确认事实、B 正文内角色证言或未核实线索、C 规划建议。只有 A 能约束事实，B 不允许冒充定论，C 不可直接写入账本。
-5. 编号常规章沿用本书写作目标 4500—5000 中文汉字，遵守全局 4000—5000 字硬边界及实际检查器；**独立不编号插章不设上下限**，不得凑字、拆章或以字数打分。
+5. 编号常规章字数、插章是否豁免从当前项目 `novel.project.json` 加载，不能将另一部小说的篇幅硬编码到 Skill。
 
 ## 2. 按 v8 组织十段自包含材料包
 
@@ -34,7 +34,7 @@
 
 离线打包工具（只读取真源，写临时文件，不写正文）：
 
-    python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 39 --volume 第二卷 --source "02-人物/主角/陈渡.md"
+    python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 1 --volume 第一卷 --source "02-人物/主角/角色名.md"
 
 插章用 --interlude-task 传入 05-写作计划/插章任务卡/ 中准确路径；--source 可重复追加本章实际人物小传及世界专题。材料包写入 .novel-work/，来源清单提供 SHA256 和缺项；**打包成功不代表简写已审核**。应人工核对批准记录与本章全部关键材料，不能只把文件路径发给隔离子 Agent。
 

@@ -1,6 +1,6 @@
 # chinese-novelist
 
-> 个人维护的中文小说创作与质量审查 Skill。用于小说规划、章节写作、审稿、改稿和长篇连续性管理。当前在《崖边戍卒》仓库内维护。
+> 个人维护的中文小说创作与质量审查 Skill。用于小说规划、章节写作、审稿、改稿和长篇连续性管理。适用于多个小说工程，作品事实从项目配置和项目文件读取。
 
 ## 定位
 
@@ -45,7 +45,7 @@
 
 ```powershell
 python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . doctor
-python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . query "林霰" --scope 人物 --limit 30
+python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . query "人物姓名" --scope 人物 --limit 30
 python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . dashboard --output .novel-work/dashboard/index.html
 ```
 
