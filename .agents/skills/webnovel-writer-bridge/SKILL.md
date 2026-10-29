@@ -5,6 +5,10 @@ description: 项目内以 webnovel-writer v8 流程组织正文备料、起草�
 
 # Webnovel Writer v8 正文适配入口
 
+## 12+7 反模板质量门禁
+
+所有 webnovel-write 的写前备料、候选起草、八维审读、G1—G4/反方审查及改稿复验，都沿用 [12 项正文文风 + 7 项情节套路化证据规范](../chinese-novelist/references/ai-tone/ai-writing-signals-12.md)。禁止“先顺滑写完再用套话润色”的工作流，优先保证人物行动与真实后果；各候选必须附具体原文、反证与净收益。webnovel-plan 和简写审查只运行 PLOT01—07，不评价文本修辞。
+
 **触发**：用户要求使用 webnovel-writer 写正文／复审／续写，或者 chinese-novelist 完成「概要设定＋约500字简写」用户审核后进入详写。
 
 先阅读仓库 AGENTS.md、../chinese-novelist/SKILL.md，再读 ../chinese-novelist/references/flows/webnovel-writer-v8-adapter.md。所有细节以适配协议为准，本入口不创建第二套重复规则。
