@@ -1,3 +1,8 @@
+
+## 研究型叙事质量门禁 F01—F16（正文/剧情双模式）
+
+调用 chinese-novelist 进行 /webnovel-plan、/webnovel-write、/webnovel-review、/webnovel-doctor 等同等工作流时，必须加载 [F01—F16 写作与审查规则](../chinese-novelist/references/ai-tone/research-narrative-ai-16.md)，并遵循 [chinese-novelist](../chinese-novelist/SKILL.md)。规划/简写只查情节结构；正式正文从写前场景设计到初稿、对抗审读、定向修订执行三层检查（段落、章节、跨章）。F 编号与现有 S/PLOT/G/TR/TX 合并归因；不因数量命中强制修改或改变评分权重，修订以读者收益净正为门槛，保留设定与已确认剧情。
+
 ---
 name: webnovel-writer-bridge
 description: 项目内以 webnovel-writer v8 流程组织正文备料、起草、八维审读、分项修改与候选事实核对；继续执行 chinese-novelist 的世界观、人物、四关与双格式质量门禁。
