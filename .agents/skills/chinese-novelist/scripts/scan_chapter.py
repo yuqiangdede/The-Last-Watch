@@ -19,7 +19,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from project_config import chapter_limits
+from project_config import chapter_limits, load_project_config
 
 # 修复 Windows 控制台编码问题
 if sys.platform == 'win32':
@@ -66,11 +66,12 @@ def prose_lines(text: str):
         yield line_no, line
 
 
-def scan_file(path: Path, min_words: int = 3000, max_words: int = 5000):
+def scan_file(path: Path, min_words: int = None, max_words: int = None):
     """扫描单章文件，返回汉字字数与潜在套式命中"""
     if not path.exists():
         raise FileNotFoundError(f"文件不存在: {path}")
 
+    min_words, max_words = chapter_limits(path, min_words=min_words, max_words=max_words)
     raw_text = path.read_text(encoding="utf-8-sig")
     lines = list(prose_lines(raw_text))
     prose = "".join(line for _, line in lines)
@@ -88,6 +89,17 @@ def scan_file(path: Path, min_words: int = 3000, max_words: int = 5000):
                     "context": line[left:right].strip()
                 })
 
+    # 项目关注的装备名词只生成候选：重复本身并非质量问题。
+    equipment_terms = load_project_config(path)["review"]["repeated_equipment_terms"]
+    for term in equipment_terms:
+        occurrences = []
+        for line_no, line in lines:
+            for match in re.finditer(re.escape(term), line):
+                occurrences.append((line_no, line.strip()))
+        if len(occurrences) > 1:
+            for line_no, context in occurrences[1:]:
+                hits.append({"type": "项目装备重复候选", "line": line_no,
+                             "match": term, "context": context[:100]})
     hits.sort(key=lambda x: (x["line"], x["type"]))
     han_count = sum(is_han(ch) for ch in prose)
     visible_count = sum(not ch.isspace() for ch in prose)

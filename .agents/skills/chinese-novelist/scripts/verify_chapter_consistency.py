@@ -761,10 +761,11 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
 def verify_chapter(
     chapter_path: Path,
     project_dir: Path,
-    min_words: int = 3000,
-    max_words: int = 5000
+    min_words: int = None,
+    max_words: int = None
 ) -> dict:
     """单章全量综合质检"""
+    min_words, max_words = chapter_limits(chapter_path, project_dir, min_words, max_words)
     content = extract_chapter_content(chapter_path)
 
     wc_result = check_word_count(content, min_words, max_words)

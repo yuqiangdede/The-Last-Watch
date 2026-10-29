@@ -62,9 +62,10 @@ def extract_content_from_chapter(file_path: Path) -> str:
     return main_content
 
 
-def check_chapter(file_path: str, min_words: int = 3000) -> dict:
+def check_chapter(file_path: str, min_words: int = None) -> dict:
     """检查单个章节的字数"""
     path = Path(file_path)
+    min_words = chapter_limits(path, min_words=min_words)[0]
 
     if not path.exists():
         return {

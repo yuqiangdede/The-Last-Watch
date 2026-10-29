@@ -451,11 +451,13 @@ def detect_project_dir(chapter_path):
     return None
 
 
-def scan_file(path: Path, min_words: int = 4000, auto_report: bool = False,
+def scan_file(path: Path, min_words: int = None, auto_report: bool = False,
               report_path: str = None, project_dir: str = None):
     if not path.exists():
         raise FileNotFoundError(f"文件不存在: {path}")
 
+    if min_words is None:
+        min_words = chapter_limits(path, project_dir)[0]
     raw = path.read_text(encoding="utf-8-sig")
     lines = list(prose_lines(raw))
     prose = "".join(line for _, line in lines)
