@@ -16,7 +16,7 @@ SOURCES = {
     "计划": "05-写作计划", "正文": "06-正文", "记忆": "07-创作记忆",
     "审稿": "08-审稿"
 }
-REQUIRED = ["AGENTS.md", "01-大纲.md", "02-写作计划.json", "06-正文", "07-创作记忆"]
+REQUIRED = ["AGENTS.md", "02-写作计划.json", "06-正文", "07-创作记忆"]
 EXCLUDE = {".git", ".novel-work", "__pycache__", ".venv", "node_modules"}
 
 def files_under(root, name, suffixes=(".md", ".json")):
