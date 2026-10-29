@@ -45,6 +45,10 @@ python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir 
 
 query 命中仅是检索证据，须区分正文事实、人物证言和未来规划；doctor 为 BLOCKED 时中止交付，并结合 `export_reading_txt.py --all --check` 和原一致性质检；learn 仅输出 `07-创作记忆/学习候选/` 的候选 JSON，不自动训练或覆盖规则；dashboard 输出固定在 `.novel-work/`，不修改权威数据。任何 write/review 仍需作者逐章简写审批、角色小传、对抗审稿、净收益评估与 MD/TXT 双格式一致性检查。
 
+## 第017章朱雀案例补充（webnovel-write / webnovel-review 同步生效）
+
+正式正文写前/写中/审后均须读取 [第017章：观察边界、技术确定性与整齐化叙述](../chinese-novelist/references/guides/chapter-017-zhuque-case.md)：炮击/电子压制/光学观察不可把推断说成实证；避免设备百科、灾难喻体加码、人物动作齐整和证据不足的章尾身份确认。结局、战术、人物与资源要连续，按净收益门禁只改成立且收益更大的缺陷。**简写只看剧情逻辑，不执行文字AI特征识别或朱雀阈值**。
+
 ## 场景自然度专项（webnovel-write / webnovel-review 同步生效）
 
 执行 [第023章案例：场景真实感与 AI 式结构审查](../chinese-novelist/references/guides/scene-naturalness-review.md)。写前检查人物所知与行动阻力，写中控制动作-眼神-心理三联/说明式对白/场景清单，审后查过度工整的情节模板、专业技术与数量守恒、情感锚点误删；朱雀值不能当生成概率或过关线；简写只审剧情结构。所有改动仍须净收益为正。
