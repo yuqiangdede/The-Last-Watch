@@ -47,7 +47,7 @@ def extract_character_summary(char_file: Path, project_dir: Path) -> dict:
     if title_match:
         raw_name = title_match.group(1).strip()
 
-    # 剥离编号章或不编号插章前缀，避免将「第一卷插章005-许临」当作人物本名。
+    # 剥离编号章或不编号插章前缀，避免将「第一卷插章005-角色甲」当作人物本名。
     name = re.sub(r'^(?:第\d+章|第?[一二三四五六七八九十百0-9]+卷(?:插章|尾声)\d+)[-_]', '', raw_name).strip()
     # 剥离人名可能包含的括号别名，例如 张三（别名） -> 张三
     pure_name = re.sub(r'[（\(].*?[）\)]', '', name).strip()

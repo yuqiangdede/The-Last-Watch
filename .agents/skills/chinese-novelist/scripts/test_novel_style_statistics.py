@@ -20,7 +20,7 @@ class StatsTests(unittest.TestCase):
         return path
 
     def test_lines_and_repetition(self):
-        p = self.make("a.md", "# 第一章\n\n　　陈渡把灯放在桌角，知道电池只剩半格。\n\n　　陈渡把灯放在桌角，知道电池只剩半格。\n")
+        p = self.make("a.md", "# 第一章\n\n　　队长把灯放在桌角，知道电池只剩半格。\n\n　　陈渡把灯放在桌角，知道电池只剩半格。\n")
         chunks = style.paragraphs(p)
         self.assertEqual([x["line"] for x in chunks], [3, 5])
         candidates, totals = style.scan(chunks)
@@ -39,7 +39,7 @@ class StatsTests(unittest.TestCase):
             self.assertEqual(style.main([str(p), "--json"]), 0)
 
     def test_outline_rejected(self):
-        p = self.make("outline.md", "概要：青隘前线遭遇封锁。")
+        p = self.make("outline.md", "概要：边境驻地前线遭遇封锁。")
         with self.assertRaises(SystemExit) as ctx:
             style.main([str(p), "--mode", "outline"])
         self.assertEqual(ctx.exception.code, 2)

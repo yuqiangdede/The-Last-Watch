@@ -43,10 +43,10 @@ class TranslationeseScanTests(unittest.TestCase):
         self.assertEqual(result["overall_status"], "PASS_WITH_WARNINGS")
 
     def test_normal_action_has_no_translationese_warning(self):
-        self.assertEqual(self.warnings("陈渡关掉电台，走出岗哨。"), [])
+        self.assertEqual(self.warnings("队长关掉电台，走出岗哨。"), [])
 
     def test_dialogue_masking_for_narration_rules(self):
-        hits = self.warnings("“由于夜里断电，导致电台失联。”老霍说。")
+        hits = self.warnings("“由于夜里断电，导致电台失联。”机械师说。")
         self.assertNotIn("TR-11", {i["rule_id"] for i in hits})
 
     def test_report_keeps_location_and_context(self):

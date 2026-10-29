@@ -293,11 +293,11 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
 
 ## 1. 叙事视角与语态
 - **主视角**：第三人称限制视角
-- **叙述距离**：贴近主角感知，注重物理细节与生理反馈
+- **叙述距离**：按作者选择设置近距离或疏离限制视角，不强制固定风格
 
 ## 2. 节奏与句式
 - 动作场景：短句为主，紧凑有力
-- 思考与环境：冷峻、克制、富有质感，避免华丽辞藻堆砌
+- 思考与环境：按当前小说题材、视角与作者要求定义，不默认军事冷峻文风
 
 ## 3. 对话风格
 - 说话符合人物身份与背景，严禁现代网梗，多用潜台词
@@ -360,22 +360,14 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
     # 时间轴总账（结构化基准底表）
     timeline_baseline = {
         "worldBaseline": {
-            "epochName": "故事纪元",
-            "currentYear": 1,
-            "currentMonth": 1,
-            "currentDay": 1,
-            "season": "初春",
-            "worldMajorEvent": "故事主线开端"
+            "epochName": "待作者确立",
+            "currentYear": None,
+            "currentMonth": None,
+            "currentDay": None,
+            "season": "",
+            "worldMajorEvent": "待确认"
         },
-        "charactersTimeline": {
-            "主角": {
-                "birthYear": -15,
-                "currentAge": 16,
-                "currentAgeDisplay": "十六岁",
-                "currentLocation": "故事起点",
-                "lastActiveTimestamp": "第1章起点"
-            }
-        },
+        "charactersTimeline": {},
         "travelConstraintMatrix": {}
     }
     write_file_if_not_exists(target_dir / "07-创作记忆" / "时间轴总账.json", json.dumps(timeline_baseline, ensure_ascii=False, indent=2))

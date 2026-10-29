@@ -236,9 +236,12 @@ def check_timeline_and_world_events(content: dict, project_dir: Path, chapter_pa
 
     # 提取世界基线时间信息
     world_baseline = timeline_data.get("worldBaseline", {})
-    baseline_year = world_baseline.get("currentYear", 2145)
-    baseline_season = world_baseline.get("season", "晚冬")
-    baseline_weather = world_baseline.get("weather", "寒冷")
+    baseline_year = world_baseline.get("currentYear")
+    baseline_year = baseline_year if type(baseline_year) is int else None
+    baseline_season = world_baseline.get("season") or ""
+    baseline_weather = world_baseline.get("weather") or ""
+    if baseline_year is None:
+        warnings.append("缺少可信世界时间基线；仅检查正文和任务卡能确认的时间，不推断角色年龄或未来事件")
 
     # 2. 章节世界时间提取与对齐（优先以任务卡与正文时间为准，无则沿用基准）
     chapter_world_year = baseline_year
@@ -246,7 +249,7 @@ def check_timeline_and_world_events(content: dict, project_dir: Path, chapter_pa
     if year_match:
         chapter_world_year = int(year_match.group(1))
 
-    info.append(f"当前章节锚定世界年份: 公元 {chapter_world_year} 年 | 基线季节: {baseline_season}")
+    info.append(f"当前章节锚定世界年份: {chapter_world_year if chapter_world_year is not None else '待确认'} | 基线季节: {baseline_season or '待确认'}")
 
     # 3. 提取正文中所有显式的年龄数字
     age_patterns = [
@@ -276,7 +279,7 @@ def check_timeline_and_world_events(content: dict, project_dir: Path, chapter_pa
 
         # 4.1 理论实岁核验
         expected_age = None
-        if birth_year:
+        if birth_year is not None and chapter_world_year is not None:
             expected_age = chapter_world_year - int(birth_year)
 
         if is_in_text and expected_age is not None:
@@ -293,13 +296,13 @@ def check_timeline_and_world_events(content: dict, project_dir: Path, chapter_pa
                         info.append(f"角色 [{pure_cname}] 年龄表述准确 ({da['raw']})，与理论实岁 {expected_age} 岁完全吻合。")
 
         # 4.2 生命周期边界核验 (未出生 / 已阵亡)
-        if is_in_text and birth_year and chapter_world_year < int(birth_year):
+        if is_in_text and birth_year is not None and chapter_world_year is not None and chapter_world_year < int(birth_year):
             issues.append(
                 f"角色时空悖论 (P0): 角色 [{pure_cname}] 设定出生于 {birth_year} 年，而当前世界年份为 {chapter_world_year} 年，"
                 f"该角色尚未出生，严禁作为实体角色登场！"
             )
 
-        if is_in_text and death_year and chapter_world_year > int(death_year):
+        if is_in_text and death_year is not None and chapter_world_year is not None and chapter_world_year > int(death_year):
             # 检查是否仅仅作为回忆
             memory_keywords = ["回忆", "当年", "曾经", "音容", "旧部", "牺牲", "墓碑", "抚恤", "遗物"]
             is_just_memory = any(k in raw_text[max(0, raw_text.find(pure_cname)-30):raw_text.find(pure_cname)+30] for k in memory_keywords)
@@ -346,7 +349,7 @@ def check_timeline_and_world_events(content: dict, project_dir: Path, chapter_pa
         keywords = ev.get("keywords", [ev_desc[:10]])
 
         # 检查未来事件是否被提前当做既成事实剧透
-        if ev_status in ("future_forbidden_early_reveal", "future") or ev_year > chapter_world_year:
+        if chapter_world_year is not None and (ev_status in ("future_forbidden_early_reveal", "future") or (type(ev_year) is int and ev_year > chapter_world_year)):
             for kw in keywords:
                 if len(kw) >= 3 and kw in raw_text:
                     # 检查是否写成了已成事实 (如 "已经覆灭", "早已陷落", "爆发多年")
@@ -717,7 +720,7 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
 
     report.append("## 2. 逐项核验细节对账\n")
     report.append("### 1. 时间轴与多主角年龄/主线事件合规性核验")
-    report.append(f"- **世界年份锚定**：公元 {time_info['chapter_world_year']} 年 | 基线季节：{time_info['baseline_season']}")
+    report.append(f"- **世界年份锚定**：{str(time_info['chapter_world_year']) + ' 年' if time_info['chapter_world_year'] is not None else '待确认'} | 基线季节：{time_info['baseline_season'] or '待确认'}")
     for inf in time_info["info"]:
         report.append(f"  - [x] {inf}")
     report.append("")
