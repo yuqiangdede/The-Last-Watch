@@ -3,8 +3,8 @@
   "title": "崖边戍卒",
   "writing": {
     "brief_target_han": 500,
-    "chapter_min_han": 4500,
-    "chapter_max_han": 5000,
+    "chapter_min_han": 3000,
+    "chapter_max_han": 6000,
     "interlude_unbounded": true,
     "author_approval_required": true
   },
