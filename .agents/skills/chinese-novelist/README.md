@@ -31,6 +31,12 @@
 
 已清除上游的 `.github/`、`assets/`、`docs/superpowers/`、原作者路线图和 Skill 内部 `.gitignore`，业务规则与可执行脚本不因此改变。
 
+## 不同小说的配置与隔离
+
+每个小说项目根目录单独维护 `novel.project.json`，可配置编号章范围、简写目标、插章篇幅、地理审查关键字与装备重复候选；`paths.story_rules` 指向此书专属规则文档。角色/势力/既定章节只在该小说项目保留，不在本 Skill 的通用脚本中写死。
+
+配置字段、默认值、优先级与示例见 [项目配置说明](references/guides/project-config.md)。新增项目由 `scripts/init_novel_workspace.py` 自动生成配置；已有项目可以补建配置，不能覆盖已有事实。全部按标准库 Python 运行，不要求第三方包。
+
 ## 使用
 
 在该仓库的 Agent 环境中，读取 `AGENTS.md` 和 `SKILL.md`，根据任务加载 `references/` 的对应规范。可直接提出以下意图：
