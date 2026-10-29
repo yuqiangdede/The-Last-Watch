@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 CHAPTER = re.compile(r"^第(\d+)章(?:[-_ ].*)?\.md$")
-INTERLUDE = re.compile(r"^插章(\d{3})(?:[-_ ].*)?\.md$")  # 数字表示该章后插入，不占全局章号
+INTERLUDE = re.compile(r"^插(?:章)?(\d{3})(?:[-_ ].*)?\.md$")  # 兼容既有“插章NNN”和“插NNN”命名
 SCENE = re.compile(r"^(?:\*\s*\*\s*\*+|-{3,}|_{3,})$")
 
 def order(path):
@@ -107,7 +107,7 @@ def main():
             names = {f.stem + ".txt" for f in members}
             folder = out / relative
             if folder.is_dir():
-                for stale in list(folder.glob("第*章*.txt")) + list(folder.glob("插章*.txt")):
+                for stale in list(folder.glob("第*章*.txt")) + list(folder.glob("插*.txt")):
                     if (re.match(r"^第\d+章", stale.name) or INTERLUDE.fullmatch(stale.name.replace(".txt", ".md"))) and stale.name not in names:
                         if a.check:
                             print("过期副本:", stale)

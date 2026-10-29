@@ -2,62 +2,62 @@
   "worldBaseline": {
     "epochName": "公元纪年",
     "currentYear": 2145,
-    "currentMonth": 3,
-    "currentDay": 25,
-    "season": "早春（高地风寒未退）",
-    "temperature": "当前未实测",
-    "weather": "风寒，返哨前夕",
-    "worldMajorEvent": "青隘有条件并防；断崖小队五人完成弘毅军籍，准备次日返七折岩"
+    "currentMonth": null,
+    "currentDay": null,
+    "season": "待核：第三卷末精确日期未确认",
+    "temperature": "未实测",
+    "weather": "未核",
+    "worldMajorEvent": "截至第082章：青隘接战，北关约三十米缺口尚未封闭；五人存活，严恪留医护掩体。具体日期待核。"
   },
   "charactersTimeline": {
     "陈渡": {
       "birthYear": 2111,
       "currentAge": 34,
       "currentAgeDisplay": "三十四岁",
-      "currentLocation": "青隘老营",
-      "lastActiveTimestamp": "第039章末，2145年3月25日傍晚"
+      "currentLocation": "青隘北关缺口短墙",
+      "lastActiveTimestamp": "截至第082章；具体日期待核"
     },
     "林霰": {
       "birthYear": 2125,
       "currentAge": 20,
       "currentAgeDisplay": "二十岁",
-      "currentLocation": "青隘老营",
-      "lastActiveTimestamp": "第039章末，2145年3月25日傍晚"
+      "currentLocation": "青隘北关缺口附近",
+      "lastActiveTimestamp": "截至第082章；具体日期待核"
     },
     "霍山": {
       "birthYear": 2097,
       "currentAge": 48,
       "currentAgeDisplay": "四十八岁",
-      "currentLocation": "青隘老营",
-      "lastActiveTimestamp": "第039章末，2145年3月25日傍晚"
+      "currentLocation": "青隘北关缺口附近，左腿伤限制负重",
+      "lastActiveTimestamp": "截至第082章；具体日期待核"
     },
     "严恪": {
       "birthYear": 2114,
       "currentAge": 31,
       "currentAgeDisplay": "三十一岁",
-      "currentLocation": "青隘老营",
-      "lastActiveTimestamp": "第039章末，2145年3月25日傍晚"
+      "currentLocation": "青隘三号防炮洞医护掩体，待军医复查",
+      "lastActiveTimestamp": "截至第082章；具体日期待核"
     },
     "江小年": {
       "birthYear": 2121,
       "currentAge": 24,
       "currentAgeDisplay": "二十四岁",
-      "currentLocation": "青隘老营",
-      "lastActiveTimestamp": "第039章末，2145年3月25日傍晚"
+      "currentLocation": "青隘转运巷救护点",
+      "lastActiveTimestamp": "截至第082章；具体日期待核"
     },
     "杜川": {
       "birthYear": 2127,
       "currentAge": 18,
       "currentAgeDisplay": "十八岁",
-      "currentLocation": "青隘老营（本章递送调令）",
-      "lastActiveTimestamp": "第039章末"
+      "currentLocation": "第076章最后确认留在关内商路接收点；其后位置待核",
+      "lastActiveTimestamp": "以最近有据正文为准，精确日期待核"
     },
     "杜衡": {
       "birthYear": 2087,
       "currentAge": 58,
       "currentAgeDisplay": "五十八岁",
-      "currentLocation": "青隘老营登记处（本章最近确认）",
-      "lastActiveTimestamp": "第039章签认小队军籍"
+      "currentLocation": "青隘防区；截至第082章的具体位置待核",
+      "lastActiveTimestamp": "以最近有据正文为准，精确日期待核"
     }
   },
   "travelConstraintMatrix": {
