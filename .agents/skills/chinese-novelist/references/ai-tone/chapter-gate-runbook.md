@@ -98,7 +98,7 @@ python {skillBaseDir}/scripts/scan_ai_tone.py <章节文件路径> --project-dir
 - G3 shuorenhua：已执行。还原名词化动作 N 处；翻译腔处理 N 处（仅限白名单五类）。
 - G4 lieflat：已执行。翻案腔：抽象改 N 处、事实辨识保留 N 处；破折号删 N 处留 N 处。
 - 信息守恒自检：伤病/弹药/时间/称谓/伏笔均未因润色改变。（逐项确认）
-- 人物语气自检：杜衡□ 霍山□ 林霰□ 其他□ —— 台词指纹是否仍然可分。
+- 人物语气自检：角色A□ 角色B□ 角色C□ 其他□ —— 按当前项目小传检查台词指纹是否仍然可分。
 - 复检：scan_ai_tone.py 结果 block=0，warn=N（已逐条裁决）。
 - 结论：PASS / PASS_WITH_WARNINGS（保留项理由见上）
 ```
