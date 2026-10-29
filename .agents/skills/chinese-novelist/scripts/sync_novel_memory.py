@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 设定与创作记忆同步与冲突校验工具
-用于保证小说工程的单一可信源 (SSOT)、只读兼容视图编译与实时状态校验。
+用于保证小说工程的单一可信源 (SSOT)、非权威辅助视图编译与实时状态校验。
 支持三级人物分类体系（主角、配角、辅助角色+章节）的递归识别与分类索引编译。
 
 用法:
@@ -142,7 +142,7 @@ def extract_character_summary(char_file: Path, project_dir: Path) -> dict:
 
 
 def compile_views(project_dir: Path) -> dict:
-    """从权威源编译生成只读兼容视图：00-人物档案.md, 03-文风基准.md, 99-章节摘要.md"""
+    """从权威源编译生成辅助视图：03-文风基准.md, 99-章节摘要.md"""
     char_dir = project_dir / "02-人物"
     summary_list = []
 
@@ -170,77 +170,7 @@ def compile_views(project_dir: Path) -> dict:
         return int(match.group(1)) if match else 999999
     auxiliary.sort(key=sort_key_aux)
 
-    # 生成 00-人物档案.md
-    char_overview_path = project_dir / "00-人物档案.md"
-    content = [
-        f"# 人物速查索引（只读编译视图）\n",
-        f"> ⚠️ **重要规则**：本文件由 `sync_novel_memory.py` 从 `02-人物/` 自动提取编译，**严禁手动在此处修改人物设定**！",
-        f"> 人物设定的唯一权威源为 `02-人物/` 独立档案（分为主角、配角、辅助角色+章节）。",
-        f"> 核心法则：**理论上只要不是一次性出现的角色，都必须生成人物小传！**\n"
-    ]
-
-    # 一、主角列表
-    content.append("## 一、主角列表\n")
-    if protagonists:
-        content.append("| 角色 | 首次登场 | 所属阵营/身份 | 性格核心 | 能力/特长 | 权威主档链接 |")
-        content.append("| :--- | :--- | :--- | :--- | :--- | :--- |")
-        for c in protagonists:
-            content.append(f"| **{c['name']}** | {c['first_appearance']} | {c['identity']} | {c['personality']} | {c['ability']} | [{c['file']}]({c['rel_path']}) |")
-        content.append("")
-        for c in protagonists:
-            content.append(f"### {c['name']}")
-            content.append(f"- **主档路径**：[{c['rel_path']}]({c['rel_path']})")
-            content.append(f"- **首次登场**：{c['first_appearance']}")
-            content.append(f"- **身份**：{c['identity']}")
-            content.append(f"- **性格要点**：{c['personality']}")
-            content.append(f"- **能力/特长**：{c['ability']}\n")
-    else:
-        content.append("*暂未登记主角主档*\n")
-
-    # 二、核心配角列表
-    content.append("## 二、核心配角列表\n")
-    if supporting:
-        content.append("| 角色 | 首次登场 | 所属阵营/身份 | 性格核心 | 能力/特长/定位 | 权威主档链接 |")
-        content.append("| :--- | :--- | :--- | :--- | :--- | :--- |")
-        for c in supporting:
-            content.append(f"| **{c['name']}** | {c['first_appearance']} | {c['identity']} | {c['personality']} | {c['ability']} | [{c['file']}]({c['rel_path']}) |")
-        content.append("")
-        for c in supporting:
-            content.append(f"### {c['name']}")
-            content.append(f"- **主档路径**：[{c['rel_path']}]({c['rel_path']})")
-            content.append(f"- **首次登场**：{c['first_appearance']}")
-            content.append(f"- **身份**：{c['identity']}")
-            content.append(f"- **性格要点**：{c['personality']}")
-            content.append(f"- **核心定位**：{c['ability']}\n")
-    else:
-        content.append("*暂无登记配角主档*\n")
-
-    # 三、辅助角色列表（按首次登场章节组织）
-    content.append("## 三、辅助角色列表（按首次登场章节组织）\n")
-    content.append("> 方便后续章节写到同类场景或调用老面孔时秒查复用。\n")
-    if auxiliary:
-        content.append("| 登场章节 | 角色姓名 | 所属阵营/职业 | 剧情功能与使命 | 权威主档链接 |")
-        content.append("| :--- | :--- | :--- | :--- | :--- |")
-        for c in auxiliary:
-            content.append(f"| {c['first_appearance']} | **{c['name']}** | {c['identity']} | {c['ability']} | [{c['file']}]({c['rel_path']}) |")
-        content.append("")
-        for c in auxiliary:
-            content.append(f"### {c['name']}（{c['first_appearance']}）")
-            content.append(f"- **主档路径**：[{c['rel_path']}]({c['rel_path']})")
-            content.append(f"- **身份/职业**：{c['identity']}")
-            content.append(f"- **性格与底线**：{c['personality']}")
-            content.append(f"- **功能与使命**：{c['ability']}\n")
-    else:
-        content.append("*暂无辅助角色小传*\n")
-
-    if others:
-        content.append("## 四、其他角色档案\n")
-        for c in others:
-            content.append(f"- **{c['name']}**：[{c['file']}]({c['rel_path']}) ({c['identity']})")
-        content.append("")
-
-    with open(char_overview_path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(content))
+    # 人物不再生成根目录重复快照；直接维护 02-人物/ 独立档案与人物总表。
 
     # 同步 07-创作记忆/章节摘要.md 到 99-章节摘要.md
     mem_summary_path = project_dir / "07-创作记忆" / "章节摘要.md"
@@ -507,7 +437,7 @@ def check_conflicts(project_dir: Path) -> dict:
 def main():
     parser = argparse.ArgumentParser(description="中文小说工程记忆同步与冲突校验工具")
     parser.add_argument("project_dir", type=str, help="工程根目录")
-    parser.add_argument("--compile-views", action="store_true", help="从权威源编译 00-人物档案.md 等只读兼容视图")
+    parser.add_argument("--compile-views", action="store_true", help="从权威源编译文风与章节摘要辅助视图")
     parser.add_argument("--check-conflicts", action="store_true", help="校验动态状态与设定冲突")
     parser.add_argument("--json", action="store_true", help="以 JSON 格式输出结果")
 
