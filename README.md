@@ -35,3 +35,7 @@
 上游 [webnovel-writer v8](https://github.com/lingfengQAQ/webnovel-writer/tree/v8) 是依赖 DSH 的 Scriptor 工作台；本仓目前提供可独立运行的**流程适配**，并未自动安装其原生服务。备料工具：`python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 39 --volume 第二卷`；仅生成 .novel-work/ 临时材料包，不代表作者审核已通过。
 
 上例使用已有第039章任务卡，只用于验证材料打包；**不能据此重写已有正文**。以后第040章要先建立任务卡、完成概要与简写并获作者批准，才可作为写作输入。
+
+## 正文 AI 式表达统计与朱雀交叉验证
+
+正式正文的四关检测 `scan_ai_tone.py` 默认附加离线的 [统计证据层](.agents/skills/chinese-novelist/scripts/novel_style_statistics.py)，标注句长变化、跨段重复、修饰词密度等可复核候选。多次 `--baseline` 可对照已定稿同类章节；只有明确使用 `--zhuque` 并设置 `MAKERS_MODELS_KEY` 才会上传正文到腾讯云。检测不能证明作者身份，也不自动改变质量评分或执行改稿。**简写/大纲继续只审剧情**。完整说明见 [统计与朱雀复核规则](.agents/skills/chinese-novelist/references/ai-tone/statistical-zhuque-review.md)，测试见 [test_novel_style_statistics.py](.agents/skills/chinese-novelist/scripts/test_novel_style_statistics.py)。
