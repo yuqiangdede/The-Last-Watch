@@ -19,6 +19,7 @@ import os
 import re
 import sys
 from pathlib import Path
+from project_config import chapter_limits
 
 # 修复 Windows 控制台编码问题
 if sys.platform == 'win32':
@@ -117,12 +118,12 @@ def scan_file(path: Path, min_words: int = 3000, max_words: int = 5000):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("files", type=Path, nargs="+", help="章节 Markdown 文件路径")
-    parser.add_argument("--min-words", type=int, default=3000, help="最低正文汉字数要求（默认3000）")
-    parser.add_argument("--max-words", type=int, default=5000, help="建议正文汉字数上限（默认5000）")
+    parser.add_argument("--min-words", type=int, default=None, help="覆盖小说项目的最低字数")
+    parser.add_argument("--max-words", type=int, default=None, help="覆盖小说项目的建议上限")
     parser.add_argument("--json", action="store_true", help="以 JSON 格式输出")
 
     args = parser.parse_args()
-    results = [scan_file(p, args.min_words, args.max_words) for p in args.files]
+    results = [scan_file(p, *chapter_limits(p, min_words=args.min_words, max_words=args.max_words)) for p in args.files]
 
     if args.json:
         print(json.dumps(results, ensure_ascii=False, indent=2))

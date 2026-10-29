@@ -27,6 +27,7 @@ import os
 import re
 import sys
 from pathlib import Path
+from project_config import chapter_limits, load_project_config
 
 # 修复 Windows 控制台编码问题
 if sys.platform == 'win32':
@@ -310,7 +311,7 @@ def check_timeline_and_world_events(content: dict, project_dir: Path, chapter_pa
 
         # 4.3 登场时机拦截 (第一卷严禁出现后续分卷登场角色的现场互动)
         if is_in_text and first_chapter and chapter_num > 0 and chapter_num < int(first_chapter):
-            # 若第一卷第5章出现第二卷第21章才登场的严恪/江小年现场互动
+            # 后续登场的角色，不得提前出现在当前章的现场活动中
             mention_in_card = card_file and (pure_cname in card_text)
             # 排除单纯的旁人提起或背景提及，捕捉实体动作或对话
             action_match = re.search(rf'{pure_cname}[^，。！？\n]{{0,15}}[说道问喊听走跑笑怒跳看叹呼冲跃]', raw_text)
@@ -378,9 +379,13 @@ def check_timeline_and_world_events(content: dict, project_dir: Path, chapter_pa
 
     # 7. 长距离地理位移耗时核验
     travel_matrix = timeline_data.get("travelConstraintMatrix", {})
+    travel_config = load_project_config(project_dir)["review"]
+    location_terms = travel_config["travel_location_terms"]
+    instant_terms = travel_config["instant_travel_terms"]
     fast_travel_pairs = [
-        (r'(千里|数百里|青隘主城|白汀)', r'(顷刻间|瞬息|眨眼之间|半盏茶|片刻便已抵达|数步之内)')
-    ]
+        ("(?:" + "|".join(map(re.escape, location_terms)) + ")",
+         "(?:" + "|".join(map(re.escape, instant_terms)) + ")")
+    ] if location_terms and instant_terms else []
     for loc_pat, speed_pat in fast_travel_pairs:
         if re.search(loc_pat, raw_text) and re.search(speed_pat, raw_text):
             warnings.append("检测到大尺度地理词与瞬时位移词同现，请核实位移耗时是否符合世界观物理/交通规则")
@@ -803,8 +808,8 @@ def main():
     parser = argparse.ArgumentParser(description="单章多维一致性与合规性核查工具")
     parser.add_argument("chapter_file", type=str, help="待检测的章节文件路径")
     parser.add_argument("--project-dir", type=str, default=None, help="小说工程根目录")
-    parser.add_argument("--min-words", type=int, default=3000, help="每章最低正文汉字数要求（默认3000）")
-    parser.add_argument("--max-words", type=int, default=5000, help="建议上限（默认5000）")
+    parser.add_argument("--min-words", type=int, default=None, help="覆盖小说项目最低字数")
+    parser.add_argument("--max-words", type=int, default=None, help="覆盖小说项目建议上限")
     parser.add_argument("--json", action="store_true", help="以 JSON 格式输出结果")
     parser.add_argument("--report", type=str, default=None, help="输出固定模板 Markdown 审稿报告文件路径")
     parser.add_argument("--auto-report", action="store_true", help="自动沉淀报告至 08-审稿/第{XX}章-质检报告.md")
@@ -817,7 +822,8 @@ def main():
         sys.exit(2)
 
     project_dir = locate_project_dir(chapter_path, args.project_dir)
-    result = verify_chapter(chapter_path, project_dir, args.min_words, args.max_words)
+    min_words, max_words = chapter_limits(chapter_path, project_dir, args.min_words, args.max_words)
+    result = verify_chapter(chapter_path, project_dir, min_words, max_words)
 
     # 报告自动生成处理
     report_md = None

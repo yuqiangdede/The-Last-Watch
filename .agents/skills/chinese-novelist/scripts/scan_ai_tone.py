@@ -30,6 +30,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from project_config import chapter_limits
 
 if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
@@ -761,7 +762,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("files", type=Path, nargs="+", help="章节 Markdown 文件路径")
     parser.add_argument("--project-dir", type=str, default=None, help="小说工程根目录（用于定位 08-审稿）")
-    parser.add_argument("--min-words", type=int, default=4000, help="正文汉字数下限（默认 4000）")
+    parser.add_argument("--min-words", type=int, default=None, help="覆盖小说项目的最低字数")
     parser.add_argument("--json", action="store_true", help="以 JSON 输出")
     parser.add_argument("--auto-report", action="store_true", help="自动写入 08-审稿/第{XX}章-去AI味四关报告.md")
     parser.add_argument("--report", type=str, default=None, help="指定报告输出路径")
@@ -772,7 +773,7 @@ def main():
     args = parser.parse_args()
     try:
         results = [
-            scan_file(p, args.min_words, args.auto_report, args.report, args.project_dir)
+            scan_file(p, chapter_limits(p, args.project_dir, min_words=args.min_words)[0], args.auto_report, args.report, args.project_dir)
             for p in args.files
         ]
     except FileNotFoundError as exc:
