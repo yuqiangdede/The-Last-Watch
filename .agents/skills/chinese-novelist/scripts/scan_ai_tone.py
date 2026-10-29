@@ -725,6 +725,9 @@ def main():
     parser.add_argument("--json", action="store_true", help="以 JSON 输出")
     parser.add_argument("--auto-report", action="store_true", help="自动写入 08-审稿/第{XX}章-去AI味四关报告.md")
     parser.add_argument("--report", type=str, default=None, help="指定报告输出路径")
+    parser.add_argument("--baseline", action="append", default=[], help="同类已定稿正文（建议至少3章，可重复）")
+    parser.add_argument("--zhuque", action="store_true", help="显式上传正文至朱雀官方接口，需MAKERS_MODELS_KEY")
+    parser.add_argument("--no-style-stats", action="store_true", help="关闭本地统计证据层；默认启用")
 
     args = parser.parse_args()
     try:
@@ -735,6 +738,33 @@ def main():
     except FileNotFoundError as exc:
         print(f"❌ {exc}", file=sys.stderr)
         sys.exit(2)
+
+    # 统计证据层仅为候选，绝不改变原四关的退出码或 BLOCKED 判定。
+    if not args.no_style_stats:
+        try:
+            import novel_style_statistics as style
+            for chapter, result in zip(args.files, results):
+                parts = style.paragraphs(chapter)
+                local_metrics = style.metrics(parts)
+                candidates, counts = style.scan(parts)
+                baseline = style.baseline_compare(local_metrics, args.baseline) if args.baseline else {
+                    "status": "NOT_REQUESTED", "used": 0, "message": "未提供已定稿基线"}
+                analysis = {
+                    "file": str(chapter), "mode": "prose", "metrics": local_metrics,
+                    "candidates": candidates, "candidate_counts": counts, "baseline": baseline,
+                    "zhuque": style.zhuque_check(parts) if args.zhuque else {"status": "NOT_REQUESTED"},
+                    "quality_gate": "REFERENCE_ONLY",
+                }
+                result["style_analysis"] = analysis
+                if result.get("report_path"):
+                    with open(result["report_path"], "a", encoding="utf-8") as f:
+                        f.write("\n---\n\n" + style.md_report(analysis))
+        except (OSError, UnicodeError, ImportError) as exc:
+            for result in results:
+                result["style_analysis_error"] = str(exc)
+            print("统计证据层不可用；四关结果仍有效（统计未执行）", file=sys.stderr)
+    elif args.zhuque:
+        parser.error("--zhuque 与 --no-style-stats 不能同时使用")
 
     if args.json:
         print(json.dumps(results, ensure_ascii=False, indent=2))
