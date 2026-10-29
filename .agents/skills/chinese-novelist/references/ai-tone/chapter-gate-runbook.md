@@ -130,3 +130,8 @@ python {skillBaseDir}/scripts/scan_ai_tone.py <章节文件路径> --project-dir
 | `verify_chapter_consistency.py` | 时间轴/因果/人设/字数的**四维一致性** | C2，四关过了才跑 |
 
 三个脚本全部 PASS 后，才允许执行阶段 D 的事实回写与归档。
+
+
+## 正文统计证据层
+
+四关机检默认附带本地统计证据层；可使用 `--baseline` 传入同类已定稿章节，只有显式 `--zhuque` 才会向腾讯云上传文本。统计和第三方分类只供参考，不自动改稿或改变评分。简写和大纲禁用。完整规范见 [统计与朱雀复核](statistical-zhuque-review.md)。
