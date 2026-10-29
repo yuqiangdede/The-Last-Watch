@@ -42,9 +42,40 @@ metadata:
 
 
 
-## 小说工作台工具入口（webnovel-writer 八能力适配）
+## Webnovel Writer v8 八能力工作台（已合并，统一入口）
 
-当用户提出项目查询、学习、体检、面板时，先读 [webnovel-writer-bridge](../webnovel-writer-bridge/SKILL.md) 的“八能力适配与可执行入口”；本仓脚本 `scripts/novel_workbench.py` 提供 `query`、`learn`、`doctor`、`dashboard` 四个子命令。初始化、规划、写作和审查继续沿用本 Skill 已有规则，不重复造轮子。**切勿称这些子命令为已安装的原版斜杠命令**。查询仅给证据不自动确认事实；学习先候选待作者审批；面板静态只读；体检不等于 RAG/依赖/原生服务检查。所有新能力须遵循既有审核和净收益门禁。
+**唯一入口是本 `chinese-novelist/SKILL.md`**，不再使用独立桥接 Skill。收到 `webnovel-init`、`webnovel-plan`、`webnovel-write`、`webnovel-review`、`webnovel-query`、`webnovel-learn`、`webnovel-dashboard`、`webnovel-doctor` 或相同自然语言请求时，先读仓库 `AGENTS.md`、本 Skill，再按任务加载 [v8 适配协议](references/flows/webnovel-writer-v8-adapter.md)。它们是**等价意图／本仓流程适配**，不是声称已注册的原版斜杠命令。真实 DSH Scriptor 8.3.2 的 `novel_*` 工具只有确已安装、可调用、书仓映射通过核验时才能使用，不得伪造调用结果。
+
+| 意图 | 本仓实际执行入口 | 必须遵守的边界 |
+|---|---|---|
+| `webnovel-init` | 本 Skill 分阶段问答 + `scripts/init_novel_workspace.py` | 已有小说工程不得重置或迁移 |
+| `webnovel-plan` | 全书／分卷／章节任务卡、时间线与人物设定规划 | 逐章确认，未经作者审批不覆盖既定剧情 |
+| `webnovel-write` | 十段带来源哈希的备料→获批简写→单章候选稿→v8 八维审读→净收益改稿→事实对账→MD/TXT | 必须保留 G1—G4、独立反方和一致性检查，插章不限制字数 |
+| `webnovel-review` | 简写剧情专用七维；正式正文八维＋原有七维／G1—G4／反方 | 简写禁用句法、词频、朱雀等正文语言 AI 检查 |
+| `webnovel-query` | `scripts/novel_workbench.py query`，输出人物、伏笔、正文等匹配路径和行号 | 关键词证据检索不等于知识图谱或事实认定 |
+| `webnovel-learn` | `scripts/novel_workbench.py learn`，提取含正文来源及 SHA256 的候选 | 只写 `07-创作记忆/学习候选/`，未经作者确认不得并入文风权威源 |
+| `webnovel-dashboard` | `scripts/novel_workbench.py dashboard`，生成只读 HTML 目录与卷计数 | 输出在 `.novel-work/`；尚无追读力计算／实体关系图 |
+| `webnovel-doctor` | `scripts/novel_workbench.py doctor`，检查目录、JSON、TXT 缺失 | 不宣称已检 RAG、依赖、原生服务及语义一致性 |
+
+Windows PowerShell 参考命令（只读或候选输出；实际参数以脚本帮助为准）：
+
+```powershell
+python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . query "林霰" --scope 人物 --limit 30
+python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . doctor
+python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . dashboard --output .novel-work/dashboard/index.html
+python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir . learn --source "06-正文/第一卷/第001章.md" --excerpt "从实际正文复制的原文" --finding "有效叙事手法" --usage "适用范围与反例"
+python .agents/skills/chinese-novelist/scripts/make_webnovel_write_pack.py --project-dir . --chapter 39 --volume 第二卷
+```
+
+`query` 的命中必须区分**已写正文事实／人物证言／未来规划**；`doctor` 返回 BLOCKED 时中止交付，并结合 `scripts/export_reading_txt.py --all --check` 与原一致性检查；`dashboard` 不改动权威数据。最后一行仅演示第039章离线材料打包，不授权重写既有正文，材料打包成功也**不代表作者批准**。
+
+### v8 正文写作与质量门禁（合并自桥接入口）
+
+- **触发**：用户要求按 webnovel-writer 写作、续写、复审，或本 Skill 的单章概要＋约500字简写已获明确审核同意，进入详写阶段。
+- **先备料后起草**：读取 [v8 适配协议](references/flows/webnovel-writer-v8-adapter.md) 的十段来源备料；真实可用才启动独立 drafting 子 Agent，否则明确降级。稿件与候选事实分离，逐版保留差异，正式稿不带草稿元数据。
+- **双轨审核**：规划／简写使用 [PLOT01—07 情节套路标准](references/ai-tone/ai-writing-signals-12.md) 及 [F01—F16 的剧情子集](references/ai-tone/research-narrative-ai-16.md)，不检查字句；正文在段落、章节、跨章三个层级同时执行 S01—S12、F01—F16、PAM01、TR/TX、G1—G4、v8 八维、独立反方与原七维。相同根因合并归因，不新增权重或机械阈值。
+- **正文写前／审后必读**：[朱雀023/029章反模板案例](references/ai-tone/zhuque-023-029-case-study.md)、[第017章战场观察案例](references/guides/chapter-017-zhuque-case.md)、[第023章场景自然度](references/guides/scene-naturalness-review.md)；审查天气式开场、道具清单、连续比喻、设定播报、齐整情绪、哲理结尾、技术观察越权等风险，保留对剧情／人物／战术真实有用的内容，不能以第三方 AIGC 数值为修改或作者鉴定依据。
+- **逐项改稿和交付**：所有候选问题按 [改稿净收益门禁](references/guides/change-benefit-gate.md) 给原文证据、反证、好处、坏处及最小方案。净收益不明确为正时不改；P0/P1 硬伤未解决不得交付 PASS。改后复验有负收益则回滚，候选事实经确认才能写入唯一账本，再同步权威 MD 与 TXT。
 
 
 ## 双轨质量审查：简写与正文分离（强制）
@@ -71,7 +102,7 @@ metadata:
 ## 每章三步写作（强制流程）
 ## Webnovel Writer v8 正文引擎（强制接入）
 
-章节概要与约500字简写获作者明确批准后，**详写不再直接按任务卡一稿定稿**：立即加载 [webnovel-writer-bridge](../webnovel-writer-bridge/SKILL.md) 和 [v8 工作流适配协议](references/flows/webnovel-writer-v8-adapter.md)，执行十段来源备料→单章起草与草稿版本→v8 八维审读→定向改稿复核→候选事实对账→原 G1-G4、反方和本仓质量门禁→MD/TXT。原书的建档、时间线、动态编组、插章不限字数等硬约束全部保留。备料可用 scripts/make_webnovel_write_pack.py；打包成功不等于作者批准。没有真实 DSH Scriptor novel_* 工具时只执行本仓 v8 流程适配，不虚报调用或提交。
+章节概要与约500字简写获作者明确批准后，**详写不再直接按任务卡一稿定稿**：直接按本 Skill 的“Webnovel Writer v8 八能力工作台”和 [v8 工作流适配协议](references/flows/webnovel-writer-v8-adapter.md) 执行十段来源备料→单章起草与草稿版本→v8 八维审读→定向改稿复核→候选事实对账→原 G1-G4、反方和本仓质量门禁→MD/TXT。原书的建档、时间线、动态编组、插章不限字数等硬约束全部保留。备料可用 scripts/make_webnovel_write_pack.py；打包成功不等于作者批准。没有真实 DSH Scriptor novel_* 工具时只执行本仓 v8 流程适配，不虚报调用或提交。
 
 
 

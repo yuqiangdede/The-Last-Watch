@@ -2,9 +2,9 @@
 
 ## 正文生产链：Webnovel Writer v8 × chinese-novelist（强制）
 
-- **职责分离**：现有 chinese-novelist 继续总控设定、章节规划与最终质检；从某章概要和约500字简写经用户明确批准后，进入新增的 webnovel-writer-bridge Skill，按十段备料、单章起草、v8 八维审读、逐项改稿、候选事实对账，再执行本仓 G1—G4／独立反方审稿、状态核验与 MD/TXT 交付。
+- **统一入口**：仅由 chinese-novelist Skill 总控设定、章节规划与最终质检；某章概要和约500字简写经用户明确批准后，直接执行内置 Webnovel Writer v8 适配流程：十段备料、单章起草、v8 八维审读、逐项改稿、候选事实对账，再执行本仓 G1—G4／独立反方审稿、状态核验与 MD/TXT 交付。
 - **唯一权威不变**：所有世界观、人物主档、时间线、阵营、结局、任务卡和正式正文仍使用本仓 01—09 目录；不迁移成 v8 默认真源目录、不自动重写已完成章节、不将草稿候选事实直接入账。第三视角插章不限字数且需独立人物档案。
-- **真实工具边界**：v8 Scriptor 8.3.2 是 DSH 写作工作台，原生 novel_* 工具只在已安装、可访问且书仓映射核准时调用；其他环境按本仓 v8 流程适配运行，不得假称原生工具已执行。入口 .agents/skills/webnovel-writer-bridge/SKILL.md；执行细则 .agents/skills/chinese-novelist/references/flows/webnovel-writer-v8-adapter.md。
+- **真实工具边界**：v8 Scriptor 8.3.2 是 DSH 写作工作台，原生 novel_* 工具只在已安装、可访问且书仓映射核准时调用；其他环境按本仓 v8 流程适配运行，不得假称原生工具已执行。统一入口 .agents/skills/chinese-novelist/SKILL.md；执行细则 .agents/skills/chinese-novelist/references/flows/webnovel-writer-v8-adapter.md。
 
 ---
 
@@ -40,7 +40,7 @@
 - **每个改动都要先评估利弊，确认收益明确大于损害后才能改。** 包括正文润色、删减重复、补充情节、插章、结构调整、人物/设定/计划修订及自动修复；不得因为检测出问题、收到改稿建议或“改后看起来更工整”就直接执行。
 - 逐条评估原文作用、拟解决的问题、预期收益、潜在损害（可读性/吸引力、人物性格、情感积累、伏笔、节奏、信息边界、因果及跨章连续性），比较原版与候选方案并记录「执行/替代/保留/待裁决」。**收益≤损害或证据不明，一律保留原文或暂不修改**，不是越改越好。
 - 已确认 P0/P1 或硬门禁错误不能通过“保留原文”强行 PASS；若当前方案弊大于利，寻找净收益为正的更小修法，仍无解则 BLOCKED 并交作者裁决。改后按局部与邻章复验，实际损害超过收益则回滚。
-- **完整执行细则与报告表**：`.agents/skills/chinese-novelist/references/guides/change-benefit-gate.md`。chinese-novelist、webnovel-writer-bridge、四关、对抗审稿及批量改稿都须引用此门禁；不改变作者审批、SSOT 或七维评分。
+- **完整执行细则与报告表**：`.agents/skills/chinese-novelist/references/guides/change-benefit-gate.md`。chinese-novelist（含内置 v8 流程）、四关、对抗审稿及批量改稿都须引用此门禁；不改变作者审批、SSOT 或七维评分。
 
 ---
 
