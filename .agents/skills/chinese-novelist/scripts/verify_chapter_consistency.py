@@ -757,9 +757,11 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
 
     report.append("## 5. 结论与下一步处置\n")
     if overall_status == "PASS":
-        report.append("- [x] **【✅ PASS】全部指标合规，时间轴吻合，准予归档并执行阶段 D 事实回写。**")
+        report.append("- [x] **【工程机械 PASS】本次已运行的机械规则无阻断；仍需独立完成完整语义质量审稿和工程其他门禁。**")
+    elif overall_status == "WARNING":
+        report.append("- [ ] **【工程机械 WARNING】存在候选警示，需人工裁决；不得宣称文学质量已通过。**")
     else:
-        report.append("- [x] **【❌ BLOCKED】存在阻断性问题，严禁归档！必须定向修正后重新质检。**")
+        report.append("- [ ] **【工程机械 BLOCKED】存在工程阻断（可能包含篇幅）；未修正前不得交付。不可推断为文学质量P1。**")
 
     return '\n'.join(report)
 
@@ -770,7 +772,7 @@ def verify_chapter(
     min_words: int = None,
     max_words: int = None
 ) -> dict:
-    """单章全量综合质检"""
+    """机械一致性与交付候选质检；不自动完成全文文学质量审稿。"""
     min_words, max_words = chapter_limits(chapter_path, project_dir, min_words, max_words)
     content = extract_chapter_content(chapter_path)
 
@@ -858,8 +860,8 @@ def main():
         print("=" * 65)
         print(f"📋 章节质检报告: {result['chapter_title']} (第{result['chapter_number']:03d}章)")
         print(f"📊 正文汉字: {result['han_words']} 字 (红线: {result['min_words_required']}-{result['max_words_suggested']} 字) | 非空白: {result['non_space_chars']}")
-        print(f"🎯 综合质量评分: {result['scoring']['total_score']}/100 | AI痕迹显著度: {result['dimensions']['language_check']['ai_score']}/5")
-        print(f"🚦 最终发布判定: {'✅ PASS' if result['overall_status'] == 'PASS' else ('⚠️ WARNING' if result['overall_status'] == 'WARNING' else '❌ BLOCKED')}")
+        print(f"🎯 机械参考指标（非正式文学质量分）: {result['scoring']['total_score']}/100 | 模式候选: {result['dimensions']['language_check']['ai_score']}/5")
+        print(f"🚦 工程机械门禁: {result['overall_status']}；完整质量审稿: 未执行（需人工阅读及设定对账）")
         print("=" * 65)
 
         if result.get("report_path"):
