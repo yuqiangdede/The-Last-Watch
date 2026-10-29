@@ -738,7 +738,7 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
     report.append("  - [ ] 情报边界与人物实际所知：**待真实语义核验**。\n")
 
     report.append("### 4. 语言打磨与套式控制")
-    report.append(f"  - 扫描到候选模式命中：{result['dimensions']['language_check']['patterns_count']} 处")
+    report.append(f"  - 扫描到候选模式命中：{result['dimensions']['language_check']['patterns_count']} 处（未经全文语义审稿）")
     report.append(f"  - AI式表达显著度评定：{ai_score}/5 分（受控良好）\n")
 
     if result["issues"]:
