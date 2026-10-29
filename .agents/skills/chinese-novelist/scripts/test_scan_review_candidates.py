@@ -35,6 +35,12 @@ class ReviewCandidateTests(unittest.TestCase):
         self.assertEqual(matches["EQUIPMENT_REPEAT_CANDIDATE"]["occurrences"], 2)
         self.assertEqual(matches["EQUIPMENT_REPEAT_CANDIDATE"]["first_mention"]["line"], 3)
 
+    def test_can_detect_take_responsibility_or_custody(self):
+        self.chapter.write_text("“这人我带。”值班员说。\n", encoding="utf-8")
+        result = review_candidates([self.chapter], project_dir=self.root)
+        self.assertEqual(len(result["candidates"]), 1)
+        self.assertEqual(result["candidates"][0]["type"], "SLOGAN_DIALOGUE_CANDIDATE")
+
     def test_outline_skips_all_wording_checks(self):
         self.chapter.write_text("“错我担。”\n仪器甲、仪器甲。\n", encoding="utf-8")
         result = review_candidates([self.chapter], mode="outline", project_dir=self.root)

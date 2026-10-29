@@ -11,7 +11,7 @@ from project_config import load_project_config
 QUOTE = re.compile(r'[“「『"]([^”」』"\n]{1,180})[”」』"]')
 RESPONSIBILITY = re.compile(
     r'(?:我签了字|我签了名|签了字|签字|错|这事|事|这人|人|这条命|命|责任)'
-    r'[^。！？\n]{0,8}?(?:我认|我扛|我担|我赔|我负责)'
+    r'[^。！？\n]{0,8}?(?:我认|我扛|我担|我赔|我带|我负责)'
 )
 
 
