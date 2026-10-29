@@ -1,1 +1,12 @@
 .novel-work/
+
+# Generated files for project Skills (consolidated from nested ignore)
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.agents/skills/chinese-novelist/scratch/
+.agents/skills/chinese-novelist/.vscode/
+.agents/skills/chinese-novelist/.idea/
+.DS_Store
+Thumbs.db
