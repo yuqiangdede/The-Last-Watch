@@ -1,5 +1,8 @@
 # 审稿检查矩阵与核验准则（Novel Review Checklist）
 
+> 正式正文完整审查除本清单外，还须执行 [插件对齐协议](plugin-review-parity.md)、[六类重复性描述频率专项](repetition-frequency-review.md)、[责任宣言式对白与比喻专项](slogan-dialogue-review.md)，并使用 [0—10节完整报告](novel-review-report-0-10.md)。均只补缺失检测要求，不删现有多维审查。简写继续使用剧情专用量表，不运行文字专项。
+
+
 > 本核验准则合并自 `novel-quality-review`。审稿严格遵循优先级：
 > **时空与主线事实 → 情节因果 → 人设动机 → 节奏可读性 → 语言去 AI 味**。
 

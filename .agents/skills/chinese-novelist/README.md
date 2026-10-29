@@ -37,6 +37,12 @@
 
 配置字段、默认值、优先级与示例见 [项目配置说明](references/guides/project-config.md)。新增项目由 `scripts/init_novel_workspace.py` 自动生成配置；已有项目可以补建配置，不能覆盖已有事实。全部按标准库 Python 运行，不要求第三方包。
 
+## 与对话小说质量检测插件对齐
+
+当前检测规则以对话插件 *novel-quality-review 0.1.21* 为已核对基线：详细见 [对齐协议](references/guides/plugin-review-parity.md)，正文 [0—10节标准报告](references/guides/novel-review-report-0-10.md)，新增 [六类重复频率](references/guides/repetition-frequency-review.md)、[责任宣言式对白](references/guides/slogan-dialogue-review.md)。本 Skill 独有的写作工具、脚本和工程交付能力全部保留。
+
+**审稿质量与写作交付独立**：字数只做质量报告的中性提示；项目仍可在实际交付时设置字数硬门禁。对话插件只对质量判定负责，Skill 的自动脚本的旧 overall_status 不等于独立语义审稿通过。
+
 ## 使用
 
 在该仓库的 Agent 环境中，读取 `AGENTS.md` 和 `SKILL.md`，根据任务加载 `references/` 的对应规范。可直接提出以下意图：

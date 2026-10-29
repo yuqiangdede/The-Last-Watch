@@ -2,6 +2,9 @@
 
 ## 正文生产链：Webnovel Writer v8 × chinese-novelist（强制）
 
+- **质量审稿与工程交付分离**：对话插件 novel-quality-review 与 chinese-novelist 的七维语义质量判定按同一口径：字数只作中性提示、已证实实质P0/P1才可质量BLOCKED、资料缺失记待核实；项目约定的4500—5000字、简写审批、G1—G4和MD/TXT继续属于独立的工程交付门禁。两类PASS/BLOCKED不得混淆。详见 `.agents/skills/chinese-novelist/references/guides/plugin-review-parity.md`。
+
+
 - **项目参数唯一来源**：小说根目录 `novel.project.json` 设置简写目标、常规章汉字下限/上限、插章篇幅豁免、地理核验地名与重复装备关注项；配置 `paths.story_rules` 指向 `04-文风/项目专属写作规则.md`，角色、势力、既定剧情仍以本书原有权威设定为准。Skill 通用规则不能覆盖这些项目参数。命令行临时显式覆盖除外。
 
 - **统一入口**：仅由 chinese-novelist Skill 总控设定、章节规划与最终质检；某章概要和约500字简写经用户明确批准后，直接执行内置 Webnovel Writer v8 适配流程：十段备料、单章起草、v8 八维审读、逐项改稿、候选事实对账，再执行本仓 G1—G4／独立反方审稿、状态核验与 MD/TXT 交付。
