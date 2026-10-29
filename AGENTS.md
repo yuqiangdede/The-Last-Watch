@@ -179,8 +179,8 @@
 ## 正文 MD + TXT 双格式交付（全局强制）
 
 1. 正文唯一权威源是 06-正文/ 内的 Markdown 文件（.md）。所有创作、审稿、事实回写及续写均以 MD 为准，禁止把 TXT 作为第二份可编辑正文。
-2. 每次新增、定稿、续写或定向修改章节 MD，必须同时生成同名 TXT 副本：06-正文/第一卷/第001章.md → 06-正文-TXT/第一卷/第001章.txt，并刷新该卷《崖边戍卒》第一卷.txt 合订本。两份均须实际落盘。
-3. TXT 为 UTF-8 无 Markdown 标记的纯文本阅读/TTS 版；章标题清晰，段首两个全角空格，普通段落之间仅一个换行；只在场景切换或标题后留一个空白行，不产生连续空行；不得删改、缩写或润色正文。
+2. 每次新增、定稿、续写或定向修改章节 MD，必须同时生成对应 TXT 副本：06-正文/第一卷/第001章.md → 06-正文-TXT/第一卷/第001章 寒风七折岩.txt（章节名称直接写在文件名上，正文内容不包含标题），并刷新该卷《崖边戍卒》第一卷.txt 合订本。两份均须实际落盘。
+3. TXT 为 UTF-8 无 Markdown 标记的纯文本阅读/TTS 版；单章文件名直接包含章节名称，内容正文不重复包含标题，段首两个全角空格，普通段落之间仅一个换行；只在场景切换时留一个空白行，不产生连续空行；不得删改、缩写或润色正文。
 4. 本地单章定稿：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --chapter 06-正文/第一卷/第001章.md。全量同步：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --all。交付检查：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --all --check。
 5. 本规则适用于 chinese-novelist Skill 的串行、并行、多 Agent、本地执行、自动审稿后的回修。若 TXT 缺失或与 MD 不同步，不得报告双格式交付成功。源 MD 更新后应再次同步。
 

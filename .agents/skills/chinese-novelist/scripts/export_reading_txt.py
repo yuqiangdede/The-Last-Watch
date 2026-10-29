@@ -25,6 +25,20 @@ def inline(text):
         text = re.sub(p, r"\1", text)
     return text.strip()
 
+def txt_filename(md_path, title):
+    safe_title = re.sub(r'[<>:"/\\|?*]', '_', title).strip()
+    chapter = CHAPTER.fullmatch(md_path.name)
+    if chapter:
+        if re.match(r"^第\d+章", safe_title):
+            return safe_title + ".txt"
+        return f"{md_path.stem} {safe_title}".strip() + ".txt"
+    insert = INTERLUDE.fullmatch(md_path.name)
+    if insert:
+        if re.match(r"^插(?:章)?\d{3}[-_ ].+", md_path.stem):
+            return md_path.stem + ".txt"
+        return f"{md_path.stem}-{safe_title}".strip() + ".txt"
+    return md_path.stem + ".txt"
+
 def chapter_txt(markdown, fallback):
     title, body, seen = fallback, [], False
     for line in markdown.replace("\r\n", "\n").replace("\r", "\n").lstrip("\ufeff").split("\n"):
@@ -37,14 +51,15 @@ def chapter_txt(markdown, fallback):
             continue
         h = re.match(r"^#{1,6}\s+(.+?)\s*#*\s*$", value)
         if h:
-            value = h.group(1).strip()
-            if not seen and (re.match(r"^第\d+章", value) or value.startswith("插章")):
-                title, seen = inline(value), True
+            val = h.group(1).strip()
+            if not seen and (re.match(r"^第\d+章", val) or val.startswith("插章") or val.startswith("插")):
+                title, seen = inline(val), True
                 continue
         body.append("\u3000\u3000" + inline(value))
     while body and body[-1] == "":
         body.pop()
-    return title + "\n\n" + "\n".join(body) + "\n"
+    body_txt = "\n".join(body) + "\n" if body else ""
+    return title, body_txt
 
 def write(path, text, check):
     old = path.read_text(encoding="utf-8-sig") if path.is_file() else None
@@ -95,17 +110,21 @@ def main():
         members = sorted([f for f in chapters if f.parent == volume], key=order)
         relative = volume.relative_to(src)
         texts = []
+        target_names = {}
         for md in members:
-            content = chapter_txt(md.read_text(encoding="utf-8-sig"), md.stem)
-            texts.append(content.rstrip("\n"))
+            title, body = chapter_txt(md.read_text(encoding="utf-8-sig"), md.stem)
+            target_name = txt_filename(md, title)
+            target_names[md] = target_name
+            combined_entry = title + "\n\n" + body.rstrip("\n")
+            texts.append(combined_entry)
             if md in selected_files:
-                ok = write(out / relative / (md.stem + ".txt"), content, a.check) and ok
+                ok = write(out / relative / target_name, body, a.check) and ok
         label = volume.name if relative != Path(".") else "正文"
         combined = "《" + book + "》\n" + label + "\n\n" + "\n\n".join(texts) + "\n"
         ok = write(out / relative / ("《" + book + "》" + label + ".txt"), combined, a.check) and ok
+        folder = out / relative
         if not a.chapter:
-            names = {f.stem + ".txt" for f in members}
-            folder = out / relative
+            names = set(target_names.values())
             if folder.is_dir():
                 for stale in list(folder.glob("第*章*.txt")) + list(folder.glob("插*.txt")):
                     if (re.match(r"^第\d+章", stale.name) or INTERLUDE.fullmatch(stale.name.replace(".txt", ".md"))) and stale.name not in names:
@@ -114,6 +133,30 @@ def main():
                             ok = False
                         else:
                             stale.unlink()
+        else:
+            if folder.is_dir():
+                for md in selected_files:
+                    target_name = target_names[md]
+                    c_match = CHAPTER.fullmatch(md.name)
+                    i_match = INTERLUDE.fullmatch(md.name)
+                    if c_match:
+                        num = c_match.group(1)
+                        for old_f in folder.glob(f"第{num}章*.txt"):
+                            if old_f.name != target_name:
+                                if a.check:
+                                    print("过期副本:", old_f)
+                                    ok = False
+                                else:
+                                    old_f.unlink()
+                    elif i_match:
+                        num = i_match.group(1)
+                        for old_f in list(folder.glob(f"插章{num}*.txt")) + list(folder.glob(f"插{num}*.txt")):
+                            if old_f.name != target_name:
+                                if a.check:
+                                    print("过期副本:", old_f)
+                                    ok = False
+                                else:
+                                    old_f.unlink()
     if ok:
         print("TXT 同步校验通过：%d 章，%d 卷" % (len(selected_files), len(volumes)))
     return 0 if ok else 1

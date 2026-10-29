@@ -73,7 +73,9 @@ def doctor(root):
     for p in chapters:
         relative = p.relative_to(root / "06-正文")
         txt = root / "06-正文-TXT" / relative.with_suffix(".txt")
-        if not txt.is_file():
+        txt_dir = root / "06-正文-TXT" / relative.parent
+        found = txt.is_file() or (txt_dir.is_dir() and any(txt_dir.glob(f"{p.stem}*.txt")))
+        if not found:
             findings.append({"severity": "WARN", "path": str(txt.relative_to(root)), "message": "正文 TXT 副本缺失"})
     # 本工具不声称扫描了依赖、RAG 或原生 Dashboard 服务。
     return {"status": "BLOCKED" if any(f["severity"] == "ERROR" for f in findings) else ("WARN" if findings else "PASS"),
