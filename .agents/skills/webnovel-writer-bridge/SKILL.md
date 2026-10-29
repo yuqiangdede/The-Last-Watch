@@ -42,3 +42,7 @@ python .agents/skills/chinese-novelist/scripts/novel_workbench.py --project-dir 
 ```
 
 query 命中仅是检索证据，须区分正文事实、人物证言和未来规划；doctor 为 BLOCKED 时中止交付，并结合 `export_reading_txt.py --all --check` 和原一致性质检；learn 仅输出 `07-创作记忆/学习候选/` 的候选 JSON，不自动训练或覆盖规则；dashboard 输出固定在 `.novel-work/`，不修改权威数据。任何 write/review 仍需作者逐章简写审批、角色小传、对抗审稿、净收益评估与 MD/TXT 双格式一致性检查。
+
+## 场景自然度专项（webnovel-write / webnovel-review 同步生效）
+
+执行 [第023章案例：场景真实感与 AI 式结构审查](../chinese-novelist/references/guides/scene-naturalness-review.md)。写前检查人物所知与行动阻力，写中控制动作-眼神-心理三联/说明式对白/场景清单，审后查过度工整的情节模板、专业技术与数量守恒、情感锚点误删；朱雀值不能当生成概率或过关线；简写只审剧情结构。所有改动仍须净收益为正。
