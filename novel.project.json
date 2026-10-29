@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "title": "崖边戍卒",
+  "writing": {
+    "brief_target_han": 500,
+    "chapter_min_han": 4500,
+    "chapter_max_han": 5000,
+    "interlude_unbounded": true,
+    "author_approval_required": true
+  },
+  "review": {
+    "travel_location_terms": [
+      "千里",
+      "数百里",
+      "青隘主城",
+      "白汀"
+    ],
+    "instant_travel_terms": [
+      "顷刻间",
+      "瞬息",
+      "眨眼之间",
+      "半盏茶",
+      "片刻便已抵达",
+      "数步之内"
+    ],
+    "repeated_equipment_terms": [
+      "12.7 毫米",
+      "12.7mm",
+      "重型狙击",
+      "重狙"
+    ]
+  },
+  "paths": {
+    "story_rules": "04-文风/项目专属写作规则.md"
+  }
+}
