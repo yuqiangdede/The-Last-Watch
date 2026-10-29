@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import re
 import sys
+from project_config import load_project_config, project_file
 
 
 def checksum(text):
@@ -77,6 +78,11 @@ def run():
 
     add(1, task)
     add(2, "AGENTS.md")
+    rules_path = project_file(root, "story_rules")
+    if rules_path:
+        add(2, rules_path.relative_to(root).as_posix())
+    if (root / "novel.project.json").is_file():
+        add(2, "novel.project.json")
     add(2, "04-文风/禁用表达与常见问题.md")
     for name in ["当前写作进度", "人物实时状态", "队伍编组状态总账"]:
         add(3, f"07-创作记忆/{name}.md")
@@ -98,8 +104,9 @@ def run():
     add(7, "99-章节摘要.md", tail=5000)
     add(8, "04-文风/文风总规范.md")
     add(8, "04-文风/原创文风样例.md", tail=6000)
+    brief_size = load_project_config(root)["writing"]["brief_target_han"]
     data[8].append(
-        "【人工必查】作者是否明确批准本章概要和约500字简写；人物是否建档；"
+        f"【人工必查】作者是否明确批准本章概要和约{brief_size}字简写；人物是否建档；"
         "重要物资伤势与知情范围是否连续；需不需要战斗协同专项。\n"
         f"【任务卡审批文字信号】{'检出，但仍须人工核对' if approved_text_signal else '未检出；不能据此进入详写'}"
     )

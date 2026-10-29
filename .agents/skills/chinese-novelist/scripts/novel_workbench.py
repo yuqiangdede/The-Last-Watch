@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""《崖边戍卒》轻量创作工作台：只读查询/体检/面板与审核式学习。无第三方依赖。"""
+"""通用小说轻量工作台：只读查询、体检、面板与审核式学习。无第三方依赖。"""
 import argparse
 import hashlib
 import html
@@ -9,6 +9,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from project_config import load_project_config
 
 SOURCES = {
     "人物": "02-人物", "世界观": "01-世界观", "剧情": "03-剧情",
@@ -52,6 +53,10 @@ def query(root, kind, term, limit):
 
 def doctor(root):
     findings = []
+    try:
+        load_project_config(root)
+    except ValueError as exc:
+        findings.append({"severity": "ERROR", "path": "novel.project.json", "message": str(exc)})
     for name in REQUIRED:
         if not (root / name).exists():
             findings.append({"severity": "ERROR", "path": name, "message": "必要文件或目录缺失"})

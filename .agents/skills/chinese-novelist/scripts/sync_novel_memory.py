@@ -9,7 +9,7 @@
   python sync_novel_memory.py <工程目录> [--compile-views] [--check-conflicts] [--json]
 
 示例:
-  python sync_novel_memory.py ./chinese-novelist/崖边戍卒 --compile-views --check-conflicts
+  python sync_novel_memory.py ./my-story --compile-views --check-conflicts
 """
 
 import argparse
@@ -49,14 +49,14 @@ def extract_character_summary(char_file: Path, project_dir: Path) -> dict:
 
     # 剥离编号章或不编号插章前缀，避免将「第一卷插章005-许临」当作人物本名。
     name = re.sub(r'^(?:第\d+章|第?[一二三四五六七八九十百0-9]+卷(?:插章|尾声)\d+)[-_]', '', raw_name).strip()
-    # 剥离可能包含的括号别名如 陈渡（老渡） -> 陈渡
+    # 剥离人名可能包含的括号别名，例如 张三（别名） -> 张三
     pure_name = re.sub(r'[（\(].*?[）\)]', '', name).strip()
     if not pure_name:
         pure_name = name
 
     # 2. 判定类别 (主角 / 配角 / 辅助角色)
     # 人物目录允许在 配角/ 和 辅助角色/ 下继续增加初始阵营子目录；
-    # 因此不能再依赖 char_file.parent.name（它现在通常是 青隘联防区/锐科合众 等）。
+    # 因此不能依赖 char_file.parent.name（这里一般是角色的初始阵营）。
     try:
         classification_parts = char_file.relative_to(project_dir / "02-人物").parts
     except ValueError:

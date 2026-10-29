@@ -8,7 +8,7 @@
   python init_novel_workspace.py <目标目录> --title <小说名称> [--mode deep|standard] [--genre <题材>]
 
 示例:
-  python init_novel_workspace.py ./chinese-novelist/崖边戍卒 --title 崖边戍卒 --mode deep --genre 科幻军事
+  python init_novel_workspace.py ./my-story --title 我的小说 --mode deep --genre 奇幻
 """
 
 import argparse
@@ -18,6 +18,7 @@ import os
 import sys
 from datetime import datetime
 from pathlib import Path
+from project_config import DEFAULT_WRITING, DEFAULT_REVIEW
 
 # 修复 Windows 控制台编码问题
 if sys.platform == 'win32':
@@ -33,9 +34,21 @@ def write_file_if_not_exists(path: Path, content: str):
             f.write(content.strip() + '\n')
 
 
+def write_project_config(target_dir: Path, title: str):
+    """为新项目生成独立配置，不覆盖已有小说的作者设定。"""
+    config = {"schema_version": 1, "title": title, "writing": dict(DEFAULT_WRITING),
+              "review": dict(DEFAULT_REVIEW),
+              "paths": {"story_rules": "04-文风/项目专属写作规则.md"}}
+    write_file_if_not_exists(target_dir / "novel.project.json",
+                             json.dumps(config, ensure_ascii=False, indent=2))
+    write_file_if_not_exists(target_dir / "04-文风/项目专属写作规则.md",
+                             "# 项目专属写作规则\n\n将具体角色、地名、既定剧情、题材风格写在这里；通用 Skill 不写死。")
+
+
 def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
     """初始化深度模块化工程体系 (Deep / Epic Mode)"""
     target_dir.mkdir(parents=True, exist_ok=True)
+    write_project_config(target_dir, title)
 
     # 1. 创建标准目录（含人物三级子目录与多媒体资源目录）
     dirs = [
@@ -388,7 +401,7 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
         "architectureMode": "deep",
         "projectPath": str(target_dir.as_posix()),
         "totalChapters": 20,
-        "minWordsPerChapter": 3000,
+        "minWordsPerChapter": DEFAULT_WRITING["chapter_min_han"],
         "createdAt": datetime.now().isoformat(),
         "updatedAt": datetime.now().isoformat(),
         "status": "planning",
@@ -461,6 +474,7 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
 def init_standard_workspace(target_dir: Path, title: str, genre: str = "通用"):
     """初始化标准轻量工程体系 (Standard Mode)"""
     target_dir.mkdir(parents=True, exist_ok=True)
+    write_project_config(target_dir, title)
 
     # 创建人物插画与剧情音频目录（用户按需自由扩充）
     (target_dir / "人物插画").mkdir(parents=True, exist_ok=True)

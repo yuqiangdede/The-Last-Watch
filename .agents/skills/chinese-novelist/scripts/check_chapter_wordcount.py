@@ -18,6 +18,7 @@ import os
 import re
 import sys
 from pathlib import Path
+from project_config import chapter_limits
 
 # 修复 Windows 控制台编码问题
 if sys.platform == 'win32':
@@ -199,14 +200,17 @@ def main():
         if len(args) < 2:
             emit_error('错误: 使用 --all 时需要指定目录路径')
         directory = args[1]
-        min_words = parse_min_words(args[2]) if len(args) > 2 else 3000
-        results, error = check_all_chapters(directory, min_words=min_words)
+        min_words = parse_min_words(args[2]) if len(args) > 2 else None
+        results, error = check_all_chapters(directory, min_words=0)
+        if not error:
+            results = [check_chapter(r['file'], chapter_limits(r['file'], min_words=min_words)[0]) for r in results]
+        min_words = chapter_limits(directory, min_words=min_words)[0]
         if error:
             emit_error(f'错误: {error}')
         has_error = any(not r['exists'] for r in results)
     else:
         file_path = args[0]
-        min_words = parse_min_words(args[1]) if len(args) > 1 else 3000
+        min_words = chapter_limits(file_path, min_words=parse_min_words(args[1]) if len(args) > 1 else None)[0]
         results = [check_chapter(file_path, min_words)]
         has_error = not results[0]['exists']
 
