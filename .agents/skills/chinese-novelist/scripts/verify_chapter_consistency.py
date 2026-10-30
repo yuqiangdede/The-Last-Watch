@@ -702,7 +702,7 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
     report.append(f"- **设定/装备与跨章连续性**：{dim_scores['continuity_setting']}/10（装备与伤病继承合规）")
     report.append(f"- **节奏、可读性与追更欲**：{dim_scores['pacing_readability']}/10（张弛有度、推进明确）")
     report.append(f"- **语言自然度与AI式模式控制**：{dim_scores['language_naturalness']}/10（动作具象、说人话）")
-    report.append("- **AI味风险**：未评分，须按统一协议人工审查。\n")
+    report.append("- **AI味专项**：未审查，须按统一协议逐项人工裁决。\n")
 
     report.append("## 2. 逐项核验细节对账\n")
     report.append("### 1. 时间轴与多主角年龄/主线事件合规性核验")
@@ -722,7 +722,7 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
 
     report.append("### 4. 语言打磨与套式控制")
     report.append(f"  - 扫描到候选模式命中：{result['dimensions']['language_check']['patterns_count']} 处（未经全文语义审稿）")
-    report.append("  - AI味风险：未评分，候选不能自动换算。\n")
+    report.append("  - AI味专项：未审查，候选不能自动裁决。\n")
 
     if result["issues"]:
         report.append("## 3. 阻断性问题清单与可执行最小修改建议\n")
@@ -843,7 +843,7 @@ def main():
         print("=" * 65)
         print(f"📋 章节质检报告: {result['chapter_title']} (第{result['chapter_number']:03d}章)")
         print(f"📊 正文汉字: {result['han_words']} 字 (红线: {result['min_words_required']}-{result['max_words_suggested']} 字) | 非空白: {result['non_space_chars']}")
-        print(f"🎯 机械参考指标（非正式文学质量分）: {result['scoring']['total_score']}/100 | 模式候选: {result['dimensions']['language_check']['patterns_count']} 处（AI味未评分）")
+        print(f"🎯 机械参考指标（非正式文学质量分）: {result['scoring']['total_score']}/100 | 模式候选: {result['dimensions']['language_check']['patterns_count']} 处（AI味未审查）")
         print(f"🚦 工程机械门禁: {result['overall_status']}；完整质量审稿: 未执行（需人工阅读及设定对账）")
         print("=" * 65)
 
