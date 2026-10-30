@@ -1,5 +1,7 @@
 # G4 · lieflat-less-ai-tone 关卡（白名单式硬规则）
 
+> **现行状态：按需参考的历史案例，不是独立硬关卡。** 仅按 [统一核心协议](../guides/review-core.md) 与 [37项原表](../guides/ai-style-37-checks.md) 裁决；下文阈值、白名单、必改与强制执行措辞仅描述旧方法，不能凌驾于现行的语义反证和正净收益门禁，也不能额外计算轮次。
+
 > 来源：[`larashero3-dotcom/lieflat-less-ai-tone`](https://github.com/larashero3-dotcom/lieflat-less-ai-tone)。
 > 原定位：按明确列出的规则识别 AI 痕迹，**只能处理清单内的问题；未命中规则的文字必须原样保留**。
 > 本关卡负责：**结构与节奏层**——翻案腔、罗列、同构、破折号、冒号、序数标题、喻体、段首零主语。
