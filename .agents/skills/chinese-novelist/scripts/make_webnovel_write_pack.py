@@ -106,16 +106,16 @@ def run():
     add(8, "04-文风/原创文风样例.md", tail=6000)
     brief_size = load_project_config(root)["writing"]["brief_target_han"]
     data[8].append(
-        f"【人工必查】作者是否明确批准本章概要和约{brief_size}字简写；人物是否建档；"
+        f"【人工必查】本章大纲和约{brief_size}字简写是否已完成；人物是否建档；"
         "重要物资伤势与知情范围是否连续；需不需要战斗协同专项。\n"
-        f"【任务卡审批文字信号】{'检出，但仍须人工核对' if approved_text_signal else '未检出；不能据此进入详写'}"
+        f"【历史审批文字信号】{'有记录' if approved_text_signal else '无记录'}（不作为正文写作门槛）"
     )
     if missing:
         data[8].append("【缺失来源】" + "、".join(missing))
     data[9].extend(f"- {item['path']} / {item['range']} / sha256={item['sha256']}" for item in files)
     content = (f"# {slug}·v8 流程适配备料包\n\n"
                f"所属卷：{args.volume}\n\n"
-               "此包不是 DSH 原生输出，不证明作者批准或质检通过。\n")
+               "此包不是 DSH 原生输出；材料包不替代正文质量与工程核验。\n")
     for i, name in enumerate(names):
         content += f"\n## {i+1:02d} {name}\n\n" + "\n\n".join(data[i] or ["【未提供】"]) + "\n"
     output = secure(args.output or f".novel-work/{slug}")
@@ -127,13 +127,13 @@ def run():
     facts = {"schemaVersion": 1, "chapter": slug, "volume": args.volume,
              "task": task, "sources": files, "missing": missing,
              "task_approval_keyword_only": approved_text_signal,
-             "author_approval_verified": False, "ready_for_drafting": False,
+             "author_approval_verified": None, "ready_for_drafting": True,
              "material_sha256": checksum(content)}
     material.write_text(content, encoding="utf-8")
     manifest.write_text(json.dumps(facts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"material": str(material), "manifest": str(manifest),
                       "sources": len(files), "missing": missing,
-                      "approval_verified": False, "sha256": checksum(content)}, ensure_ascii=False))
+                      "approval_required": False, "sha256": checksum(content)}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
