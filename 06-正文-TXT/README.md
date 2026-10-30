@@ -7,3 +7,5 @@
 - 每次写作或修订正文后运行：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --all
 - 交付前运行：python .agents/skills/chinese-novelist/scripts/export_reading_txt.py --project-dir . --all --check
 - 后续修订只编辑 06-正文/ 的 .md 文件，不直接编辑 TXT。
+
+2026-10-29：作者确认前两卷正文定稿；第一、二卷单章与合订本均已对照 Markdown 校验同步，插章按其所处章节后收录。

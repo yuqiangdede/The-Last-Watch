@@ -1,5 +1,11 @@
 # 《崖边戍卒》全局创作约束与 Agent 协作指南
 
+## 章节编号：阅读版按卷重置（2026-10-30）
+
+- 作者要求各卷阅读章号从第001章重新开始；正文一级标题、TXT 文件名和合订本使用卷内章号，插章文件的数字表示该卷内插入位置。引用卷内章号时必须注明卷名。
+- 迁移期间，现有 Markdown 文件名、平铺任务卡和历史审稿文件仍以原全书连续号作为内部定位号；`02-写作计划.json` 中 `chapterNumber` 是原全书号，`volumeChapterNumber` 是卷内号。未逐条迁移的旧资料中的裸章号仍按原全书号理解，禁止将两套编号混淆。对照见 `scratch/逐卷重新编号预览/新旧章节编号对照.md`。
+- 当前只完成阅读显示和计划字段转换，章大纲、历史引用、平铺任务卡及审稿工具尚未完成逐卷迁移；不得声称所有资料已统一为卷内编号，也不得用卷内号直接调用仍依赖全书号的工具。
+
 ## 正文生产链：Webnovel Writer v8 × chinese-novelist（强制）
 
 - **质量审稿与工程交付分离**：对话插件 novel-quality-review 与 chinese-novelist 的七维语义质量判定按同一口径：字数只作中性提示、已证实实质P0/P1才可质量BLOCKED、资料缺失记待核实；项目约定的3000—6000字、简写审批、G1—G4和MD/TXT继续属于独立的工程交付门禁。两类PASS/BLOCKED不得混淆。详见 `.agents/skills/chinese-novelist/references/guides/plugin-review-parity.md`。

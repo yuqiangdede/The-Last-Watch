@@ -25,7 +25,7 @@ def inline(text):
         text = re.sub(p, r"\1", text)
     return text.strip()
 
-def txt_filename(md_path, title):
+def txt_filename(md_path, title, chapter_offset=0):
     safe_title = re.sub(r'[<>:"/\\|?*]', '_', title).strip()
     chapter = CHAPTER.fullmatch(md_path.name)
     if chapter:
@@ -34,6 +34,9 @@ def txt_filename(md_path, title):
         return f"{md_path.stem} {safe_title}".strip() + ".txt"
     insert = INTERLUDE.fullmatch(md_path.name)
     if insert:
+        if chapter_offset:
+            local_number = int(insert.group(1)) - chapter_offset
+            return re.sub(r'^(插(?:章)?)\d{3}', lambda match: match.group(1) + f'{local_number:03d}', md_path.stem) + '.txt'
         if re.match(r"^插(?:章)?\d{3}[-_ ].+", md_path.stem):
             return md_path.stem + ".txt"
         return f"{md_path.stem}-{safe_title}".strip() + ".txt"
@@ -108,12 +111,23 @@ def main():
     ok = True
     for volume in sorted(volumes):
         members = sorted([f for f in chapters if f.parent == volume], key=order)
+        chapter_numbers = [int(CHAPTER.fullmatch(f.name).group(1)) for f in members if CHAPTER.fullmatch(f.name)]
+        chapter_offset = 0
+        if chapter_numbers:
+            first = min((f for f in members if CHAPTER.fullmatch(f.name)), key=order)
+            first_title, _ = chapter_txt(first.read_text(encoding="utf-8-sig"), first.stem)
+            first_number = re.match(r"^第(\d+)章", first_title)
+            if first_number:
+                chapter_offset = int(CHAPTER.fullmatch(first.name).group(1)) - int(first_number.group(1))
         relative = volume.relative_to(src)
         texts = []
         target_names = {}
         for md in members:
             title, body = chapter_txt(md.read_text(encoding="utf-8-sig"), md.stem)
-            target_name = txt_filename(md, title)
+            chapter_match = CHAPTER.fullmatch(md.name)
+            if chapter_match and title == md.stem and chapter_offset:
+                title = f"第{int(chapter_match.group(1)) - chapter_offset:03d}章"
+            target_name = txt_filename(md, title, chapter_offset)
             target_names[md] = target_name
             combined_entry = title + "\n\n" + body.rstrip("\n")
             texts.append(combined_entry)
@@ -140,7 +154,7 @@ def main():
                     c_match = CHAPTER.fullmatch(md.name)
                     i_match = INTERLUDE.fullmatch(md.name)
                     if c_match:
-                        num = c_match.group(1)
+                        num = re.match(r"^第(\d+)章", target_name).group(1)
                         for old_f in folder.glob(f"第{num}章*.txt"):
                             if old_f.name != target_name:
                                 if a.check:
@@ -149,7 +163,7 @@ def main():
                                 else:
                                     old_f.unlink()
                     elif i_match:
-                        num = i_match.group(1)
+                        num = INTERLUDE.fullmatch(target_name[:-4] + ".md").group(1)
                         for old_f in list(folder.glob(f"插章{num}*.txt")) + list(folder.glob(f"插{num}*.txt")):
                             if old_f.name != target_name:
                                 if a.check:

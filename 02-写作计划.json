@@ -1,4 +1,15 @@
 {
+  "authorFinalizedVolumes": {
+    "第一卷": {
+      "date": "2026-10-29",
+      "scope": "第001—020章及3篇插章"
+    },
+    "第二卷": {
+      "date": "2026-10-29",
+      "scope": "第021—039章及4篇插章"
+    },
+    "note": "作者定稿独立于质量审稿及工程验收状态"
+  },
   "version": 2,
   "novelName": "崖边戍卒",
   "architectureMode": "deep",
@@ -21,7 +32,8 @@
       "status": "completed",
       "wordCount": 4369,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 1
     },
     {
       "chapterNumber": 2,
@@ -31,7 +43,8 @@
       "status": "completed",
       "wordCount": 4678,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 2
     },
     {
       "chapterNumber": 3,
@@ -41,7 +54,8 @@
       "status": "completed",
       "wordCount": 4090,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 3
     },
     {
       "chapterNumber": 4,
@@ -51,7 +65,8 @@
       "status": "completed",
       "wordCount": 4498,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 4
     },
     {
       "chapterNumber": 5,
@@ -61,7 +76,8 @@
       "status": "completed",
       "wordCount": 4993,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 5
     },
     {
       "chapterNumber": 6,
@@ -71,7 +87,8 @@
       "status": "completed",
       "wordCount": 4237,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 6
     },
     {
       "chapterNumber": 7,
@@ -81,7 +98,8 @@
       "status": "completed",
       "wordCount": 4844,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 7
     },
     {
       "chapterNumber": 8,
@@ -91,7 +109,8 @@
       "status": "completed",
       "wordCount": 4093,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 8
     },
     {
       "chapterNumber": 9,
@@ -101,7 +120,8 @@
       "status": "completed",
       "wordCount": 4568,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 9
     },
     {
       "chapterNumber": 10,
@@ -111,7 +131,8 @@
       "status": "completed",
       "wordCount": 4662,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 10
     },
     {
       "chapterNumber": 11,
@@ -121,7 +142,8 @@
       "status": "completed",
       "wordCount": 4729,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 11
     },
     {
       "chapterNumber": 12,
@@ -131,7 +153,8 @@
       "status": "completed",
       "wordCount": 4372,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 12
     },
     {
       "chapterNumber": 13,
@@ -141,7 +164,8 @@
       "status": "completed",
       "wordCount": 4349,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 13
     },
     {
       "chapterNumber": 14,
@@ -151,7 +175,8 @@
       "status": "completed",
       "wordCount": 4407,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 14
     },
     {
       "chapterNumber": 15,
@@ -161,7 +186,8 @@
       "status": "completed",
       "wordCount": 4203,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 15
     },
     {
       "chapterNumber": 16,
@@ -171,7 +197,8 @@
       "status": "completed",
       "wordCount": 4204,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 16
     },
     {
       "chapterNumber": 17,
@@ -181,7 +208,8 @@
       "status": "completed",
       "wordCount": 4387,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 17
     },
     {
       "chapterNumber": 18,
@@ -191,7 +219,8 @@
       "status": "completed",
       "wordCount": 4300,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 18
     },
     {
       "chapterNumber": 19,
@@ -201,7 +230,8 @@
       "status": "completed",
       "wordCount": 4818,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 19
     },
     {
       "chapterNumber": 20,
@@ -211,1237 +241,1361 @@
       "status": "completed",
       "wordCount": 4786,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 20
     },
     {
       "chapterNumber": 21,
-      "title": "第021章 采石场火线",
+      "title": "第001章 采石场火线",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第021章.md",
       "status": "completed",
       "wordCount": 4263,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 1
     },
     {
       "chapterNumber": 22,
-      "title": "第022章 矿洞的两辆卡车",
+      "title": "第002章 矿洞的两辆卡车",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第022章.md",
       "status": "completed",
       "wordCount": 4320,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 2
     },
     {
       "chapterNumber": 23,
-      "title": "第023章 未熄的诊所",
+      "title": "第003章 未熄的诊所",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第023章.md",
       "status": "completed",
       "wordCount": 4396,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 3
     },
     {
       "chapterNumber": 24,
-      "title": "第024章 最后一张名单",
+      "title": "第004章 最后一张名单",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第024章.md",
       "status": "completed",
       "wordCount": 4022,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 4
     },
     {
       "chapterNumber": 25,
-      "title": "第025章 倒下的铁砧",
+      "title": "第005章 倒下的铁砧",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第025章.md",
       "status": "completed",
       "wordCount": 4343,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 5
     },
     {
       "chapterNumber": 26,
-      "title": "第026章 烟火回廊",
+      "title": "第006章 烟火回廊",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第026章.md",
       "status": "completed",
       "wordCount": 4282,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 6
     },
     {
       "chapterNumber": 27,
-      "title": "第027章 峡口的枪声",
+      "title": "第007章 峡口的枪声",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第027章.md",
       "status": "completed",
       "wordCount": 4132,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 7
     },
     {
       "chapterNumber": 28,
-      "title": "第028章 雨后的清点",
+      "title": "第008章 雨后的清点",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第028章.md",
       "status": "completed",
       "wordCount": 4374,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 8
     },
     {
       "chapterNumber": 29,
-      "title": "第029章 无处可去的人",
+      "title": "第009章 无处可去的人",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第029章.md",
       "status": "completed",
       "wordCount": 4015,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 9
     },
     {
       "chapterNumber": 30,
-      "title": "第030章 两种人的口粮",
+      "title": "第010章 两种人的口粮",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第030章.md",
       "status": "completed",
       "wordCount": 4312,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 10
     },
     {
       "chapterNumber": 31,
-      "title": "第031章 拆下的钢臂",
+      "title": "第011章 拆下的钢臂",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第031章.md",
       "status": "completed",
       "wordCount": 4159,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 11
     },
     {
       "chapterNumber": 32,
-      "title": "第032章 五个人的第一次任务",
+      "title": "第012章 五个人的第一次任务",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第032章.md",
       "status": "completed",
       "wordCount": 4284,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 12
     },
     {
       "chapterNumber": 33,
-      "title": "第033章 两万人的粮仓",
+      "title": "第013章 两万人的粮仓",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第033章.md",
       "status": "completed",
       "wordCount": 4023,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 13
     },
     {
       "chapterNumber": 34,
-      "title": "第034章 断掉的商路",
+      "title": "第014章 断掉的商路",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第034章.md",
       "status": "completed",
       "wordCount": 4006,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 14
     },
     {
       "chapterNumber": 35,
-      "title": "第035章 带印的条件",
+      "title": "第015章 带印的条件",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第035章.md",
       "status": "completed",
       "wordCount": 4064,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 15
     },
     {
       "chapterNumber": 36,
-      "title": "第036章 青隘的议事厅",
+      "title": "第016章 青隘的议事厅",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第036章.md",
       "status": "completed",
       "wordCount": 4028,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 16
     },
     {
       "chapterNumber": 37,
-      "title": "第037章 签字之前",
+      "title": "第017章 签字之前",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第037章.md",
       "status": "completed",
       "wordCount": 4035,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 17
     },
     {
       "chapterNumber": 38,
-      "title": "第038章 旗帜还在风里",
+      "title": "第018章 旗帜还在风里",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第038章.md",
       "status": "completed",
       "wordCount": 4078,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 18
     },
     {
       "chapterNumber": 39,
-      "title": "第039章 铁幕之下",
+      "title": "第019章 铁幕之下",
       "volume": "第二卷",
       "filePath": "06-正文/第二卷/第039章.md",
       "status": "completed",
       "wordCount": 4065,
       "wordCountPass": true,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 19
     },
     {
       "chapterNumber": 40,
-      "title": "第040章 旧哨卡，新军徽",
+      "title": "第001章 旧哨卡，新军徽",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第040章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 1
     },
     {
       "chapterNumber": 41,
-      "title": "第041章 写不全的白汀名单",
+      "title": "第002章 写不全的白汀名单",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第041章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 2
     },
     {
       "chapterNumber": 42,
-      "title": "第042章 生铁的缝隙",
+      "title": "第003章 生铁的缝隙",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第042章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 3
     },
     {
       "chapterNumber": 43,
-      "title": "第043章 不给射手的奖章",
+      "title": "第004章 不给射手的奖章",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第043章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 4
     },
     {
       "chapterNumber": 44,
-      "title": "第044章 炉火边的五只碗",
+      "title": "第005章 炉火边的五只碗",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第044章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 5
     },
     {
       "chapterNumber": 45,
-      "title": "第045章 迟到的补给车",
+      "title": "第006章 迟到的补给车",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第045章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 6
     },
     {
       "chapterNumber": 46,
-      "title": "第046章 战报上的五个人",
+      "title": "第007章 战报上的五个人",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第046章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 7
     },
     {
       "chapterNumber": 47,
-      "title": "第047章 关卡外的老妇人",
+      "title": "第008章 关卡外的老妇人",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第047章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 8
     },
     {
       "chapterNumber": 48,
-      "title": "第048章 她的风向尺",
+      "title": "第009章 她的风向尺",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第048章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 9
     },
     {
       "chapterNumber": 49,
-      "title": "第049章 走不通的老猎道",
+      "title": "第010章 走不通的老猎道",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第049章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 10
     },
     {
       "chapterNumber": 50,
-      "title": "第050章 多出来的一双袜子",
+      "title": "第011章 多出来的一双袜子",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第050章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 11
     },
     {
       "chapterNumber": 51,
-      "title": "第051章 医务棚外的风口",
+      "title": "第012章 医务棚外的风口",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第051章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 12
     },
     {
       "chapterNumber": 52,
-      "title": "第052章 借来的半日晴",
+      "title": "第013章 借来的半日晴",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第052章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 13
     },
     {
       "chapterNumber": 53,
-      "title": "第053章 雪桥交接",
+      "title": "第014章 雪桥交接",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第053章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 14
     },
     {
       "chapterNumber": 54,
-      "title": "第054章 密封的任务袋",
+      "title": "第015章 密封的任务袋",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第054章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 15
     },
     {
       "chapterNumber": 55,
-      "title": "第055章 地图上少掉的河谷",
+      "title": "第016章 地图上少掉的河谷",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第055章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 16
     },
     {
       "chapterNumber": 56,
-      "title": "第056章 你总不能只往前走",
+      "title": "第017章 你总不能只往前走",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第056章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 17
     },
     {
       "chapterNumber": 57,
-      "title": "第057章 三个撤退信号",
+      "title": "第018章 三个撤退信号",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第057章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 18
     },
     {
       "chapterNumber": 58,
-      "title": "第058章 十二卷绷带",
+      "title": "第019章 十二卷绷带",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第058章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 19
     },
     {
       "chapterNumber": 59,
-      "title": "第059章 离开前的修靴匠",
+      "title": "第020章 离开前的修靴匠",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第059章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 20
     },
     {
       "chapterNumber": 60,
-      "title": "第060章 封线以南",
+      "title": "第021章 封线以南",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第060章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 21
     },
     {
       "chapterNumber": 61,
-      "title": "第061章 丰壤关栅",
+      "title": "第022章 丰壤关栅",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第061章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 22
     },
     {
       "chapterNumber": 62,
-      "title": "第062章 第一片没有焦土的田",
+      "title": "第023章 第一片没有焦土的田",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第062章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 23
     },
     {
       "chapterNumber": 63,
-      "title": "第063章 一包普通的种子",
+      "title": "第024章 一包普通的种子",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第063章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 24
     },
     {
       "chapterNumber": 64,
-      "title": "第064章 桥头的封条",
+      "title": "第025章 桥头的封条",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第064章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 25
     },
     {
       "chapterNumber": 65,
-      "title": "第065章 温棚里的夜班",
+      "title": "第026章 温棚里的夜班",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第065章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 26
     },
     {
       "chapterNumber": 66,
-      "title": "第066章 粮仓的价目表",
+      "title": "第027章 粮仓的价目表",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第066章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 27
     },
     {
       "chapterNumber": 67,
-      "title": "第067章 下错的一枚路标",
+      "title": "第028章 下错的一枚路标",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第067章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 28
     },
     {
       "chapterNumber": 68,
-      "title": "第068章 关外的泥",
+      "title": "第029章 关外的泥",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第068章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 29
     },
     {
       "chapterNumber": 69,
-      "title": "第069章 无人哨的影子",
+      "title": "第030章 无人哨的影子",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第069章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 30
     },
     {
       "chapterNumber": 70,
-      "title": "第070章 错过的夜班",
+      "title": "第031章 错过的夜班",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第070章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 31
     },
     {
       "chapterNumber": 71,
-      "title": "第071章 第三条排水沟",
+      "title": "第032章 第三条排水沟",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第071章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 32
     },
     {
       "chapterNumber": 72,
-      "title": "第072章 铁砧的十几秒",
+      "title": "第033章 铁砧的十几秒",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第072章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 33
     },
     {
       "chapterNumber": 73,
-      "title": "第073章 商路来的口信",
+      "title": "第034章 商路来的口信",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第073章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 34
     },
     {
       "chapterNumber": 74,
-      "title": "第074章 第二条消息",
+      "title": "第035章 第二条消息",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第074章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 35
     },
     {
       "chapterNumber": 75,
-      "title": "第075章 撤离窗口",
+      "title": "第036章 撤离窗口",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第075章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 36
     },
     {
       "chapterNumber": 76,
-      "title": "第076章 关口的代价",
+      "title": "第037章 关口的代价",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第076章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 37
     },
     {
       "chapterNumber": 77,
-      "title": "第077章 沿河赶路",
+      "title": "第038章 沿河赶路",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第077章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 38
     },
     {
       "chapterNumber": 78,
-      "title": "第078章 被截断的路",
+      "title": "第039章 被截断的路",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第078章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 39
     },
     {
       "chapterNumber": 79,
-      "title": "第079章 路上遇见的人",
+      "title": "第040章 路上遇见的人",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第079章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 40
     },
     {
       "chapterNumber": 80,
-      "title": "第080章 快到青隘",
+      "title": "第041章 快到青隘",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第080章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 41
     },
     {
       "chapterNumber": 81,
-      "title": "第081章 接上防线",
+      "title": "第042章 接上防线",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第081章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 42
     },
     {
       "chapterNumber": 82,
-      "title": "第082章 赶回来的五个人",
+      "title": "第043章 赶回来的五个人",
       "volume": "第三卷",
       "filePath": "06-正文/第三卷/第082章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 43
     },
     {
       "chapterNumber": 83,
-      "title": "第083章 防线缺口",
+      "title": "第001章 防线缺口",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第083章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 1
     },
     {
       "chapterNumber": 84,
-      "title": "第084章 扣掉的一车弹药",
+      "title": "第002章 扣掉的一车弹药",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第084章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 2
     },
     {
       "chapterNumber": 85,
-      "title": "第085章 河床里的伤兵",
+      "title": "第003章 河床里的伤兵",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第085章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 3
     },
     {
       "chapterNumber": 86,
-      "title": "第086章 脏雪与热汤",
+      "title": "第004章 脏雪与热汤",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第086章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 4
     },
     {
       "chapterNumber": 87,
-      "title": "第087章 向西的预警",
+      "title": "第005章 向西的预警",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第087章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 5
     },
     {
       "chapterNumber": 88,
-      "title": "第088章 顶住第一轮",
+      "title": "第006章 顶住第一轮",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第088章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 6
     },
     {
       "chapterNumber": 89,
-      "title": "第089章 挡风的半面盾",
+      "title": "第007章 挡风的半面盾",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第089章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 7
     },
     {
       "chapterNumber": 90,
-      "title": "第090章 三条回去的路",
+      "title": "第008章 三条回去的路",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第090章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 8
     },
     {
       "chapterNumber": 91,
-      "title": "第091章 活着回来的士兵",
+      "title": "第009章 活着回来的士兵",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第091章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 9
     },
     {
       "chapterNumber": 92,
-      "title": "第092章 没人愿意签的撤兵令",
+      "title": "第010章 没人愿意签的撤兵令",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第092章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 10
     },
     {
       "chapterNumber": 93,
-      "title": "第093章 西侧缺口",
+      "title": "第011章 西侧缺口",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第093章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 11
     },
     {
       "chapterNumber": 94,
-      "title": "第094章 铁砧最后一次接应",
+      "title": "第012章 铁砧最后一次接应",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第094章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 12
     },
     {
       "chapterNumber": 95,
-      "title": "第095章 只有四声应答",
+      "title": "第013章 只有四声应答",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第095章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 13
     },
     {
       "chapterNumber": 96,
-      "title": "第096章 阵亡表的空白",
+      "title": "第014章 阵亡表的空白",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第096章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 14
     },
     {
       "chapterNumber": 97,
-      "title": "第097章 钢臂里的编号",
+      "title": "第015章 钢臂里的编号",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第097章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 15
     },
     {
       "chapterNumber": 98,
-      "title": "第098章 一个没接通的信标",
+      "title": "第016章 一个没接通的信标",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第098章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 16
     },
     {
       "chapterNumber": 99,
-      "title": "第099章 江小年的证词",
+      "title": "第017章 江小年的证词",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第099章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 17
     },
     {
       "chapterNumber": 100,
-      "title": "第100章 被钉在布告栏的人",
+      "title": "第018章 被钉在布告栏的人",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第100章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 18
     },
     {
       "chapterNumber": 101,
-      "title": "第101章 你见过他救人",
+      "title": "第019章 你见过他救人",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第101章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 19
     },
     {
       "chapterNumber": 102,
-      "title": "第102章 灰雀的证物袋",
+      "title": "第020章 灰雀的证物袋",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第102章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 20
     },
     {
       "chapterNumber": 103,
-      "title": "第103章 两份互相打架的报告",
+      "title": "第021章 两份互相打架的报告",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第103章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 21
     },
     {
       "chapterNumber": 104,
-      "title": "第104章 肯盖章的人",
+      "title": "第022章 肯盖章的人",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第104章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 22
     },
     {
       "chapterNumber": 105,
-      "title": "第105章 提前挪动的炮车",
+      "title": "第023章 提前挪动的炮车",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第105章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 23
     },
     {
       "chapterNumber": 106,
-      "title": "第106章 陈渡走进军部",
+      "title": "第024章 陈渡走进军部",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第106章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 24
     },
     {
       "chapterNumber": 107,
-      "title": "第107章 断脊岩调令",
+      "title": "第025章 断脊岩调令",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第107章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 25
     },
     {
       "chapterNumber": 108,
-      "title": "第108章 一张标着两小时的图",
+      "title": "第026章 一张标着两小时的图",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第108章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 26
     },
     {
       "chapterNumber": 109,
-      "title": "第109章 断脊岩不是要塞",
+      "title": "第027章 断脊岩不是要塞",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第109章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 27
     },
     {
       "chapterNumber": 110,
-      "title": "第110章 第一批过去的人",
+      "title": "第028章 第一批过去的人",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第110章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 28
     },
     {
       "chapterNumber": 111,
-      "title": "第111章 给四个人分一个排的工事",
+      "title": "第029章 给四个人分一个排的工事",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第111章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 29
     },
     {
       "chapterNumber": 112,
-      "title": "第112章 迟到的军需卡车",
+      "title": "第030章 迟到的军需卡车",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第112章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 30
     },
     {
       "chapterNumber": 113,
-      "title": "第113章 医务棚的灯",
+      "title": "第031章 医务棚的灯",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第113章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 31
     },
     {
       "chapterNumber": 114,
-      "title": "第114章 风向尺的误差",
+      "title": "第032章 风向尺的误差",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第114章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 32
     },
     {
       "chapterNumber": 115,
-      "title": "第115章 传不到的确认",
+      "title": "第033章 传不到的确认",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第115章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 33
     },
     {
       "chapterNumber": 116,
-      "title": "第116章 撤退还是坚守",
+      "title": "第034章 撤退还是坚守",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第116章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 34
     },
     {
       "chapterNumber": 117,
-      "title": "第117章 背后的车辙",
+      "title": "第035章 背后的车辙",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第117章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 35
     },
     {
       "chapterNumber": 118,
-      "title": "第118章 山口的第一声枪",
+      "title": "第036章 山口的第一声枪",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第118章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 36
     },
     {
       "chapterNumber": 119,
-      "title": "第119章 没能回来的信号",
+      "title": "第037章 没能回来的信号",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第119章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 37
     },
     {
       "chapterNumber": 120,
-      "title": "第120章 第一次穿插",
+      "title": "第038章 第一次穿插",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第120章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 38
     },
     {
       "chapterNumber": 121,
-      "title": "第121章 两小时以后",
+      "title": "第039章 两小时以后",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第121章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 39
     },
     {
       "chapterNumber": 122,
-      "title": "第122章 炸断的接应桥",
+      "title": "第040章 炸断的接应桥",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第122章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 40
     },
     {
       "chapterNumber": 123,
-      "title": "第123章 还在山道上的人",
+      "title": "第041章 还在山道上的人",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第123章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 41
     },
     {
       "chapterNumber": 124,
-      "title": "第124章 她守住的那条路",
+      "title": "第042章 她守住的那条路",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第124章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 42
     },
     {
       "chapterNumber": 125,
-      "title": "第125章 风停以前",
+      "title": "第043章 风停以前",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第125章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 43
     },
     {
       "chapterNumber": 126,
-      "title": "第126章 小年的检查记录",
+      "title": "第044章 小年的检查记录",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第126章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 44
     },
     {
       "chapterNumber": 127,
-      "title": "第127章 不肯写下死亡的人",
+      "title": "第045章 不肯写下死亡的人",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第127章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 45
     },
     {
       "chapterNumber": 128,
-      "title": "第128章 旧仓里的冷机",
+      "title": "第046章 旧仓里的冷机",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第128章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 46
     },
     {
       "chapterNumber": 129,
-      "title": "第129章 一台发电机",
+      "title": "第047章 一台发电机",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第129章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 47
     },
     {
       "chapterNumber": 130,
-      "title": "第130章 撤不完的人",
+      "title": "第048章 撤不完的人",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第130章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 48
     },
     {
       "chapterNumber": 131,
-      "title": "第131章 西侧彻底失口",
+      "title": "第049章 西侧彻底失口",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第131章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 49
     },
     {
       "chapterNumber": 132,
-      "title": "第132章 两万人在哪里",
+      "title": "第050章 两万人在哪里",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第132章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 50
     },
     {
       "chapterNumber": 133,
-      "title": "第133章 杜衡的旧账本",
+      "title": "第051章 杜衡的旧账本",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第133章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 51
     },
     {
       "chapterNumber": 134,
-      "title": "第134章 最后一个医疗棚",
+      "title": "第052章 最后一个医疗棚",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第134章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 52
     },
     {
       "chapterNumber": 135,
-      "title": "第135章 杜川的撤离名单",
+      "title": "第053章 杜川的撤离名单",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第135章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 53
     },
     {
       "chapterNumber": 136,
-      "title": "第136章 杜衡的最后通联",
+      "title": "第054章 杜衡的最后通联",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第136章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 54
     },
     {
       "chapterNumber": 137,
-      "title": "第137章 三个人与一个托付",
+      "title": "第055章 三个人与一个托付",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第137章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 55
     },
     {
       "chapterNumber": 138,
-      "title": "第138章 条码封签",
+      "title": "第056章 条码封签",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第138章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 56
     },
     {
       "chapterNumber": 139,
-      "title": "第139章 军部最后一扇门",
+      "title": "第057章 军部最后一扇门",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第139章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 57
     },
     {
       "chapterNumber": 140,
-      "title": "第140章 去接杜川",
+      "title": "第058章 去接杜川",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第140章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 58
     },
     {
       "chapterNumber": 141,
-      "title": "第141章 带不走的家",
+      "title": "第059章 带不走的家",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第141章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 59
     },
     {
       "chapterNumber": 142,
-      "title": "第142章 穿过禁止线",
+      "title": "第060章 穿过禁止线",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第142章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 60
     },
     {
       "chapterNumber": 143,
-      "title": "第143章 崖外无旗",
+      "title": "第061章 崖外无旗",
       "volume": "第四卷",
       "filePath": "06-正文/第四卷/第143章.md",
       "status": "planned",
       "wordCount": 0,
       "wordCountPass": false,
-      "retryCount": 0
+      "retryCount": 0,
+      "volumeChapterNumber": 61
     }
   ],
   "plannedChapterScope": "当前chapters覆盖第一至第四卷143章；第5—20卷总章数尚未确定。",
@@ -1477,28 +1631,28 @@
   "volumeFramework": [
     {
       "volumeNumber": 1,
-      "title": "青隘日常·孤峰三人",
+      "title": "山风将起",
       "phase": "前期",
       "chapterCount": 20,
       "status": "chapters_planned"
     },
     {
       "volumeNumber": 2,
-      "title": "白汀浩劫·迫立铁幕",
+      "title": "烽火白汀",
       "phase": "前期",
       "chapterCount": 19,
       "status": "body_completed"
     },
     {
       "volumeNumber": 3,
-      "title": "铁幕远征·丰壤之眸",
+      "title": "远行有归",
       "phase": "前期",
       "chapterCount": 43,
       "status": "chapters_planned"
     },
     {
       "volumeNumber": 4,
-      "title": "血染残土·孤军叛逃",
+      "title": "故土何归",
       "phase": "前期",
       "chapterCount": 61,
       "status": "chapters_planned"
@@ -1712,5 +1866,9 @@
         "reviewAuthorization": "2026-10-28用户明确要求按四篇既定规划写正文；未逐篇审核单独500字简写；待自动四关与独立反方复核"
       }
     ]
+  },
+  "chapterNumbering": {
+    "reader": "每卷从001开始，volumeChapterNumber为卷内章号",
+    "chapterNumber": "保留原全书连续编号作为内部唯一定位号；引用须注明卷名与编号体系"
   }
 }
