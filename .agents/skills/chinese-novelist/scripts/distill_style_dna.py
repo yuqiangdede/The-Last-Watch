@@ -383,7 +383,7 @@ def generate_nuwa_dual_dna_markdown(blended_dna: dict, ext_dna: dict, int_dna: d
 ```
 
 ### 2. 本书自生正文黄金段落库（权重占比: {weights['internal_pct']}%，**随正文增多权重持续增大**）
-> 萃取自本书最新定稿的优秀章节，代表本书人物的实际声线、战斗白描手感与生活烟火气。
+> 萃取自本书最新定稿的优秀章节，代表当前作品的人物声口、场景叙述与生活细节。
 
 {int_snippets_md}
 
