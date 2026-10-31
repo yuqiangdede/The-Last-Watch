@@ -20,7 +20,7 @@ class StatsTests(unittest.TestCase):
         return path
 
     def test_lines_and_repetition(self):
-        p = self.make("a.md", "# 第一章\n\n　　队长把灯放在桌角，知道电池只剩半格。\n\n　　陈渡把灯放在桌角，知道电池只剩半格。\n")
+        p = self.make("a.md", "# 第一章\n\n　　队长把灯放在桌角，知道电池只剩半格。\n\n　　角色乙把灯放在桌角，知道电池只剩半格。\n")
         chunks = style.paragraphs(p)
         self.assertEqual([x["line"] for x in chunks], [3, 5])
         candidates, totals = style.scan(chunks)
@@ -28,18 +28,18 @@ class StatsTests(unittest.TestCase):
         self.assertTrue(totals["跨段连续表达复现"]["total"] >= 1)
 
     def test_insufficient_baseline(self):
-        p = self.make("a.md", "陈渡检查了两次弹仓。")
+        p = self.make("a.md", "角色乙清点了两次书本。")
         m = style.metrics(style.paragraphs(p))
         result = style.baseline_compare(m, [p])
         self.assertEqual(result["status"], "INSUFFICIENT")
 
     def test_no_network_without_opt_in(self):
-        p = self.make("a.md", "陈渡关掉电台。")
+        p = self.make("a.md", "角色乙合上笔记本。")
         with patch("novel_style_statistics.zhuque_check", side_effect=RuntimeError("unexpected network")):
             self.assertEqual(style.main([str(p), "--json"]), 0)
 
     def test_outline_rejected(self):
-        p = self.make("outline.md", "概要：边境驻地前线遭遇封锁。")
+        p = self.make("outline.md", "概要：城中的书店临时停业。")
         with self.assertRaises(SystemExit) as ctx:
             style.main([str(p), "--mode", "outline"])
         self.assertEqual(ctx.exception.code, 2)
