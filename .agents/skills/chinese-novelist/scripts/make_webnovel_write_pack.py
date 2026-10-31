@@ -27,7 +27,7 @@ def run():
     args = parser.parse_args()
     root = Path(args.project_dir).resolve()
     if not (root / "AGENTS.md").is_file():
-        parser.error("找不到 AGENTS.md；须指定本书仓库根目录")
+        parser.error("找不到 AGENTS.md；请指定当前小说项目根目录")
 
     def secure(rel):
         p = (root / rel).resolve()
