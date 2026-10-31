@@ -89,7 +89,7 @@ def scan_file(path: Path, min_words: int = None, max_words: int = None):
                     "context": line[left:right].strip()
                 })
 
-    # 项目关注的装备名词只生成候选：重复本身并非质量问题。
+    # 项目配置中的器物或专有词只生成候选：重复本身并非质量问题。
     equipment_terms = load_project_config(path)["review"]["repeated_equipment_terms"]
     for term in equipment_terms:
         occurrences = []
@@ -98,7 +98,7 @@ def scan_file(path: Path, min_words: int = None, max_words: int = None):
                 occurrences.append((line_no, line.strip()))
         if len(occurrences) > 1:
             for line_no, context in occurrences[1:]:
-                hits.append({"type": "项目装备重复候选", "line": line_no,
+                hits.append({"type": "项目词语重复候选", "line": line_no,
                              "match": term, "context": context[:100]})
     hits.sort(key=lambda x: (x["line"], x["type"]))
     han_count = sum(is_han(ch) for ch in prose)
