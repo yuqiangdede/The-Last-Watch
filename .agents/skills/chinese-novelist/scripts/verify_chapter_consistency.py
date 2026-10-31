@@ -612,7 +612,7 @@ def compute_seven_dimensions(wc_res, time_res, plot_res, persona_res, lang_res) 
         score_plot -= len(plot_res["warnings"]) * 1
     scores["plot_causality"] = max(2, min(10, score_plot))
 
-    # 2. 时空、物理与战术合理性 (权重 15)
+    # 2. 时空、物理与行动可行性 (权重 15)
     score_time = 10
     if time_res["issues"]:
         score_time -= len(time_res["issues"]) * 4
@@ -696,10 +696,10 @@ def generate_review_report_markdown(result: dict, project_dir: Path) -> str:
 
     report.append("## 1. 核心维度量化评价\n")
     report.append(f"- **机器指标参考（非完整质量总分）**：**{total_score}/100**；须以0—10节人工审查报告为正式质量评分")
-    report.append(f"- **时空、物理与战术合理性**：{dim_scores['spacetime_tactics']}/10（世界主线时间、主角理论年龄、天候位移吻合）")
-    report.append(f"- **剧情因果与信息证据链**：{dim_scores['plot_causality']}/10（任务决策闭环、战术摩擦、无机械降神）")
+    report.append(f"- **时空、物理与行动可行性**：{dim_scores['spacetime_tactics']}/10（时间、地点、环境与行动条件一致）")
+    report.append(f"- **剧情因果与信息证据链**：{dim_scores['plot_causality']}/10（目标、信息、行动与后果一致）")
     report.append(f"- **人物动机与小传合规性**：{dim_scores['character_depth']}/10（符合小传性格底色、未触犯禁止偏离清单）")
-    report.append(f"- **设定/装备与跨章连续性**：{dim_scores['continuity_setting']}/10（装备与伤病继承合规）")
+    report.append(f"- **设定、物品与跨章连续性**：{dim_scores['continuity_setting']}/10（人物状态与资源变化连续）")
     report.append(f"- **节奏、可读性与追更欲**：{dim_scores['pacing_readability']}/10（张弛有度、推进明确）")
     report.append(f"- **语言自然度与AI式模式控制**：{dim_scores['language_naturalness']}/10（动作具象、说人话）")
     report.append("- **AI味专项**：未审查，须按统一协议逐项人工裁决。\n")
