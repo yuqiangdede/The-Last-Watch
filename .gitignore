@@ -10,3 +10,6 @@
 .agents/skills/chinese-novelist/.idea/
 .DS_Store
 Thumbs.db
+
+# Local AI workspace data (session memory logs); keep on disk, do not version
+.workbuddy-ai/
