@@ -49,6 +49,19 @@
 - 根目录旧人物档案和大纲已清理；`00-全书二十卷章节分布与概要.md` 为未维护的旧规划快照，不能作为当前章节进度、人物命运或写作事实依据，待确认清理权限后删除。
 - 冲突优先级：已写正文事实优先于旧摘要；同层级设定以可核实的最后一次有效修改为准；未写规划以最新已确认分卷细纲为准。不得因旧文件的更新时间较新就覆盖用户已明确确认的内容。
 
+## 四阶段成果物审核提示词
+
+只需指定审核对象，Skill 自动按成果物类别选择对应提示词；四阶段评分不能混用。
+
+| 阶段与成果物 | 审核提示词 | 评分与权限 |
+|---|---|---|
+| 一、全书大纲 | [全书大纲审核](.agents/skills/chinese-novelist/references/guides/review-prompt-01-book-outline.md) | 剧情16维100分；默认只审不改 |
+| 二、分卷章纲（卷纲／单章章纲） | [分卷章纲审核](.agents/skills/chinese-novelist/references/guides/review-prompt-02-volume-chapter-outline.md) | 剧情16维100分；默认只审不改 |
+| 三、章节简写 | [章节简写审核](.agents/skills/chinese-novelist/references/guides/review-prompt-03-chapter-brief.md) | 剧情七维100分；默认只审不改 |
+| 四、正式正文 | [正文审核与自动修订](.agents/skills/chinese-novelist/references/guides/review-prompt-04-chapter-prose.md) | 正文七维100分＋AI味37项专项；依正式协议修订、复审和同步 |
+
+示例指令：“审核全书大纲”“审核第四卷章纲”“审核第四卷第128章简写”“审核第四卷第128章正文”。每次独立核实和评分，不参考历史审核分数；历史问题可以作为待核线索。入口及权限说明见 [Skill](.agents/skills/chinese-novelist/SKILL.md)。
+
 ## 四阶段写作工作流（强制）
 
 **全书大纲 → 分卷章纲 → 章节简写 → 正文**。全书主线以 `03-剧情/全书主线.md` 等权威材料为准；分卷章纲涵盖 `05-写作计划/卷大纲.md` 与 `05-写作计划/章大纲/第NN卷.md`；简写按卷归档。写作前检查当前目标阶段的全部上游材料；缺项或无法核实时必须先提醒作者选择补齐还是确认例外继续，不得静默跳阶段。简写完成并经剧情审查、上游齐全后可自动进入 `06-正文/`。具体核验与例外规则见 [chinese-novelist Skill 第2节](.agents/skills/chinese-novelist/SKILL.md)。已写正文事实优先于旧规划；不编号插章不占正式编号。
