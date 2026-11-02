@@ -1,5 +1,12 @@
 # 《崖边戍卒》全局创作约束与 Agent 协作指南
 
+## 四阶段成果物独立审核入口（2026-11-02）
+
+- 由 .agents/skills/chinese-novelist/SKILL.md 第0.1节自动分流：**全书大纲**执行 .agents/skills/chinese-novelist/references/guides/review-prompt-01-book-outline.md；**分卷章纲**执行 review-prompt-02-volume-chapter-outline.md；**章节简写**执行 review-prompt-03-chapter-brief.md；**正式正文**执行 review-prompt-04-chapter-prose.md 和 chapter-review-default.md。
+- **评分互斥**：全书大纲／分卷章纲按 outline-review.md 16维100分；章节简写按剧情七维100分；正式正文按 review-core.md 七维正文评分和37项AI味非数值专项。不同成果物不得套错规则、重复打分或换算。
+- **独立审核**：每轮从当前真实文件重新举证和评分，不参考历史分数；历史问题可以作为待核实线索。全书开篇前3／前10章专项只有存在实读章级材料时才能声称逐章完成。
+- **权限与流程**：阶段一至三默认只审不改成果物，本次明确授权修订才可写回；阶段四仍按原有正文审核自动修订、复审、MD/TXT/合订本和审核总表规则执行。审核已存在的成果物可记录前置资料缺失，但新写作阶段开始前必须执行四阶段缺项提醒。
+
 ## 正文审核自动入口（2026-10-30 生效）
 
 - 用户提出“审查／审核／检测／复审／检查／去AI味”且对象是**正式章节正文**时，默认调用 `.agents/skills/chinese-novelist/references/guides/chapter-review-default.md`，不需用户再次提供整段审稿提示词；总控入口为 `.agents/skills/chinese-novelist/SKILL.md`，质量裁决唯一规则为其 `references/guides/review-core.md`。
