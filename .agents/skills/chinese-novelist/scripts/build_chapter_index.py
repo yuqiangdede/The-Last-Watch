@@ -60,26 +60,53 @@ def build(root: Path) -> str:
         title = re.search(r"^# .*?：(.+)$", content, re.M)
         if not title:
             raise ValueError(f"卷文件缺少标题：{path}")
-        count_match = re.search(r"^- 编号章节数：(\d+|待定)", content, re.M)
+        count_match = re.search(r"^- 编号章节数：(?:\*\*)?(?:拟定)?(\d+|待定)", content, re.M)
         expected = int(count_match.group(1)) if count_match and count_match.group(1).isdigit() else None
         rows = []
         for line in content.splitlines():
-            if not re.match(r"^\| 第\d+章(?:后插章（不编号）)? \|", line):
-                continue
-            cols = [x.strip() for x in line.strip().strip("|").split("|")]
-            if len(cols) not in (4, 5):
-                raise ValueError(f"字段数量错误：{path}: {line}")
-            if len(cols) == 4:
-                number, name, brief, status = cols
-                goal = "—"
+            if re.match(r"^\| 第\d+章(?:后插章（不编号）)? \|", line):
+                # 既有分卷：第NNN章 / 第NNN章后插章五列（或旧四列）
+                cols = [x.strip() for x in line.strip().strip("|").split("|")]
+                if len(cols) not in (4, 5):
+                    raise ValueError(f"字段数量错误：{path}: {line}")
+                if len(cols) == 4:
+                    number, name, brief, status = cols
+                    goal = "—"
+                else:
+                    number, name, brief, goal, status = cols
+            elif m := re.match(r"^\| \*\*(\d{3}) / \d{3}\*\* \|", line):
+                # 第五卷新章纲：全书章号 / 卷内章号、标题、事件、结果、主线关联、状态
+                cols = [x.strip() for x in line.strip().strip("|").split("|")]
+                if len(cols) != 6:
+                    raise ValueError(f"新章纲字段数量错误：{path}: {line}")
+                _chapter, name, brief, outcome, related, status = cols
+                number = f"第{m.group(1)}章"
+                goal = f"【结果】{outcome} 【求索】{related}"
+            elif m := re.match(r"^\*\*插章(\d{3})（非编号）·(.+?)\*\*：(.+)$", line):
+                # 第五卷杜川、程述成长篇：以章纲原文为唯一可编辑来源
+                number = f"第{m.group(1)}章后插章（不编号）"
+                name = m.group(2).replace("《", "·").replace("》", "")
+                brief, goal, status = m.group(3), "—", "planned"
+            elif m := re.match(r"^\d+\. \*\*新增：(.+?)\*\*：拟插于第(\d+)章后。(.+)$", line):
+                # 第五卷另外三篇独立插章：从“五篇独立插章”主题清单提取
+                number = f"第{m.group(2)}章后插章（不编号）"
+                name = m.group(1).replace("《", "·").replace("》", "")
+                brief, goal, status = m.group(3), "—", "planned"
             else:
-                number, name, brief, goal, status = cols
+                continue
             if re.fullmatch(r"第\d+章", number):
                 n = int(re.search(r"\d+", number).group())
                 if n in seen:
                     raise ValueError(f"重复章节号：{n}")
                 seen.add(n)
             rows.append((number, name, brief, goal, status))
+        # 新章纲的插章简介分散在主题清单及幕间叙述，按落点回插索引；
+        # 既有卷原先的行顺序不变，避免无关索引改动。
+        if i == 5:
+            rows.sort(key=lambda row: (
+                int(re.search(r"\d+", row[0]).group()),
+                1 if "后插章" in row[0] else 0,
+            ))
         numbered = sum(bool(re.fullmatch(r"第\d+章", r[0])) for r in rows)
         if expected is not None and numbered != expected:
             raise ValueError(f"第{i:02d}卷章数不一致：声明{expected}，实际{numbered}")
