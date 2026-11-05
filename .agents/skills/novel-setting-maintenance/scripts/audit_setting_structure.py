@@ -16,6 +16,8 @@ from collections import defaultdict
 from pathlib import Path
 
 SOURCE_DIRS = ("01-世界观", "02-人物", "03-剧情", "04-文风", "05-写作计划", "07-创作记忆")
+SOURCE_EXTENSIONS = {".md", ".json", ".yaml", ".yml"}
+ROOT_CONTEXT = ("AGENTS.md", "README.md", "novel.project.json", "02-写作计划.json", "03-文风基准.md", "99-章节摘要.md")
 PROTECTED_DIRS = ("06-正文", "06-正文-TXT", "09-归档")
 BRIEF_PREFIX = "05-写作计划/章节简写/"
 INDEX_FILE = "05-写作计划/章节规划总表.md"
@@ -49,10 +51,11 @@ def locate_source_files(root: Path) -> list[Path]:
         folder = root / dirname
         if not folder.is_dir():
             continue
-        for path in folder.rglob("*.md"):
-            if path.is_file() and editable(relative(path, root)):
+        for path in folder.rglob("*"):
+            if path.is_file() and path.suffix.lower() in SOURCE_EXTENSIONS and editable(relative(path, root)):
                 files.append(path)
-    return sorted(files)
+    files.extend(root / item for item in ROOT_CONTEXT if (root / item).is_file())
+    return sorted(set(files))
 
 
 def classify(rel: str) -> str:
@@ -72,6 +75,8 @@ def classify(rel: str) -> str:
         return "dynamic_memory"
     if rel.startswith("05-写作计划/"):
         return "plan_or_task"
+    if "/" not in rel:
+        return "project_context"
     return "story_rules"
 
 
