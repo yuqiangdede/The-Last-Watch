@@ -24,6 +24,7 @@ class SettingMaintenanceTests(unittest.TestCase):
         self.put("06-正文-TXT/第一卷/第001章.txt", "TXT保护\n")
         self.put("05-写作计划/章节简写/第01卷/第001章.md", "简写保护\n")
         self.put("05-写作计划/章节规划总表.md", "只读索引\n")
+        self.put("novel.project.json", '{"title":"测试小说"}\n')
         self.put("02-人物/角色.md", "# 角色\n> 最后修订时间：2026-01-01 09:00:00 +08:00\n联域不是第八强权\n")
 
     def tearDown(self):
@@ -63,6 +64,7 @@ class SettingMaintenanceTests(unittest.TestCase):
         after = {p: p.read_bytes() for p in self.root.rglob("*") if p.is_file()}
         self.assertEqual(before, after)
         self.assertTrue(data["term_evidence"]["联域"])
+        self.assertTrue(any(x["path"] == "novel.project.json" for x in data["inventory"]))
         self.assertFalse(any("06-正文" in i["path"] for i in data["inventory"]))
         self.assertFalse(any("章节简写" in i["path"] for i in data["inventory"]))
         self.assertFalse(any("章节规划总表" in i["path"] for i in data["inventory"]))
