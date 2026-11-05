@@ -96,6 +96,9 @@ def planned_count(content: str) -> int | None:
         return None
     # 不把“另5篇插章”误判成常规章节数。
     text = match.group(1).replace("**", "")
+    exact = re.fullmatch(r"\s*(\d+)\s*", text)
+    if exact:
+        return int(exact.group(1))
     count = re.search(r"(?:共|拟定|已确定|计划)?\s*(\d+)\s*个?编号", text)
     if count:
         return int(count.group(1))
@@ -165,9 +168,9 @@ def scan(root: Path, expected_volumes: int | None = None, terms: list[str] | Non
         if expected is not None and rows and len(rows) != expected:
             issues.append({"severity": "error", "code": "CHAPTER_COUNT_MISMATCH", "path": relative(path, root),
                            "volume": vol, "message": f"声明{expected}章，表格识别{len(rows)}章；需核对章纲格式"})
-        if expected is not None and not rows:
+        if not rows:
             issues.append({"severity": "info", "code": "PLANNED_NOT_SPLIT", "path": relative(path, root),
-                           "volume": vol, "message": f"已声明{expected}章，但尚无可识别的逐章表格；核对是否仍在规划"})
+                           "volume": vol, "message": f"未识别逐章表格；声明章数为{expected if expected is not None else '待定'}，该卷不算已完成逐章审阅"})
         if nav_numbers and vol not in nav_numbers:
             issues.append({"severity": "candidate", "code": "MISSING_NAV_LINK", "path": VOLUME_NAV,
                            "volume": vol, "message": "卷纲导航未链接此卷章纲"})
@@ -213,6 +216,8 @@ def scan(root: Path, expected_volumes: int | None = None, terms: list[str] | Non
                     "candidates": sum(i["severity"] == "candidate" for i in issues),
                     "info": sum(i["severity"] == "info" for i in issues),
                     "volumes_read": sum(v["status"] == "read" for v in volume_records),
+                    "volumes_with_chapters": sum(v.get("recognized_chapters", 0) > 0 for v in volume_records),
+                    "volumes_unexpanded": sum(v["status"] == "read" and v.get("recognized_chapters", 0) == 0 for v in volume_records),
                     "chapter_rows_recognized": sum(v.get("recognized_chapters", 0) for v in volume_records)},
         "issues": issues,
         "term_evidence": dict(evidence),
