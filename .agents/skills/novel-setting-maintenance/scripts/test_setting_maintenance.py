@@ -42,6 +42,7 @@ class SettingMaintenanceTests(unittest.TestCase):
         self.assertEqual(data["summary"]["errors"], 0)
 
     def test_unexpanded_volume_and_plain_numeric_declared_count(self):
+        self.put("03-剧情/章大纲/第01卷.md", "# 第一卷\n- 编号章节数：2\n| 第001章 | A | A | A |\n| 第002章 | B | B | B |\n")
         self.put("03-剧情/章大纲/第02卷.md", "# 第二卷\n- 编号章节数：待定\n")
         data = module.scan(self.root, expected_volumes=2)
         self.assertEqual(data["summary"]["volumes_unexpanded"], 1)
