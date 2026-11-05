@@ -8,7 +8,11 @@
       "date": "2026-10-29",
       "scope": "第021—039章及4篇插章"
     },
-    "note": "作者定稿独立于质量审稿及工程验收状态"
+    "note": "作者定稿独立于质量审稿及工程验收状态",
+    "第五卷": {
+      "date": "2026-11-05",
+      "scope": "第144—181章（卷内第001—038章）及5篇插章（共43篇正文，作者定稿待审核）"
+    }
   },
   "version": 2,
   "novelName": "崖边戍卒",
@@ -17,10 +21,10 @@
   "totalChapters": 143,
   "totalVolumes": 20,
   "fullBookTargetChapters": null,
-  "currentPhase": "第四卷已写至第114章；第四卷第115章待写",
+  "currentPhase": "第五卷全卷43篇正文已完成作者定稿，处于待审核阶段；第四卷正本清源持续推进中",
   "minWordsPerChapter": 3000,
   "createdAt": "2026-10-25T08:47:34.059266",
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-05",
   "status": "writing",
   "writingMode": "serial",
   "chapters": [
