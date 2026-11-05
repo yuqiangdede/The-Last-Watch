@@ -40,6 +40,13 @@ class SettingMaintenanceTests(unittest.TestCase):
         self.assertEqual(data["summary"]["chapter_rows_recognized"], 3)
         self.assertEqual(data["summary"]["errors"], 0)
 
+    def test_unexpanded_volume_and_plain_numeric_declared_count(self):
+        self.put("03-剧情/章大纲/第02卷.md", "# 第二卷\n- 编号章节数：待定\n")
+        data = module.scan(self.root, expected_volumes=2)
+        self.assertEqual(data["summary"]["volumes_unexpanded"], 1)
+        self.assertIn("PLANNED_NOT_SPLIT", [x["code"] for x in data["issues"]])
+        self.assertEqual(data["volume_coverage"][0]["declared_count"], 2)
+
     def test_missing_volume_is_error_not_silent_pass(self):
         data = module.scan(self.root, expected_volumes=3)
         self.assertIn("MISSING_CHAPTER_OUTLINE", [issue["code"] for issue in data["issues"]])
