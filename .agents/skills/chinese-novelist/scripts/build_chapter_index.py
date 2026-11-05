@@ -83,10 +83,11 @@ def build(root: Path) -> str:
                 number = f"第{m.group(1)}章"
                 goal = f"【结果】{outcome} 【求索】{related}"
             elif m := re.match(r"^\*\*插章(\d{3})（非编号）·(.+?)\*\*：(.+)$", line):
-                # 第五卷杜川、程述成长篇：以章纲原文为唯一可编辑来源
+                # 不编号插章：章纲使用全书内部定位号，阅读版卷内位置以源文标注为准
                 number = f"第{m.group(1)}章后插章（不编号）"
                 name = m.group(2).replace("《", "·").replace("》", "")
-                brief, goal, status = m.group(3), "—", "planned"
+                brief, goal = m.group(3), "—"
+                status = "design_pending_review" if "设计待审" in brief else "planned"
             elif m := re.match(r"^\d+\. \*\*新增：(.+?)\*\*：拟插于第(\d+)章后。(.+)$", line):
                 # 第五卷另外三篇独立插章：从“五篇独立插章”主题清单提取
                 number = f"第{m.group(2)}章后插章（不编号）"
@@ -101,8 +102,8 @@ def build(root: Path) -> str:
                 seen.add(n)
             rows.append((number, name, brief, goal, status))
         # 新章纲的插章简介分散在主题清单及幕间叙述，按落点回插索引；
-        # 既有卷原先的行顺序不变，避免无关索引改动。
-        if i == 5:
+        # 第五卷起按内部定位回插，既有前四卷原有行顺序不变。
+        if i >= 5:
             rows.sort(key=lambda row: (
                 int(re.search(r"\d+", row[0]).group()),
                 1 if "后插章" in row[0] else 0,
