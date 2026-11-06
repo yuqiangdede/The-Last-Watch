@@ -792,6 +792,193 @@
       "source": "03-剧情/章大纲/第06卷.md",
       "source_sha256": "12f6b9bd3ebc9c546ca874fde3af87a24ce722a336ca2571f22944085b70c55a",
       "reviewed_at": "2026-11-06T12:57:03+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷",
+      "stage": "卷纲",
+      "result": "通过",
+      "score": 82.4,
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/卷纲/第八卷-孤岛的门.md",
+      "source_sha256": "5064499edb2273c99190ca7664adbdd2111187bd7215d7aa7ae4e50793a978cc",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内001章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内002章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内003章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内004章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内005章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内006章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内007章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内008章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内009章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内010章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内011章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内012章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内013章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "卷内014章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "插章003",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
+    },
+    {
+      "volume": 8,
+      "unit": "插章011",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第08卷-新版.md",
+      "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
+      "reviewed_at": "2026-11-06T12 (second: 21)+08:00"
     }
   ]
 }
