@@ -316,7 +316,7 @@ def build(root: Path) -> tuple[str, str]:
             if vol <= 4 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "四阶段审核均已完成（作者确认；未关联的分数及报告待核）"
             elif vol == 5 and author:
-                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲已审；简写、正文待审（作者确认）"
+                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）"
             elif vol == 6 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）"
             elif vol == 7 and author:

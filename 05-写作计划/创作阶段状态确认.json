@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "confirmed_on": "2026-11-06",
-  "confirmation_source": "作者在2026-11-06明确确认前四卷四阶段编写与审核均完成；第五卷四阶段编写均完成，仅简写和正文审核未完成；第六卷正文待审；第七卷全卷正文已编写完成，待审",
+  "confirmation_source": "作者在2026-11-06明确确认前四卷四阶段编写与审核均完成；第五卷卷纲、章纲、简写审核均完成，仅正文待审；第六卷正文待审；第七卷全卷正文已编写完成，待审",
   "scope": "现行章节及独立插章；确认仅对应生产/审核流程状态，不等于本轮重新审核通过或工程校验通过",
   "volumes": {
     "1": {
@@ -141,9 +141,9 @@
       },
       "简写": {
         "written": true,
-        "reviewed": false,
+        "reviewed": true,
         "basis": "author_confirmation",
-        "review_result": null,
+        "review_result": "通过",
         "review_score": null
       },
       "正文": {
