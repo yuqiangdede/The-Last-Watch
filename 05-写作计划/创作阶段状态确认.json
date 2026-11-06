@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "confirmed_on": "2026-11-06",
-  "confirmation_source": "作者在2026-11-06明确确认前四卷四阶段编写与审核均完成；第五卷卷纲、章纲、简写审核均完成，仅正文待审；第六卷正文待审；第七卷全卷正文已编写完成，待审",
+  "confirmation_source": "作者在2026-11-06明确确认前四卷四阶段编写与审核均完成；第五卷卷纲、章纲、简写审核均完成，正文待审；第六、七卷卷纲、章纲、简写均已审过，正文已写待审；第八、九、十卷卷纲、章纲、简写均已审核通过（对应08-审稿报告均已归档且达80分以上），第八卷正文撰写中，第九、十卷正文待写",
   "scope": "现行章节及独立插章；确认仅对应生产/审核流程状态，不等于本轮重新审核通过或工程校验通过",
   "volumes": {
     "1": {
@@ -208,6 +208,96 @@
       },
       "正文": {
         "written": true,
+        "reviewed": false,
+        "basis": "author_confirmation",
+        "review_result": null,
+        "review_score": null
+      }
+    },
+    "8": {
+      "卷纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 82.4
+      },
+      "章纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": null
+      },
+      "简写": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 83.5
+      },
+      "正文": {
+        "written": true,
+        "reviewed": false,
+        "basis": "author_confirmation",
+        "review_result": null,
+        "review_score": null
+      }
+    },
+    "9": {
+      "卷纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 82.09
+      },
+      "章纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": null
+      },
+      "简写": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 84.8
+      },
+      "正文": {
+        "written": false,
+        "reviewed": false,
+        "basis": "author_confirmation",
+        "review_result": null,
+        "review_score": null
+      }
+    },
+    "10": {
+      "卷纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 80.3
+      },
+      "章纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": null
+      },
+      "简写": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 85.0
+      },
+      "正文": {
+        "written": false,
         "reviewed": false,
         "basis": "author_confirmation",
         "review_result": null,

@@ -321,6 +321,10 @@ def build(root: Path) -> tuple[str, str]:
                 last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）"
             elif vol == 7 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文已写、待审（作者确认）"
+            elif vol == 8 and author:
+                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文撰写中、待审（作者确认）"
+            elif vol in (9, 10) and author:
+                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待写（作者确认）"
             rows.append({
                 "卷": VOLUMES[vol-1], "篇目": unit, "类型": chapter["kind"],
                 "标题": chapter["title"],
