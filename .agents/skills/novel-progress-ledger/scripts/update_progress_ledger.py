@@ -424,7 +424,8 @@ def main() -> int:
             parser.error("--record-review 需要 --volume/--stage/--result/--report")
         record(root, args)
     markdown, machine_csv = build(root)
-    expected = {MD_FILE: markdown, CSV_FILE: machine_csv}
+    # CSV 需要 UTF-8 BOM，否则 Windows Excel 可能将中文按系统编码误读；--check 同时校验 BOM。
+    expected = {MD_FILE: markdown, CSV_FILE: "\ufeff" + machine_csv}
     if args.check:
         out_of_date = [p for p, body in expected.items()
                        if not (root / p).exists() or
