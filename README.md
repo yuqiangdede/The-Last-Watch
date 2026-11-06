@@ -75,6 +75,8 @@
 | 三、章节简写 | [章节简写审核](.agents/skills/chinese-novelist/references/guides/review-prompt-03-chapter-brief.md) | 剧情七维100分；默认只审不改 |
 | 四、正式正文 | [正文审核与自动修订](.agents/skills/chinese-novelist/references/guides/review-prompt-04-chapter-prose.md) | 正文七维100分＋AI味37项专项；依正式协议修订、复审和同步 |
 
+**相邻上游一致性一票打回**：严格执行 [stage-consistency-gate.md](.agents/skills/chinese-novelist/references/guides/stage-consistency-gate.md)。卷纲对已确认全书大纲、章纲对当前卷纲、简写对当前章纲、正文对当前简写；全书大纲对作者锁定的主线和权威事实。逐章对照必写事件、人物抉择、核心因果与结果、代价、时序、伏笔和本章任务。合理扩写允许；**确证实质不一致，即使质量评分超过80分也直接打回，禁止流转至下一阶段**。无法确认上游则暂缓验收，而非虚报通过；审核结论通过/不通过/待核实与分数分开记录进度台账。
+
 示例指令：“审核全书大纲”“审核第四卷章纲”“审核第四卷第128章简写”“审核第四卷第128章正文”。每次独立核实和评分，不参考历史审核分数；历史问题可以作为待核线索。入口及权限说明见 [Skill](.agents/skills/chinese-novelist/SKILL.md)。
 
 ## 四阶段写作工作流（强制）
