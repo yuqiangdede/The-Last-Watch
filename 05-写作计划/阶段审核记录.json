@@ -21,7 +21,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/卷纲/第七卷-逃向海的路.md",
       "source_sha256": "9f6e31819bce4e1945e0ae61659c745870c64a807a951b7d28aec1812eb9ce7b",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -32,7 +34,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -43,7 +47,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -54,7 +60,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -65,7 +73,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -76,7 +86,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -87,7 +99,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -98,7 +112,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -109,7 +125,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -120,7 +138,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -131,7 +151,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -142,7 +164,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -153,7 +177,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -164,7 +190,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -175,7 +203,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -186,7 +216,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -197,7 +229,9 @@
       "report": "08-审稿/第七卷-卷纲章纲正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
-      "reviewed_at": "2026-11-06T12:19:37+08:00"
+      "reviewed_at": "2026-11-06T12:19:37+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 10,
@@ -208,7 +242,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/卷纲/第十卷-守护与伤害.md",
       "source_sha256": "c95748b61741f9ac751bb23e759c2962149c041324febb7a30c6930dcd7fadea",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -219,7 +255,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -230,7 +268,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -241,7 +281,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -252,7 +294,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -263,7 +307,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -274,7 +320,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -285,7 +333,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -296,7 +346,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -307,7 +359,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -318,7 +372,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -329,7 +385,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -340,7 +398,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -351,7 +411,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -362,7 +424,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第10卷-新版.md",
       "source_sha256": "c335820b3a2d7a47dfe604a6391c5632826ffc482d19178d372b5bf7af05bad2",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -373,7 +437,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "8fb4d397afdee14d40a434e11e8d71bed9486ab440adb68938c842f9e0835cdc",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -384,7 +450,9 @@
       "report": "08-审稿/第十卷-章纲优化复审-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "8fb4d397afdee14d40a434e11e8d71bed9486ab440adb68938c842f9e0835cdc",
-      "reviewed_at": "2026-11-06 12:57:11+08:00"
+      "reviewed_at": "2026-11-06 12:57:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 6,
@@ -813,7 +881,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/卷纲/第八卷-孤岛的门.md",
       "source_sha256": "9b44bd71e913ee1c8ee8f113a6eefe58772da13acf8546cead06fefe072d232d",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -824,7 +894,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -835,7 +907,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -846,7 +920,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -857,7 +933,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -868,7 +946,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -879,7 +959,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -890,7 +972,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -901,7 +985,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -912,7 +998,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -923,7 +1011,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -934,7 +1024,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -945,7 +1037,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -956,7 +1050,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -967,7 +1063,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -978,7 +1076,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -989,7 +1089,9 @@
       "report": "08-审稿/第八卷-十四章章纲优化复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "a151786edfed32e94923c50321d8079a80c2ab600665b35acc838bcc21d5fa02",
-      "reviewed_at": "2026-11-06T12:59:47+08:00"
+      "reviewed_at": "2026-11-06T12:59:47+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 7,
@@ -1000,7 +1102,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/卷纲/第七卷-逃向海的路.md",
       "source_sha256": "4e857d7f0feac026264de10c4fcef4e28a75efe71b33ded555b76738674b6dd0",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1011,7 +1115,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1022,7 +1128,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1033,7 +1141,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1044,7 +1154,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1055,7 +1167,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1066,7 +1180,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1077,7 +1193,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1088,7 +1206,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1099,7 +1219,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1110,7 +1232,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1121,7 +1245,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1132,7 +1258,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1143,7 +1271,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1154,7 +1284,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1165,7 +1297,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1176,7 +1310,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1187,7 +1323,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "394f551e1db110bb9521bfbbe556ba59a0760ecb6047382cc8a371f2d48cfc4e",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1198,7 +1336,9 @@
       "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "394f551e1db110bb9521bfbbe556ba59a0760ecb6047382cc8a371f2d48cfc4e",
-      "reviewed_at": "2026-11-06T13:02:11+08:00"
+      "reviewed_at": "2026-11-06T13:02:11+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 9,
@@ -1209,7 +1349,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第001章-简写.md",
       "source_sha256": "de09f66afdd70df6e4c678a3591d5b171eed6fe48b69840040507d9aa82cbf7c",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1220,7 +1362,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第002章-简写.md",
       "source_sha256": "0e40c260a2d4eb2bd9c4fccb929eef00f47b32b4159fd83c6da93d5660b2cdac",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1231,7 +1375,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第003章-简写.md",
       "source_sha256": "29a4dbfe327f5bc1142381fee537ec025c4cea53a5fbb484c05f96092d575938",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1242,7 +1388,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第004章-简写.md",
       "source_sha256": "4aca3cd49eb73933dfdbdfd6f57c9797ce76787e7d0f34fd337a55d8abc16787",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1253,7 +1401,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第005章-简写.md",
       "source_sha256": "9fbd27a558535ba21330b08df0a7e2e5eb02a2314ce04754a5807a3dc89473e3",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1264,7 +1414,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第006章-简写.md",
       "source_sha256": "dd66e7b5e7d60a83a51cde93149eab9f5901ae3eabf798b8c40e86fcd9566744",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1275,7 +1427,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第007章-简写.md",
       "source_sha256": "4b069d90d13bd313b2296cb2aa1ae0619b56b12e0e87f7d053ddfc36ed0f01e5",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1286,7 +1440,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第008章-简写.md",
       "source_sha256": "4f06589b4aac6918c91ee4dd2b1ded8af6156ac8e12ea3c44325e7957d4bfea1",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1297,7 +1453,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第009章-简写.md",
       "source_sha256": "1c4aeba7ed29da156dc5b96c0b9be53c7c3bb0f6f015d8c5e7a235b25628741f",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1308,7 +1466,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第010章-简写.md",
       "source_sha256": "9a4362fdc76768bf4b6fc08526371b9ba4b1d52dd27bbb2e5455b10ae4198606",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1319,7 +1479,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第011章-简写.md",
       "source_sha256": "9258e20011296b34f50108d2ec85ee2b8c3789edd0bb77b00ce88320ee0b8ece",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1330,7 +1492,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第012章-简写.md",
       "source_sha256": "11b12f3b10db3dc33f869fedd191e544639cd8b40f7cf27ad68d151cb6f89010",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1341,7 +1505,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第013章-简写.md",
       "source_sha256": "d4472124c6835ad4a3ea54cf749e020da263e9c0223286f1ef733f9fbf7541ed",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1352,7 +1518,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第014章-简写.md",
       "source_sha256": "4e4ec0407069e9d398aca40a619ddd7fcd1662899ad4e869c12dec97f0bbf137",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1363,7 +1531,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/插章005-天衡视角-交班本的原页-简写.md",
       "source_sha256": "09eb221aadd5f0f3c93e3fec7d10560336ae4a75f0afda5d5e7ea97caf32476d",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -1374,7 +1544,9 @@
       "report": "08-审稿/第九卷-16篇章节简写逐章质量审查-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/插章009-丰壤视角-阿七想换白班-简写.md",
       "source_sha256": "21c9137405cf45be523526ae49bde65b3d608574643b779e92357f2431b6e578",
-      "reviewed_at": "2026-11-06T13:11:34+08:00"
+      "reviewed_at": "2026-11-06T13:11:34+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 7,
@@ -1385,7 +1557,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第001章-简写.md",
       "source_sha256": "2bb6eb70cbe0d09e0b4ba171f6b2089e5139ae2b35701febab4b6f58afa2b8a8",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1396,7 +1570,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第002章-简写.md",
       "source_sha256": "0c0262f40866728ce945137d1a0e5393153365a96fb643e0dbf73d81927dac93",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1407,7 +1583,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第003章-简写.md",
       "source_sha256": "59c4843b52bc79dd95121d847c3700c72d4621ff298e731bc35b2ee72886b8b5",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1418,7 +1596,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第004章-简写.md",
       "source_sha256": "11fc0dac9013a55afeed7e18c065c24691254a8b60ab584ee22a873409726874",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1429,7 +1609,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第005章-简写.md",
       "source_sha256": "15c1aa1ecd42cfbb8dff1b7a0dc1970bc3f2ffec0a072f7c883b7437be54075a",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1440,7 +1622,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第006章-简写.md",
       "source_sha256": "95af1e4d0fab3474dec24d4fe281f8a11979a07ba5e23017ed214a07200697b5",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1451,7 +1635,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第007章-简写.md",
       "source_sha256": "56a3210e0c8926176a0406d989a1b720a9d5ad291e36e4b461cad0547cd784b7",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1462,7 +1648,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第008章-简写.md",
       "source_sha256": "4bbfdc1f101abe2ad4dd91eaab4db9a0c6596c0e926078fd0f877429b0272456",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1473,7 +1661,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第009章-简写.md",
       "source_sha256": "e052208557bb54ae8366a545bb0b08ed98bd59a3d34f94131e2a3b604769c648",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1484,7 +1674,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第010章-简写.md",
       "source_sha256": "941b4aec978ccf7ca74e36bd49ea6a54584aa92dd8ed432f6553dc486aade9fb",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1495,7 +1687,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第011章-简写.md",
       "source_sha256": "b7bf3b6c0bca3076b193e38c30164ac85f374bd31b98173658999aa7cf54245d",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1506,7 +1700,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第012章-简写.md",
       "source_sha256": "bf42b11c064b2994a45d9dd07e5008da64f02b4ab249e9651ec216050c88415e",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1517,7 +1713,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第013章-简写.md",
       "source_sha256": "10563212bf88cac77bacd90f694c73393bd35ba7559dfd397f693f04f32ddf79",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1528,7 +1726,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第014章-简写.md",
       "source_sha256": "b410781c831afa0c3a86642903f7862f10f4818e1e92266209fd364b7e5098e7",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1539,7 +1739,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第015章-简写.md",
       "source_sha256": "2cf3e795128f4243a2ca40dbd4f51dd09eeda4571f1ad554053629bef0161248",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1550,7 +1752,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第016章-简写.md",
       "source_sha256": "43c8c666f974836e10ea21d5a34ea97de992dbeefebed0674a42e730c255861e",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1561,7 +1765,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/插章006-联域视角-只保这一段-简写.md",
       "source_sha256": "a29e115490904ec5e5d7fdf2240c5a2ec67f9307ad338469389cc13507938331",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -1572,7 +1778,9 @@
       "report": "08-审稿/第七卷-18篇章节简写逐章独立审核-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/插章013-沧溟视角-船员的工钱-简写.md",
       "source_sha256": "64b55c777018b22192603673315116cf5eb9048a4462d58ea65a7929ba2cfa31",
-      "reviewed_at": "2026-11-06T13:04:00+08:00"
+      "reviewed_at": "2026-11-06T13:04:00+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 8,
@@ -1583,7 +1791,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第001章-简写.md",
       "source_sha256": "96a05de8fac0422f530782d5e277b7b5bfe3f88f87eb94e9022bdab42a5e5507",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1594,7 +1804,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第002章-简写.md",
       "source_sha256": "4792dfb9da44f1b9c8cf9ece87ccbbf84c33294c1e041d84d37c02758e05edff",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1605,7 +1817,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第003章-简写.md",
       "source_sha256": "143c8fc405191a190a84d8dd051ffbc295a5e6e6ed7c61a50459a74d66936f97",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1616,7 +1830,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/插章003-天衡视角-留在码头的箱子-简写.md",
       "source_sha256": "0dd2198bf4b07c6183d5539265822ebdce22dfe5afa8bfc9aae120de72ad412b",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1627,7 +1843,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第004章-简写.md",
       "source_sha256": "cb234cf781dd2348993ef48a9baa009d1e2e329d8922ab14439fff3aba47956d",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1638,7 +1856,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第005章-简写.md",
       "source_sha256": "7ceb5482dbfa113826b249a4a83bda55a97242ea58cfb652c3d99169259d8885",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1649,7 +1869,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第006章-简写.md",
       "source_sha256": "f41b9f89fb048d39db957dc8cf110c2a2af3fdd28a21b62f78af227f49a540c1",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1660,7 +1882,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第007章-简写.md",
       "source_sha256": "b036d6db5e83a3dc26ff6d6a81f1ab07f69a0c7a5b67028ffdecb2948154095a",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1671,7 +1895,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第008章-简写.md",
       "source_sha256": "70add89ac3e1f8d35703163a719bb0d526f31fdfcc2bc380b14a5bb959c08e74",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1682,7 +1908,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第009章-简写.md",
       "source_sha256": "88357ce4c9758ae6288295a3cd2810e6747b78d02efc7942abf6ff934c4ecc62",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1693,7 +1921,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第010章-简写.md",
       "source_sha256": "62cfc0323e3c36e9bf37f935b05b009289ccf85c75a8b6282f3ac28ee367d508",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1704,7 +1934,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第011章-简写.md",
       "source_sha256": "ad9ef4e2ade94c504403d661a809554635f463156fffdbef04ddb7149172b35a",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1715,7 +1947,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/插章011-天衡视角-今天不能关摊-简写.md",
       "source_sha256": "e10a1533bebc05ffb6a9f9a7f5f06cee97fccd9d93ce732860d215cd1ed7155a",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1726,7 +1960,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第012章-简写.md",
       "source_sha256": "4cb759fd31e7b44425c2899f93a043c5cd81e69bae6086ee31418b92491676c4",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1737,7 +1973,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第013章-简写.md",
       "source_sha256": "2daa8abd516ca9f5dff5e1a3ff01d66eb7599dcea0c617963b5ae30fcdb20f87",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -1748,7 +1986,9 @@
       "report": "08-审稿/第八卷-16篇逐章简写剧情审核-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第014章-简写.md",
       "source_sha256": "5dfba133d2a6542323b99390d725b25a191903f5d41e5b7b7d089bbd09268789",
-      "reviewed_at": "2026-11-06T13:13:15.526+08:00"
+      "reviewed_at": "2026-11-06T13:13:15.526+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 6,
@@ -2177,7 +2417,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第001章-简写.md",
       "source_sha256": "eb106164a48e52ab4c7eb7a64952b8ae494c2c1e43597ed70ef1f8856c4f5882",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2188,7 +2430,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第002章-简写.md",
       "source_sha256": "630625f4686dd1916cfca7d6a7d1f2aa2937335fc896777b04f7aae87b4ac8f3",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2199,7 +2443,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第003章-简写.md",
       "source_sha256": "7939396f63efaaf01f29e33a0add7a89caea3d59843ae0beaee73281d2321303",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2210,7 +2456,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/插章003-天衡视角-留在码头的箱子-简写.md",
       "source_sha256": "7eda7cf8a365951f646684a86b209f6f3defac144ffb2e4533220c40a754d834",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2221,7 +2469,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第004章-简写.md",
       "source_sha256": "c211007586543b2dd1e775c91246bc829937779ba45798020dc4f1b37d2d6bc8",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2232,7 +2482,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第005章-简写.md",
       "source_sha256": "69bd4b444441dafee7ae07ce2a5e900e8ecac524b26cb1a6ed4c05febea88e56",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2243,7 +2495,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第006章-简写.md",
       "source_sha256": "07a683e31858af9d04c9edff5dca2f089fb3d7832b035b16b0c8e112ac4f4a72",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2254,7 +2508,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第007章-简写.md",
       "source_sha256": "b58595ff6ef706dd01e47c3623396ec25219056d6d56c075bde39212edb62b1d",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2265,7 +2521,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第008章-简写.md",
       "source_sha256": "5c014f4ca3759e15ecb3c3558977ae35bd4823f5250f3013ebd703e5cd324202",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2276,7 +2534,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第009章-简写.md",
       "source_sha256": "507b9331f41e775fa77d45875b778013f4e73d88ec974b7e5ae7077806746531",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2287,7 +2547,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第010章-简写.md",
       "source_sha256": "ce0ea0e0bc8089589208fa273b6ff2dd4ae192ad696b95cfc386f7d1415dbb97",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2298,7 +2560,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第011章-简写.md",
       "source_sha256": "bd3a35d1609c24b8bd725bc321a6d063c2619d139abcb0f0a1a66a3804d7a6c6",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2309,7 +2573,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/插章011-天衡视角-今天不能关摊-简写.md",
       "source_sha256": "a8002b58f054e9be181c823fa30c8b8d79b90437e603f107a61a94a5ff2ab041",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2320,7 +2586,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第012章-简写.md",
       "source_sha256": "1c55f29f4e37f55b0821d947974187544d641e0bcec128465aec0a64d30cefd0",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2331,7 +2599,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第013章-简写.md",
       "source_sha256": "3edd8fe088936bd5aedc5e530692de64ee0b377f4243af170120a0564868255e",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 8,
@@ -2342,7 +2612,9 @@
       "report": "08-审稿/第八卷-16篇简写80分修订与逐章复审-20261106.md",
       "source": "05-写作计划/章节简写/第08卷/第014章-简写.md",
       "source_sha256": "d55e05f825beb3c9faf41f6072afdb860f6c85091928b93d589166c1d1630cf1",
-      "reviewed_at": "2026-11-06T13:28:06+08:00"
+      "reviewed_at": "2026-11-06T13:28:06+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 8
     },
     {
       "volume": 9,
@@ -2353,7 +2625,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第001章-简写.md",
       "source_sha256": "0d644e9c6f71c2ff7f80e1d80ac04ef42de3398ab3db0c7576debfc16a1311e1",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2364,7 +2638,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第002章-简写.md",
       "source_sha256": "cbf682a0ea18f7c3fea57fe6d50c677a57e85b426b6c8cd6ede3bf2120a29009",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2375,7 +2651,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第003章-简写.md",
       "source_sha256": "0b7c2216c37cc4cf44e824c1519c22eb85dd029daaed8c02d68d3189bdef0707",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2386,7 +2664,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第004章-简写.md",
       "source_sha256": "671b9e71cac92b7f908d035235e8c58b9933183af742e7d0252c3c49fd613790",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2397,7 +2677,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第005章-简写.md",
       "source_sha256": "9df45562f3f1d16a613ac45c0351bff1ab8d32ae28d8e1c444313dd51ea5e1da",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2408,7 +2690,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第006章-简写.md",
       "source_sha256": "6982b59bd2437788b19cb4f13dba19d2340dc541aae1fda10ade8016de77c656",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2419,7 +2703,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第007章-简写.md",
       "source_sha256": "96711e9e67adfe45cdbc8743cb28e55bdef5fbeb4bc2a76357b053711f9ede84",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2430,7 +2716,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第008章-简写.md",
       "source_sha256": "a4015bd526bd7f662b19c40ac43e581957e318263f018458e910d4bfc604e6d2",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2441,7 +2729,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第009章-简写.md",
       "source_sha256": "00e8bd971c604d031f0ce0a2aed270e637ae6e084c87c5cc646e0da91353e739",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2452,7 +2742,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第010章-简写.md",
       "source_sha256": "d64cb26ea61ce31452f7744cac91e471831cea1e4c5f4f3de87757f3cb7df558",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2463,7 +2755,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第011章-简写.md",
       "source_sha256": "63c5d024d3b67043b4f06afa427b39dde31cc42d3ccaae2bdefcd180cfdeb6b6",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2474,7 +2768,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第012章-简写.md",
       "source_sha256": "18bd9ece937cb1fd1c8295e47c134a4b3617c8f5c7c31bb102b9b28fb7a0d13a",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2485,7 +2781,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第013章-简写.md",
       "source_sha256": "184e50bc1b105b17ae1327ebdeda620cf8db27436f15842c00fe68e96a0f3251",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2496,7 +2794,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/第014章-简写.md",
       "source_sha256": "97eec9b2dcc609dda557acdd0ad28ccfa4e5ab4335299288c6e99b9d18e0a737",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2507,7 +2807,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/插章005-天衡视角-交班本的原页-简写.md",
       "source_sha256": "d4da03292b374a5fc4192bea57a21e052e515f3de96716fc31957371a2a6fbc5",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -2518,7 +2820,9 @@
       "report": "08-审稿/第九卷-16篇章节简写修订后正式复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第09卷/插章008-丰壤视角-阿七想换白班-简写.md",
       "source_sha256": "e41ff94d14e5db8cad80bcf8dfc41c19c7be2f47da46573310e65bba8b7e588b",
-      "reviewed_at": "2026-11-06T13:30:38+08:00"
+      "reviewed_at": "2026-11-06T13:30:38+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 10,
@@ -2529,7 +2833,9 @@
       "report": "08-审稿/第十卷-两篇插章章纲现行版本复核-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "7d898234864cfdf62a9bfaa6b47eb6261fa400e32425665a19a6b2e0c2f70bee",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2540,7 +2846,9 @@
       "report": "08-审稿/第十卷-两篇插章章纲现行版本复核-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "7d898234864cfdf62a9bfaa6b47eb6261fa400e32425665a19a6b2e0c2f70bee",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2551,7 +2859,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第001章-简写.md",
       "source_sha256": "e192164e5f90b24c472e97e97afe95e269e69ffa6cb1d802c485631fa0ee32c3",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2562,7 +2872,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第002章-简写.md",
       "source_sha256": "c59412d099936f8edb3d251849c0e06c879465d028601facd11ccf2cd486e4e7",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2573,7 +2885,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第003章-简写.md",
       "source_sha256": "01f3fb523f5b929f78e62cec5226becdb37424f6c7d58f2701a97e988a02454c",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2584,7 +2898,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第004章-简写.md",
       "source_sha256": "aa8263f594e18957b1e8da38f9cf9652cd9029b5e09ae5f4e64a8c4ddcb6c179",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2595,7 +2911,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第005章-简写.md",
       "source_sha256": "5b5af9587264cba2a9e802eedf0746098f4fd5535a73fcd90e6a0c500502b258",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2606,7 +2924,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第006章-简写.md",
       "source_sha256": "029ea140294e3641d755675112584c5314ec1f0442519f7b99a4246a692cf71b",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2617,7 +2937,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/插章006-天衡视角-缺失的时段-简写.md",
       "source_sha256": "b76885cdf3565a3b89f378d5b354f4c640e79d4ab5379ca93502d31f43b85e43",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2628,7 +2950,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第007章-简写.md",
       "source_sha256": "4684a8182bbb9825da9200704fb1d74843d406c8edab40004f2cd5cac4b50b67",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2639,7 +2963,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第008章-简写.md",
       "source_sha256": "8955b1aab6bb244a889ec612d78e040d88552714ff8c4d5205c0497b0f1c62ba",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2650,7 +2976,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第009章-简写.md",
       "source_sha256": "1ae14477273a331c0df49ed73dd32acaf0edba8392a894c1cca32d8d854e3cd1",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2661,7 +2989,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第010章-简写.md",
       "source_sha256": "e3007a324d06c2b1a49b8c9a3741a7f53cd67d046f0f8f428bca283d02f5ae00",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2672,7 +3002,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第011章-简写.md",
       "source_sha256": "c486e24a95003f3250d726683405f0cc85e73feed8c2c91b6008959eea61d563",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2683,7 +3015,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第012章-简写.md",
       "source_sha256": "362d50d1f442669f8bedfdb71dde2332d0992fb7fd08eb863ff09250d7134c98",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2694,7 +3028,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第013章-简写.md",
       "source_sha256": "75e9532810b51331fbbb1880845d9990ab01efe0566e8815ba4559ac9475270b",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2705,7 +3041,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/插章013-天衡视角-自己的明天-简写.md",
       "source_sha256": "9d8f659a5a21b1c7119255f2b31a8d0e4bb21286b6341196eb37c05ccf8d6b67",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 10,
@@ -2716,7 +3054,9 @@
       "report": "08-审稿/第十卷-章节简写修订复审-2026-11-06.md",
       "source": "05-写作计划/章节简写/第10卷/第014章-简写.md",
       "source_sha256": "e4dd2659a53964948b45f7a15af50e4e9cf4c8423240c475065e46ddc50462fd",
-      "reviewed_at": "2026-11-06T13:30:54+08:00"
+      "reviewed_at": "2026-11-06T13:30:54+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 10
     },
     {
       "volume": 6,
@@ -3145,7 +3485,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/卷纲/第七卷-逃向海的路.md",
       "source_sha256": "8192fd449a1a878cfc6bc505db82eb93722e289954ef89e7b615548122b92065",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3156,7 +3498,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3167,7 +3511,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第001章-简写.md",
       "source_sha256": "a801bc9345245648e161cc86148a826f5148315bcd0cd0637d315fb4cd154b9a",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3178,7 +3524,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3189,7 +3537,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第002章-简写.md",
       "source_sha256": "b7ae8980e36a4fcecd7b4ffdd99c09eee81d6ad6e3bfbfe1b2148947034dcd8c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3200,7 +3550,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3211,7 +3563,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第003章-简写.md",
       "source_sha256": "8d06b2fbd2a6ff209516472342dc9c93a747dcb846f0821c8843461d09a3fee0",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3222,7 +3576,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3233,7 +3589,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第004章-简写.md",
       "source_sha256": "41fb1dc5ab8b89891fa44667b8d95bfad35a17c52e106ba0ee6fb2424217d9dc",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3244,7 +3602,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3255,7 +3615,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第005章-简写.md",
       "source_sha256": "a0ee3bdae23f49b91685001f303f08de8fc5c356deaeb335df2bc167c7e4ee92",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3266,7 +3628,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3277,7 +3641,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第006章-简写.md",
       "source_sha256": "b4d39837ede012b604fbd079f11d9b4adb462f74814e0c36588e809f8adb7d88",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3288,7 +3654,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3299,7 +3667,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第007章-简写.md",
       "source_sha256": "589e8a5870dbef3dfad9e5f3f29fa450d76543a16ce53fc3c3cb56301f6a7168",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3310,7 +3680,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3321,7 +3693,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第008章-简写.md",
       "source_sha256": "ce5d8239c149da7fdc2ee9b2a5365f161cd12dda381303c95045ad92644d4051",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3332,7 +3706,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3343,7 +3719,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第009章-简写.md",
       "source_sha256": "45e8d0e7cb6471f78e615c4e4023b2c8a853fa664d29463e53fd4524bafd2e70",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3354,7 +3732,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3365,7 +3745,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第010章-简写.md",
       "source_sha256": "053d25031d0cf69d1442d137f51dcca3472b5f4c81289c8b6a1e4968a39534ee",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3376,7 +3758,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3387,7 +3771,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第011章-简写.md",
       "source_sha256": "9fe64f6761f778381a088ccc83d7b94ddae2c607bc03548ecd3502ed6afa1d5d",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3398,7 +3784,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3409,7 +3797,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第012章-简写.md",
       "source_sha256": "4721dd3629335062c4163df8dc980ba1fbd46c8892c9b499ade60db584823a06",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3420,7 +3810,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3431,7 +3823,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第013章-简写.md",
       "source_sha256": "243f9b6ab2a45d6104e03329e57227da7dc6d725d4a6248c61e2a538d4e879a0",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3442,7 +3836,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3453,7 +3849,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第014章-简写.md",
       "source_sha256": "9e84870938509db487a890bd0833b5f1cc3f026b33e548815ef29d5dce212b76",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3464,7 +3862,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3475,7 +3875,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第015章-简写.md",
       "source_sha256": "20713c662a1b5ba08e21e3e028974afe30156726d0dec74dbdb1fcbe5b6c169a",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3486,7 +3888,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "60624d88ce33a912a17430c5e509ffe6da771ce4fe9785727bda71fc608e954c",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3497,7 +3901,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/第016章-简写.md",
       "source_sha256": "e9b91c4965c6391f3f2acf087ba28d8781606cf739b0eb75d5681b73838256d1",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3508,7 +3914,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "7d898234864cfdf62a9bfaa6b47eb6261fa400e32425665a19a6b2e0c2f70bee",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3519,7 +3927,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/插章006-联域视角-只保这一段-简写.md",
       "source_sha256": "1c36bb472541d92a0d7659ce6430b57d8dd7bc4762b128542c1522768199e4e1",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3530,7 +3940,9 @@
       "report": "08-审稿/第七卷-卷纲交班接口定向复审-20261106.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "7d898234864cfdf62a9bfaa6b47eb6261fa400e32425665a19a6b2e0c2f70bee",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 7,
@@ -3541,7 +3953,9 @@
       "report": "08-审稿/第七卷-18篇章节简写80分门禁修订复审-20261106.md",
       "source": "05-写作计划/章节简写/第07卷/插章013-沧溟视角-船员的工钱-简写.md",
       "source_sha256": "420190de5b1bcaf23bec65f4e9ebeff93f17bc3f9765d4567720348ec66ac891",
-      "reviewed_at": "2026-11-06T13:34:06.435+08:00"
+      "reviewed_at": "2026-11-06T13:34:06.435+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 7
     },
     {
       "volume": 9,
@@ -3552,7 +3966,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/卷纲/卷大纲.md",
       "source_sha256": "4354f8354e96935d07b96023d1ad2fad1f2104ec886e1388d2d44f051a210c94",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3563,7 +3979,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3574,7 +3992,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3585,7 +4005,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3596,7 +4018,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3607,7 +4031,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3618,7 +4044,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3629,7 +4057,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3640,7 +4070,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3651,7 +4083,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3662,7 +4096,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3673,7 +4109,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3684,7 +4122,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3695,7 +4135,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3706,7 +4148,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/章大纲/第09卷-新版.md",
       "source_sha256": "0bee34d0d61c371495581ae8980618b13a4b364a10d81cd27e46c3206b4d8492",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3717,7 +4161,9 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "7d898234864cfdf62a9bfaa6b47eb6261fa400e32425665a19a6b2e0c2f70bee",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     },
     {
       "volume": 9,
@@ -3728,7 +4174,10 @@
       "report": "08-审稿/第九卷-章纲优化后阶段二复审-2026-11-06.md",
       "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
       "source_sha256": "7d898234864cfdf62a9bfaa6b47eb6261fa400e32425665a19a6b2e0c2f70bee",
-      "reviewed_at": "2026-11-06 12:52:41+08:00"
+      "reviewed_at": "2026-11-06 12:52:41+08:00",
+      "invalidated_by_volume_merge": "2026-11-06合卷后原上游源稿、卷号及章号已发生变更；历史报告仅归档追溯",
+      "legacy_volume": 9
     }
-  ]
+  ],
+  "volume_merge_note": "原7—10卷共224条历史事件被标识失效，后续必须用合卷后的新源稿重新登记审核，旧分数不得自动变成新卷评分。"
 }

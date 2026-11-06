@@ -19,7 +19,7 @@ from pathlib import Path
 CN = "一二三四五六七八九十"
 VOLUMES = [f"第{ch}卷" for ch in CN[:9]] + ["第十卷"] + [
     "第十一卷", "第十二卷", "第十三卷", "第十四卷", "第十五卷",
-    "第十六卷", "第十七卷", "第十八卷", "第十九卷", "第二十卷",
+    "第十六卷", "第十七卷", "第十八卷",
 ]
 STAGES = ("卷纲", "章纲", "简写", "正文")
 STATUS = {"通过", "不通过", "待复核", "待核实"}
@@ -40,7 +40,7 @@ def read_events(root: Path) -> list[dict]:
     if not file.exists():
         return []
     payload = json.loads(file.read_text(encoding="utf-8-sig"))
-    return payload.get("reviews", [])
+    return [e for e in payload.get("reviews", []) if not e.get("invalidated_by_volume_merge")]
 
 
 def read_author_confirmations(root: Path) -> dict[int, dict]:
@@ -52,7 +52,7 @@ def read_author_confirmations(root: Path) -> dict[int, dict]:
     confirmations = {}
     for key, stages in payload.get("volumes", {}).items():
         vol = int(key)
-        if not 1 <= vol <= 20:
+        if not 1 <= vol <= 18:
             raise ValueError(f"作者确认卷号非法：{vol}")
         if any(s not in STAGES for s in stages):
             raise ValueError(f"作者确认包含未知阶段：{vol}")
@@ -97,7 +97,7 @@ def revision(events: list[dict], root: Path, volume: int, stage: str,
 
 def parse_index(root: Path) -> dict[int, list[dict]]:
     """从只读生成索引获取1—6卷当前章位；不使用已暂停的旧卷章号。"""
-    result = {i: [] for i in range(1, 21)}
+    result = {i: [] for i in range(1, 19)}
     file = root / ROOT_PLAN
     if not file.is_file():
         return result
@@ -130,14 +130,14 @@ def parse_index(root: Path) -> dict[int, list[dict]]:
 def current_outline(root: Path, vol: int) -> str:
     newer = f"03-剧情/章大纲/第{vol:02d}卷-新版.md"
     old = f"03-剧情/章大纲/第{vol:02d}卷.md"
-    if vol in (7, 8, 9, 10) and (root / newer).is_file():
+    if vol in (7, 8) and (root / newer).is_file():
         return newer
     return old
 
 
 def planned_new(root: Path, vol: int, outline: str) -> list[dict]:
     file = root / outline
-    if not file.is_file() or vol < 7 or vol > 10 or "-新版" not in outline:
+    if not file.is_file() or vol < 7 or vol > 8 or "-新版" not in outline:
         return []
     content = file.read_text(encoding="utf-8")
     section = content.split("## 逐章章纲", 1)[-1].split("\n## ", 1)[0]
@@ -151,12 +151,12 @@ def planned_new(root: Path, vol: int, outline: str) -> list[dict]:
 
 
 def planned_new_interludes(root: Path, vol: int) -> list[dict]:
-    """新第七至十卷的插章章纲单独保存在新版插章设计稿，不能漏算。"""
-    rel = "03-剧情/第七至十卷-新版第三方有限视角插章.md"
+    """现行第七至八卷插章章纲由合并版独立设计稿提供。"""
+    rel = "03-剧情/第七至八卷-第三方有限视角插章.md"
     file = root / rel
     if not file.is_file():
         return []
-    tokens = {7: "七", 8: "八", 9: "九", 10: "十"}
+    tokens = {7: "七", 8: "八"}
     result = []
     for line in file.read_text(encoding="utf-8").splitlines():
         m = re.match(r"\|\s*([七八九十])卷(\d{3})后\s*\|\s*【([^】]+)】《([^》]+)》", line)
@@ -269,18 +269,18 @@ def build(root: Path) -> tuple[str, str]:
     authors = read_author_confirmations(root)
     plans = parse_index(root)
     finals = prose_reviews(root)
-    for vol in range(7, 11):
+    for vol in range(7, 9):
         outline = current_outline(root, vol)
         plans[vol] = planned_new(root, vol, outline) + planned_new_interludes(root, vol)
     rows = []
     stats = []
     vol_text = (root / "03-剧情/卷纲/卷大纲.md").read_text(encoding="utf-8") if (root / "03-剧情/卷纲/卷大纲.md").exists() else ""
-    for vol in range(1, 21):
+    for vol in range(1, 19):
         outline = current_outline(root, vol)
         outline_file = root / outline
         volume_file = root / "03-剧情/卷纲/卷大纲.md"
         volume_exists = bool(vol_text and f"| {VOLUMES[vol-1]} |" in vol_text)
-        vol_audit = revision(events, root, vol, "卷纲", "卷", volume_file)
+        vol_audit = revision(events, root, vol, "卷纲", "卷", stage_file(root, vol, "卷纲", "卷", {}))
         author = authors.get(vol, {})
         chapters = plans[vol]
         counters = {stage: [0, 0] for stage in STAGES}
@@ -320,11 +320,9 @@ def build(root: Path) -> tuple[str, str]:
             elif vol == 6 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）"
             elif vol == 7 and author:
-                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文已写、待审（作者确认）"
+                last = (last + "；" if last != "无正式审核记录" else "") + "合卷稿已写，章纲、简写及正文对应现行上游的新版审核待完成"
             elif vol == 8 and author:
-                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文撰写中、待审（作者确认）"
-            elif vol in (9, 10) and author:
-                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待写（作者确认）"
+                last = (last + "；" if last != "无正式审核记录" else "") + "合卷简写已写，现行审核门禁待执行；正式正文未写"
             rows.append({
                 "卷": VOLUMES[vol-1], "篇目": unit, "类型": chapter["kind"],
                 "标题": chapter["title"],
@@ -346,7 +344,7 @@ def build(root: Path) -> tuple[str, str]:
         "> 作者确认“审核完成”只证明流程状态，**不等于取得正式报告、具体成绩或本次版本复审通过**；未知结论、分数和源稿路径不补造。",
         "> 旧章纲停用不计新章，未分章卷仅显示卷级进度；作者人工复核进度表独立且绝不自动修改。",
         "",
-        "## 一、20卷总览",
+        "## 一、18卷总览",
         "",
         "| 卷 | 有效篇目数 | 卷纲(写/审) | 章纲(写/审) | 简写(写/审) | 正文(写/审) | 章纲版本 |",
         "| --- | ---: | --- | --- | --- | --- | --- |",
@@ -393,8 +391,8 @@ def build(root: Path) -> tuple[str, str]:
 def record(root: Path, args: argparse.Namespace) -> None:
     if args.stage not in STAGES or args.result not in STATUS:
         raise ValueError("阶段或审核结论无效")
-    if not 1 <= args.volume <= 20:
-        raise ValueError("卷号应为1—20")
+    if not 1 <= args.volume <= 18:
+        raise ValueError("卷号应为1—18")
     unit = "卷" if args.stage == "卷纲" else args.unit
     if not unit:
         raise ValueError("非卷纲审核必须提供 --unit")
@@ -404,7 +402,7 @@ def record(root: Path, args: argparse.Namespace) -> None:
     if not report.is_file():
         raise ValueError("正式审核报告不存在，不能登记已审")
     plan = parse_index(root)
-    if args.volume in range(7, 11):
+    if args.volume in range(7, 9):
         plan[args.volume] = planned_new(root, args.volume, current_outline(root, args.volume)) + planned_new_interludes(root, args.volume)
     chapter = next((c for c in plan[args.volume] if c["unit"] == unit), None)
     if args.stage != "卷纲" and chapter is None:
