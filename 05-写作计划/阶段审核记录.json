@@ -3,6 +3,18 @@
   "reviews": [
     {
       "volume": 5,
+      "unit": "第180章",
+      "stage": "正文",
+      "result": "待核实",
+      "score": 83.3,
+      "report": "08-审稿/第五卷第180章-独立正文质量审查与修订复审-20261106.md",
+      "source": "06-正文/第五卷-荒原流亡·残火未熄/第180章.md",
+      "source_sha256": "ce74070f379caef2e6f8ef70684dff60f3aa7eae264a79b81d2dcf9e2644060c",
+      "reviewed_at": "2026-11-06T21:26:36+08:00",
+      "notes": "文学质量PASS、AI味37项专项通过；对有效简写的语义对应一致，但其正式审核通过凭证仍待核；GitHub端MD/TXT/第五卷合订本转换等值，正式Python检查、XLSX镜像、阶段进度生成未验收"
+    },
+    {
+      "volume": 5,
       "unit": "第176章",
       "stage": "正文",
       "result": "待核实",
