@@ -126,15 +126,34 @@ def planned_new(root: Path, vol: int, outline: str) -> list[dict]:
     return result
 
 
+def planned_new_interludes(root: Path, vol: int) -> list[dict]:
+    """新第七至十卷的插章章纲单独保存在新版插章设计稿，不能漏算。"""
+    rel = "03-剧情/第七至十卷-新版第三方有限视角插章.md"
+    file = root / rel
+    if not file.is_file():
+        return []
+    tokens = {7: "七", 8: "八", 9: "九", 10: "十"}
+    result = []
+    for line in file.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"\|\s*([七八九十])卷(\d{3})后\s*\|\s*【([^】]+)】《([^》]+)》", line)
+        if m and m.group(1) == tokens[vol]:
+            result.append(dict(unit="插章" + m.group(2), kind="插章",
+                               title=m.group(3) + "·" + m.group(4),
+                               hint="design_pending_review",
+                               chapter_outline=rel))
+    return result
+
+
 def find_artifacts(root: Path, vol: int, unit: str) -> dict:
     cn_vol = VOLUMES[vol - 1]
     brief_dir = root / f"05-写作计划/章节简写/第{vol:02d}卷"
     prose_dir = root / "06-正文" / cn_vol
     matches = []
-    if re.fullmatch(r"第\d{3}章", unit):
-        matches = sorted(brief_dir.glob(unit + "*-简写.md"))
-        prose = prose_dir / (unit + ".md")
-        prose_matches = [prose] if prose.is_file() else sorted(prose_dir.glob(unit + "-*.md"))
+    if re.fullmatch(r"第\d{3}章", unit) or re.fullmatch(r"卷内\d{3}章", unit):
+        base = "第" + unit.removeprefix("卷内") if unit.startswith("卷内") else unit
+        matches = sorted(brief_dir.glob(base + "*-简写.md"))
+        prose = prose_dir / (base + ".md")
+        prose_matches = [prose] if prose.is_file() else sorted(prose_dir.glob(base + "-*.md"))
     elif unit.startswith("插章"):
         number = unit.removeprefix("插章")
         matches = sorted(brief_dir.glob("插章" + number + "*-简写.md"))
@@ -199,7 +218,7 @@ def build(root: Path) -> tuple[str, str]:
     finals = prose_reviews(root)
     for vol in range(7, 11):
         outline = current_outline(root, vol)
-        plans[vol] = planned_new(root, vol, outline)
+        plans[vol] = planned_new(root, vol, outline) + planned_new_interludes(root, vol)
     rows = []
     stats = []
     vol_text = (root / "03-剧情/卷大纲.md").read_text(encoding="utf-8") if (root / "03-剧情/卷大纲.md").exists() else ""
@@ -218,10 +237,10 @@ def build(root: Path) -> tuple[str, str]:
         for chapter in chapters:
             unit = chapter["unit"]
             artifacts = find_artifacts(root, vol, unit)
-            files = dict(chapter_outline=outline, **artifacts)
+            files = dict(chapter_outline=chapter.get('chapter_outline', outline), **artifacts)
             stage_exists = {
                 "卷纲": volume_exists,
-                "章纲": outline_file.is_file(),
+                "章纲": (root / files["chapter_outline"]).is_file(),
                 "简写": bool(files["brief"]),
                 "正文": bool(files["prose"]),
             }
@@ -317,12 +336,12 @@ def record(root: Path, args: argparse.Namespace) -> None:
         raise ValueError("正式审核报告不存在，不能登记已审")
     plan = parse_index(root)
     if args.volume in range(7, 11):
-        plan[args.volume] = planned_new(root, args.volume, current_outline(root, args.volume))
+        plan[args.volume] = planned_new(root, args.volume, current_outline(root, args.volume)) + planned_new_interludes(root, args.volume)
     chapter = next((c for c in plan[args.volume] if c["unit"] == unit), None)
     if args.stage != "卷纲" and chapter is None:
         raise ValueError("现行章纲里找不到篇目标识，检查卷号/编号/新版章纲")
     artifacts = find_artifacts(root, args.volume, unit)
-    files = dict(chapter_outline=current_outline(root, args.volume), **artifacts)
+    files = dict(chapter_outline=(chapter or {}).get('chapter_outline', current_outline(root, args.volume)), **artifacts)
     file = stage_file(root, args.volume, args.stage, unit, files)
     if not file or not file.is_file():
         raise ValueError("受审核源稿文件不存在，不能登记已审")
