@@ -187,6 +187,193 @@
       "source": "03-剧情/章大纲/第07卷-新版.md",
       "source_sha256": "2b21f6e321f72eb7f787e974666c252f0be3a75482d6f628bf464bdeb2193190",
       "reviewed_at": "2026-11-06T12:19:37+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷",
+      "stage": "卷纲",
+      "result": "通过",
+      "score": 81.45,
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/卷纲/第十卷-守护与伤害.md",
+      "source_sha256": "ae4431a54240023fa0636d60889cfad8a171a925a816f4a08e2e53421bcf1fb2",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内001章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内002章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内003章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内004章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内005章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内006章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内007章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内008章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内009章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内010章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内011章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内012章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内013章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "卷内014章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第10卷-新版.md",
+      "source_sha256": "6df2cbc8f72015b6ba0e29b10a3de858faa8c7552c79ee59a6ab0d48b284686d",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "插章006",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
+      "source_sha256": "21409fee1db1fe991f99067960b085dd63ff76c30403fe6ff2beb032b7b9b58b",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
+    },
+    {
+      "volume": 10,
+      "unit": "插章013",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第十卷-卷纲章纲80分达标正式复审-2026-11-06.md",
+      "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
+      "source_sha256": "21409fee1db1fe991f99067960b085dd63ff76c30403fe6ff2beb032b7b9b58b",
+      "reviewed_at": "2026-11-06 12:35:14+08:00"
     }
   ]
 }
