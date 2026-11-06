@@ -171,19 +171,31 @@ def planned_new_interludes(root: Path, vol: int) -> list[dict]:
 def find_artifacts(root: Path, vol: int, unit: str) -> dict:
     cn_vol = VOLUMES[vol - 1]
     brief_dir = root / f"05-写作计划/章节简写/第{vol:02d}卷"
-    prose_dir = root / "06-正文" / cn_vol
+    prose_candidates = sorted(p for p in (root / "06-正文").glob(f"{cn_vol}*") if p.is_dir())
+    prose_dir = prose_candidates[0] if prose_candidates else root / "06-正文" / cn_vol
     matches = []
     if re.fullmatch(r"第\d{3}章", unit) or re.fullmatch(r"卷内\d{3}章", unit):
         base = "第" + unit.removeprefix("卷内") if unit.startswith("卷内") else unit
         matches = sorted(brief_dir.glob(base + "*-简写.md"))
         prose = prose_dir / (base + ".md")
         prose_matches = [prose] if prose.is_file() else sorted(prose_dir.glob(base + "-*.md"))
+        if not prose_matches and vol == 7:
+            num = int(re.search(r"\d+", unit).group())
+            if num < 100:
+                global_base = f"第{217 + num:03d}章"
+                global_prose = prose_dir / f"{global_base}.md"
+                prose_matches = [global_prose] if global_prose.is_file() else sorted(prose_dir.glob(global_base + "-*.md"))
     elif unit.startswith("插章"):
         number = unit.removeprefix("插章")
         matches = sorted(brief_dir.glob("插章" + number + "*-简写.md"))
         prose_matches = sorted(prose_dir.glob("插章" + number + "*md"))
         # 插046、插章46等历史命名也要精准匹配；不能错连其它章节。
         prose_matches += sorted(prose_dir.glob(f"插{int(number):03d}-*.md"))
+        if not prose_matches and vol == 7:
+            num = int(number)
+            if num < 100:
+                global_num = 217 + num
+                prose_matches = sorted(prose_dir.glob(f"插章{global_num}*md"))
         prose_matches = [p for p in prose_matches if p.is_file()]
     else:
         prose_matches = []
@@ -305,6 +317,10 @@ def build(root: Path) -> tuple[str, str]:
                 last = (last + "；" if last != "无正式审核记录" else "") + "四阶段审核均已完成（作者确认；未关联的分数及报告待核）"
             elif vol == 5 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲已审；简写、正文待审（作者确认）"
+            elif vol == 6 and author:
+                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）"
+            elif vol == 7 and author:
+                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文已写、待审（作者确认）"
             rows.append({
                 "卷": VOLUMES[vol-1], "篇目": unit, "类型": chapter["kind"],
                 "标题": chapter["title"],
