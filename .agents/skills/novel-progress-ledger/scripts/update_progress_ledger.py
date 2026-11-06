@@ -302,7 +302,11 @@ def build(root: Path) -> tuple[str, str]:
     for row in rows:
         def esc(value):
             return str(value).replace("|", "／").replace("\n", " ")
-        lines.append("| " + " | ".join(esc(row[c]) for c in (
+        page_row = dict(row)
+        target = row["正文路径"] or row["简写路径"] or row["章纲路径"]
+        if target:
+            page_row["篇目"] = f"[{row['篇目']}](../{target})"
+        lines.append("| " + " | ".join(esc(page_row[c]) for c in (
             "卷", "篇目", "标题", "卷纲", "章纲", "简写", "正文", "最新审核结果")) + " |")
     lines += ["", "## 三、数据与使用", "",
               f"- 最新逐章清单：{CSV_FILE}；阶段审核事件源：{EVENTS_FILE}。",
