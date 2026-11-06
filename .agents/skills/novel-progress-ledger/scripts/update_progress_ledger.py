@@ -296,7 +296,7 @@ def build(root: Path) -> tuple[str, str]:
     stream = io.StringIO()
     writer = csv.DictWriter(stream, fieldnames=list(rows[0]) if rows else [
         "卷", "篇目", "类型", "标题", *STAGES, "最新审核结果",
-        "章纲路径", "简写路径", "正文路径", "终审报告"])
+        "章纲路径", "简写路径", "正文路径", "终审报告"], lineterminator="\n")
     writer.writeheader()
     writer.writerows(rows)
     return "\n".join(lines), stream.getvalue()
