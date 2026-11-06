@@ -2,6 +2,7 @@
 
 > 仓库当前以 [review-core.md](review-core.md) 和 [37项表](ai-style-37-checks.md) 为准。此前曾按对话插件 `novel-quality-review` 设计过对齐规则，但**不代表当前已实际核对或同步了插件运行版本**；仓库更新不会自动更新对话插件。
 
+- **新增注意**：仓库的相邻上游一致性硬门禁见 [stage-consistency-gate.md](stage-consistency-gate.md)；卷纲对总纲、章纲对卷纲、简写对章纲、正文对简写，确证核心剧情偏离一票打回，不受评分影响。**本次仅修改仓库 Skill 与项目规则；已安装的独立对话插件未核验/未更新，不能声称插件也已经执行这道门禁**。实际调用该对话插件时应显式采用仓库的最新流程，或先单独更新插件发行版本。
 - 仓库路径：[Skill](../../SKILL.md) → [正文默认审查模板](chapter-review-default.md) → [唯一审稿核心](review-core.md) → [AI味37项](ai-style-37-checks.md)。
 - 历史插件规则路径：`skills/novel-quality-review/references/review-core.md`（不在本仓中）。
 - 历史对齐目标：正文七维100分、AI味37项独立裁决、简写剧情模式、同根因不重复扣分、只凭确证实质 P0/P1 阻断文学质量、工程交付单独判断、主动审核正收益自动改稿且单章最多5轮。
