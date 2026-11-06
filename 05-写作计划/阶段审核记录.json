@@ -2,6 +2,18 @@
   "schema_version": 1,
   "reviews": [
     {
+      "volume": 5,
+      "unit": "第145章",
+      "stage": "正文",
+      "result": "待核实",
+      "score": 80.2,
+      "report": "08-审稿/第五卷第145章-完整正文质量审查与修订复审-20261106.md",
+      "source": "06-正文/第五卷-荒原流亡·残火未熄/第145章.md",
+      "source_sha256": "08d46fa244a4c133a91d82f7036ed427167be6aa07f5d2a7cac1fd69f1cb0eb7",
+      "reviewed_at": "2026-11-06T19:25:16+08:00",
+      "notes": "正文文学及AI专项通过；上游简写仍标待审核，正式一致性阶段门禁待核实；TXT GitHub端对照，Python、XLSX和进度生成未验收"
+    },
+    {
       "volume": 6,
       "unit": "卷",
       "stage": "卷纲",
