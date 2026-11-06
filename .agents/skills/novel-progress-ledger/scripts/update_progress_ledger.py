@@ -29,6 +29,7 @@ ROOT_PLAN = "05-写作计划/章节规划总表.md"
 REVIEW_REGISTER = "08-审稿/章节最终审核总表.csv"
 EVENTS_FILE = "05-写作计划/阶段审核记录.json"
 AUTHOR_CONFIRMATIONS_FILE = "05-写作计划/创作阶段状态确认.json"
+WORK_IN_PROGRESS_FILE = "05-写作计划/正文审核进行中.json"
 MD_FILE = "05-写作计划/创作阶段进度.md"
 CSV_FILE = "05-写作计划/创作阶段进度.csv"
 
@@ -43,6 +44,15 @@ def read_events(root: Path) -> list[dict]:
         return []
     payload = json.loads(file.read_text(encoding="utf-8-sig"))
     return [e for e in payload.get("reviews", []) if not e.get("invalidated_by_volume_merge")]
+
+
+def read_work_in_progress(root: Path) -> dict[str, dict]:
+    """进行中证据只用于展示，不计入正式审核、不影响门禁。"""
+    file = root / WORK_IN_PROGRESS_FILE
+    if not file.is_file():
+        return {}
+    entries = json.loads(file.read_text(encoding="utf-8-sig")).get("entries", [])
+    return {e["source"]: e for e in entries if e.get("source") and e.get("report")}
 
 
 def read_author_confirmations(root: Path) -> dict[int, dict]:
@@ -269,6 +279,7 @@ def latest_review(staged: list[tuple[str, dict | None]], csv_row: dict | None) -
 def build(root: Path) -> tuple[str, str]:
     events = read_events(root)
     authors = read_author_confirmations(root)
+    work_in_progress = read_work_in_progress(root)
     plans = parse_index(root)
     finals = prose_reviews(root)
     for vol in range(7, 9):
@@ -326,6 +337,11 @@ def build(root: Path) -> tuple[str, str]:
             elif vol == 8 and author:
                 prose_note = "正文已写、待审" if files["prose"] else "正式正文未写"
                 last = (last + "；" if last != "无正式审核记录" else "") + f"合卷简写已写，现行审核门禁待执行；{prose_note}"
+            progress = work_in_progress.get(files["prose"])
+            if progress and (root / progress["report"]).is_file():
+                source = root / files["prose"]
+                version_note = "" if source.is_file() and digest(source) == progress.get("sha256") else "（正文版本已变，进度待核）"
+                last = (last + "；" if last != "无正式审核记录" else "") + f"正文初审进行中{version_note}，未完成正式审核；工作记录：{progress['report']}"
             rows.append({
                 "卷": VOLUMES[vol-1], "篇目": unit, "类型": chapter["kind"],
                 "标题": chapter["title"],
@@ -345,6 +361,7 @@ def build(root: Path) -> tuple[str, str]:
         "",
         "> 本表由现行章纲、稿件、实际审核报告、历史正文终审CSV及作者明确确认的流程状态生成；禁止手改。",
         "> 作者确认“审核完成”只证明流程状态，**不等于取得正式报告、具体成绩或本次版本复审通过**；未知结论、分数和源稿路径不补造。",
+        "> 正文初审进行中仅表示已开展部分工作，不计入已审数量，也不代表正式审核通过。",
         "> 旧章纲停用不计新章，未分章卷仅显示卷级进度；作者人工复核进度表独立且绝不自动修改。",
         "",
         "## 一、18卷总览",
@@ -376,6 +393,7 @@ def build(root: Path) -> tuple[str, str]:
             "卷", "篇目", "标题", "卷纲", "章纲", "简写", "正文", "最新审核结果")) + " |")
     lines += ["", "## 三、数据与使用", "",
               f"- 最新逐章清单：{CSV_FILE}；真实审稿报告事件：{EVENTS_FILE}；作者流程状态确认：{AUTHOR_CONFIRMATIONS_FILE}。",
+              f"- 未完成正文初审的进展及源稿指纹：{WORK_IN_PROGRESS_FILE}，不作为正式审核事件。",
               f"- 正文终审来源：{REVIEW_REGISTER}（含正式报告路径和旧版本说明）。",
               "- 有效审核需真实报告文件和受审稿源的SHA256；修改源稿不抹旧分数，但自动提示需复审。",
               "- 更新：python .agents/skills/novel-progress-ledger/scripts/update_progress_ledger.py --project-dir .",
