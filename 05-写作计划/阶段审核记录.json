@@ -979,6 +979,215 @@
       "source": "03-剧情/章大纲/第08卷-新版.md",
       "source_sha256": "69abd0b9c3049eb936efdba6377a6db740f887ca63ee91a14b9c5e8ff89b3874",
       "reviewed_at": "2026-11-06T12:59:47+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷",
+      "stage": "卷纲",
+      "result": "通过",
+      "score": 82.9,
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/卷纲/第七卷-逃向海的路.md",
+      "source_sha256": "4e857d7f0feac026264de10c4fcef4e28a75efe71b33ded555b76738674b6dd0",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内001章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内002章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内003章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内004章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内005章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内006章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内007章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内008章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内009章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内010章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内011章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内012章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内013章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内014章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内015章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "卷内016章",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/章大纲/第07卷-新版.md",
+      "source_sha256": "623d7ebc8ad9c2404a4610dbf5fa865ff4f34da4e7478f0ae700d9155fa7209c",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "插章006",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
+      "source_sha256": "394f551e1db110bb9521bfbbe556ba59a0760ecb6047382cc8a371f2d48cfc4e",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
+    },
+    {
+      "volume": 7,
+      "unit": "插章013",
+      "stage": "章纲",
+      "result": "通过",
+      "score": "",
+      "report": "08-审稿/第七卷-章纲优化后正式复审-2026-11-06.md",
+      "source": "03-剧情/第七至十卷-新版第三方有限视角插章.md",
+      "source_sha256": "394f551e1db110bb9521bfbbe556ba59a0760ecb6047382cc8a371f2d48cfc4e",
+      "reviewed_at": "2026-11-06T13:02:11+08:00"
     }
   ]
 }
