@@ -22,6 +22,8 @@ VOLUMES = [f"第{ch}卷" for ch in CN[:9]] + ["第十卷"] + [
     "第十六卷", "第十七卷", "第十八卷",
 ]
 STAGES = ("卷纲", "章纲", "简写", "正文")
+# 合并卷正文按全书连续章号命名：卷内号 + 偏移 = 全书号（第七卷001→第218章，第八卷001→第248章）
+GLOBAL_OFFSETS = {7: 217, 8: 247}
 STATUS = {"通过", "不通过", "待复核", "待核实"}
 ROOT_PLAN = "05-写作计划/章节规划总表.md"
 REVIEW_REGISTER = "08-审稿/章节最终审核总表.csv"
@@ -179,10 +181,10 @@ def find_artifacts(root: Path, vol: int, unit: str) -> dict:
         matches = sorted(brief_dir.glob(base + "*-简写.md"))
         prose = prose_dir / (base + ".md")
         prose_matches = [prose] if prose.is_file() else sorted(prose_dir.glob(base + "-*.md"))
-        if not prose_matches and vol == 7:
+        if not prose_matches and vol in GLOBAL_OFFSETS:
             num = int(re.search(r"\d+", unit).group())
             if num < 100:
-                global_base = f"第{217 + num:03d}章"
+                global_base = f"第{GLOBAL_OFFSETS[vol] + num:03d}章"
                 global_prose = prose_dir / f"{global_base}.md"
                 prose_matches = [global_prose] if global_prose.is_file() else sorted(prose_dir.glob(global_base + "-*.md"))
     elif unit.startswith("插章"):
@@ -191,10 +193,10 @@ def find_artifacts(root: Path, vol: int, unit: str) -> dict:
         prose_matches = sorted(prose_dir.glob("插章" + number + "*md"))
         # 插046、插章46等历史命名也要精准匹配；不能错连其它章节。
         prose_matches += sorted(prose_dir.glob(f"插{int(number):03d}-*.md"))
-        if not prose_matches and vol == 7:
+        if not prose_matches and vol in GLOBAL_OFFSETS:
             num = int(number)
             if num < 100:
-                global_num = 217 + num
+                global_num = GLOBAL_OFFSETS[vol] + num
                 prose_matches = sorted(prose_dir.glob(f"插章{global_num}*md"))
         prose_matches = [p for p in prose_matches if p.is_file()]
     else:
@@ -322,7 +324,8 @@ def build(root: Path) -> tuple[str, str]:
             elif vol == 7 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "合卷稿已写，章纲、简写及正文对应现行上游的新版审核待完成"
             elif vol == 8 and author:
-                last = (last + "；" if last != "无正式审核记录" else "") + "合卷简写已写，现行审核门禁待执行；正式正文未写"
+                prose_note = "正文已写、待审" if files["prose"] else "正式正文未写"
+                last = (last + "；" if last != "无正式审核记录" else "") + f"合卷简写已写，现行审核门禁待执行；{prose_note}"
             rows.append({
                 "卷": VOLUMES[vol-1], "篇目": unit, "类型": chapter["kind"],
                 "标题": chapter["title"],
