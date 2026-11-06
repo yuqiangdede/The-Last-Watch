@@ -58,6 +58,7 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
         "02-人物/配角",
         "02-人物/辅助角色",
         "03-剧情",
+        "03-剧情/卷纲",
         "04-文风",
         "05-写作计划/章节任务卡",
         "05-写作计划/插章任务卡",
@@ -267,7 +268,7 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
 - **第二卷**：
 - **第三卷**：
 """)
-    write_file_if_not_exists(target_dir / "03-剧情" / "第一卷-启程.md", f"""# 第一卷剧情大纲
+    write_file_if_not_exists(target_dir / "03-剧情" / "卷纲" / "第一卷-启程.md", f"""# 第一卷剧情大纲
 
 ## 核心因果三问
 1. **本卷发生了什么核心事件？**：
@@ -415,7 +416,7 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
 
     # 编译生成 00-人物档案.md, 01-大纲.md, 03-文风基准.md, 99-章节摘要.md
     write_file_if_not_exists(target_dir / "00-人物档案.md", f"# 《{title}》人物速查（只读索引）\n\n> ⚠️ 本文件由系统自动从 `02-人物/` 提取生成，请勿在此直接修改。\n\n- 主角：见 [02-人物/主角/主角.md](02-人物/主角/主角.md)\n")
-    write_file_if_not_exists(target_dir / "01-大纲.md", f"# 《{title}》总纲与分卷索引\n\n> 详细情节请参阅 `03-剧情/` 与 `05-写作计划/`。\n\n## 主线索引\n- 全书主线：[03-剧情/全书主线.md](03-剧情/全书主线.md)\n- 第一卷：[03-剧情/第一卷-启程.md](03-剧情/第一卷-启程.md)\n")
+    write_file_if_not_exists(target_dir / "01-大纲.md", f"# 《{title}》总纲与分卷索引\n\n> 详细情节请参阅 `03-剧情/` 与 `05-写作计划/`。\n\n## 主线索引\n- 全书主线：[03-剧情/全书主线.md](03-剧情/全书主线.md)\n- 第一卷：[03-剧情/卷纲/第一卷-启程.md](03-剧情/卷纲/第一卷-启程.md)\n")
     write_file_if_not_exists(target_dir / "03-文风基准.md", f"# 文风基准\n\n> 权威源见 `04-文风/`。\n\n## 核心锚点\n- 参见 [04-文风/原创文风样例.md](04-文风/原创文风样例.md)\n")
     write_file_if_not_exists(target_dir / "99-章节摘要.md", "# 章节摘要\n\n> 镜像自 `07-创作记忆/章节摘要.md`。\n")
 

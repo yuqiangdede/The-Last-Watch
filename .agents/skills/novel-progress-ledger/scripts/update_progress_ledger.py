@@ -62,7 +62,7 @@ def read_author_confirmations(root: Path) -> dict[int, dict]:
 
 def stage_file(root: Path, volume: int, stage: str, unit: str, files: dict) -> Path | None:
     if stage == "卷纲":
-        return root / "03-剧情/卷大纲.md"
+        return root / "03-剧情/卷纲/卷大纲.md"
     if stage == "章纲":
         return root / files["chapter_outline"]
     if stage == "简写":
@@ -256,11 +256,11 @@ def build(root: Path) -> tuple[str, str]:
         plans[vol] = planned_new(root, vol, outline) + planned_new_interludes(root, vol)
     rows = []
     stats = []
-    vol_text = (root / "03-剧情/卷大纲.md").read_text(encoding="utf-8") if (root / "03-剧情/卷大纲.md").exists() else ""
+    vol_text = (root / "03-剧情/卷纲/卷大纲.md").read_text(encoding="utf-8") if (root / "03-剧情/卷纲/卷大纲.md").exists() else ""
     for vol in range(1, 21):
         outline = current_outline(root, vol)
         outline_file = root / outline
-        volume_file = root / "03-剧情/卷大纲.md"
+        volume_file = root / "03-剧情/卷纲/卷大纲.md"
         volume_exists = bool(vol_text and f"| {VOLUMES[vol-1]} |" in vol_text)
         vol_audit = revision(events, root, vol, "卷纲", "卷", volume_file)
         author = authors.get(vol, {})
