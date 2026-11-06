@@ -26,6 +26,7 @@ STATUS = {"通过", "不通过", "待复核", "待核实"}
 ROOT_PLAN = "05-写作计划/章节规划总表.md"
 REVIEW_REGISTER = "08-审稿/章节最终审核总表.csv"
 EVENTS_FILE = "05-写作计划/阶段审核记录.json"
+AUTHOR_CONFIRMATIONS_FILE = "05-写作计划/创作阶段状态确认.json"
 MD_FILE = "05-写作计划/创作阶段进度.md"
 CSV_FILE = "05-写作计划/创作阶段进度.csv"
 
@@ -40,6 +41,23 @@ def read_events(root: Path) -> list[dict]:
         return []
     payload = json.loads(file.read_text(encoding="utf-8"))
     return payload.get("reviews", [])
+
+
+def read_author_confirmations(root: Path) -> dict[int, dict]:
+    """作者确认是流程完成状态，不得冒充含分数/报告/版本hash的专业审稿证据。"""
+    file = root / AUTHOR_CONFIRMATIONS_FILE
+    if not file.is_file():
+        return {}
+    payload = json.loads(file.read_text(encoding="utf-8"))
+    confirmations = {}
+    for key, stages in payload.get("volumes", {}).items():
+        vol = int(key)
+        if not 1 <= vol <= 20:
+            raise ValueError(f"作者确认卷号非法：{vol}")
+        if any(s not in STAGES for s in stages):
+            raise ValueError(f"作者确认包含未知阶段：{vol}")
+        confirmations[vol] = stages
+    return confirmations
 
 
 def stage_file(root: Path, volume: int, stage: str, unit: str, files: dict) -> Path | None:
@@ -195,8 +213,24 @@ def audit_label(review: dict | None) -> str:
     return "已审:" + str(review["result"]) + (f"({score}分)" if score != "" else "")
 
 
-def state(exists: bool, audit: dict | None) -> str:
-    return ("已写" if exists else "未写") + "／" + audit_label(audit)
+def state(exists: bool, audit: dict | None, author: dict | None = None,
+          official: dict | None = None) -> str:
+    """写作、审核分别计数；作者声明与实际有报告的审查结论明确区分。"""
+    author = author or {}
+    written = ("已写" if exists else
+               ("已写（作者确认；稿件待核）" if author.get("written") is True else "未写"))
+    if audit:
+        reviewed = audit_label(audit)
+    elif official:
+        score = official.get("最终总分", "")
+        reviewed = "有终审登记（" + (str(score) + "分；" if score else "") + "当前版本待核）"
+    elif author.get("reviewed") is True:
+        reviewed = "已审（作者确认；报告待关联）"
+    elif author.get("reviewed") is False:
+        reviewed = "待审（作者确认）"
+    else:
+        reviewed = "未审"
+    return written + "／" + reviewed
 
 
 def latest_review(staged: list[tuple[str, dict | None]], csv_row: dict | None) -> str:
@@ -214,6 +248,7 @@ def latest_review(staged: list[tuple[str, dict | None]], csv_row: dict | None) -
 
 def build(root: Path) -> tuple[str, str]:
     events = read_events(root)
+    authors = read_author_confirmations(root)
     plans = parse_index(root)
     finals = prose_reviews(root)
     for vol in range(7, 11):
@@ -228,11 +263,13 @@ def build(root: Path) -> tuple[str, str]:
         volume_file = root / "03-剧情/卷大纲.md"
         volume_exists = bool(vol_text and f"| {VOLUMES[vol-1]} |" in vol_text)
         vol_audit = revision(events, root, vol, "卷纲", "卷", volume_file)
+        author = authors.get(vol, {})
         chapters = plans[vol]
         counters = {stage: [0, 0] for stage in STAGES}
-        if volume_exists:
+        if volume_exists or author.get("卷纲", {}).get("written") is True:
             counters["卷纲"][0] = 1
-        if vol_audit and not vol_audit.get("stale"):
+        if ((vol_audit and not vol_audit.get("stale")) or
+                author.get("卷纲", {}).get("reviewed") is True):
             counters["卷纲"][1] = 1
         for chapter in chapters:
             unit = chapter["unit"]
@@ -244,30 +281,32 @@ def build(root: Path) -> tuple[str, str]:
                 "简写": bool(files["brief"]),
                 "正文": bool(files["prose"]),
             }
+            existing = finals.get(files["prose"]) if files["prose"] else None
             reviews = {}
             for stage in STAGES:
                 file = stage_file(root, vol, stage, unit, files)
                 reviews[stage] = revision(events, root, vol, stage, unit, file)
                 if stage != "卷纲":
-                    if stage_exists[stage]:
+                    claim = author.get(stage, {})
+                    if stage_exists[stage] or claim.get("written") is True:
                         counters[stage][0] += 1
-                    if reviews[stage] and not reviews[stage].get("stale"):
+                    if (claim.get("reviewed") is True or
+                            (reviews[stage] and not reviews[stage].get("stale")) or
+                            (stage == "正文" and existing and claim.get("reviewed") is not False)):
                         counters[stage][1] += 1
-            existing = finals.get(files["prose"], None) if files["prose"] else None
-            if existing and not reviews["正文"]:
-                counters["正文"][1] += 1
             last = latest_review(list(reviews.items()), existing)
+            if vol <= 4 and author:
+                last = (last + "；" if last != "无正式审核记录" else "") + "四阶段审核均已完成（作者确认；未关联的分数及报告待核）"
+            elif vol == 5 and author:
+                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲已审；简写、正文待审（作者确认）"
             rows.append({
                 "卷": VOLUMES[vol-1], "篇目": unit, "类型": chapter["kind"],
                 "标题": chapter["title"],
-                **{stage: state(stage_exists[stage],
-                                 reviews[stage] if stage != "正文" or not existing else
-                                 (reviews[stage] or {
-                                     "result": "参考终审登记", "score": existing.get("最终总分", "")
-                                 }))
+                **{stage: state(stage_exists[stage], reviews[stage],
+                                 author.get(stage, {}), existing if stage == "正文" else None)
                    for stage in STAGES},
                 "最新审核结果": last,
-                "章纲路径": outline, "简写路径": files["brief"],
+                "章纲路径": files["chapter_outline"], "简写路径": files["brief"],
                 "正文路径": files["prose"],
                 "终审报告": (existing or {}).get("审核报告", ""),
             })
@@ -277,8 +316,8 @@ def build(root: Path) -> tuple[str, str]:
     lines = [
         f"# 《{title}》四阶段创作进度台账（自动生成）",
         "",
-        "> 本表由实际稿件文件、现行章纲、阶段审核记录与现有正文最终审核CSV自动生成；禁止手改。",
-        "> 写作完成≠审核完成；AI味37项无数值分。正文终审CSV已有分数只作引用，缺最终版本哈希时显示「版本待核」。",
+        "> 本表由现行章纲、稿件、实际审核报告、历史正文终审CSV及作者明确确认的流程状态生成；禁止手改。",
+        "> 作者确认“审核完成”只证明流程状态，**不等于取得正式报告、具体成绩或本次版本复审通过**；未知结论、分数和源稿路径不补造。",
         "> 旧章纲停用不计新章，未分章卷仅显示卷级进度；作者人工复核进度表独立且绝不自动修改。",
         "",
         "## 一、20卷总览",
@@ -309,7 +348,7 @@ def build(root: Path) -> tuple[str, str]:
         lines.append("| " + " | ".join(esc(page_row[c]) for c in (
             "卷", "篇目", "标题", "卷纲", "章纲", "简写", "正文", "最新审核结果")) + " |")
     lines += ["", "## 三、数据与使用", "",
-              f"- 最新逐章清单：{CSV_FILE}；阶段审核事件源：{EVENTS_FILE}。",
+              f"- 最新逐章清单：{CSV_FILE}；真实审稿报告事件：{EVENTS_FILE}；作者流程状态确认：{AUTHOR_CONFIRMATIONS_FILE}。",
               f"- 正文终审来源：{REVIEW_REGISTER}（含正式报告路径和旧版本说明）。",
               "- 有效审核需真实报告文件和受审稿源的SHA256；修改源稿不抹旧分数，但自动提示需复审。",
               "- 更新：python .agents/skills/novel-progress-ledger/scripts/update_progress_ledger.py --project-dir .",
