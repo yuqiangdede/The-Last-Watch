@@ -20,6 +20,7 @@ HEADER = """# 《{title}》章节规划总表（自动生成索引）
 > 工作流：卷大纲 → 章大纲 → 简写 → 正文。
 > 更新命令：python .agents/skills/chinese-novelist/scripts/build_chapter_index.py --project-dir .
 > 检查漂移：同一命令附加 --check。
+> 标为暂停使用的旧章纲不输出章节与旧编号，待新版章纲就绪后重新生成。
 
 | 卷号 | 章号 / 插章位置 | 标题 | 核心事件 / 概要 | 推进目标 | 状态 |
 | --- | --- | --- | --- | --- | --- |"""
@@ -57,6 +58,11 @@ def build(root: Path) -> str:
     for i, path in volumes:
         numeral = NUMERALS[i - 1] if 1 <= i <= len(NUMERALS) else str(i)
         content = path.read_text(encoding="utf-8")
+        # 旧七卷起因合卷而停用；不让仍保留的候选行重新进入现行索引。
+        if "本旧稿的卷次、章号、人物在场及衔接须逐项复核，暂停作为新简写或正文依据" in content:
+            out.append(f"\n## 第{numeral}卷：旧章纲暂停使用（章数待定）")
+            out.append("\n> 旧章节和编号不作为现行写作依据；如另有新版候选，按其文内状态审核，本索引暂不收录。")
+            continue
         title = re.search(r"^# .*?：(.+)$", content, re.M)
         if not title:
             raise ValueError(f"卷文件缺少标题：{path}")
