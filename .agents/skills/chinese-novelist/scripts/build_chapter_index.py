@@ -16,7 +16,7 @@ NUMERALS = [
 
 HEADER = """# 《{title}》章节规划总表（自动生成索引）
 
-> **只读生成文件，严禁手改。** 逐章规划来源：`03-剧情/章大纲/第NN卷.md`；卷级导航：`03-剧情/卷大纲.md`。
+> **只读生成文件，严禁手改。** 逐章规划来源：`03-剧情/章大纲/第NN卷.md`（第07—10卷另有 `第NN卷-新版.md`）；卷级导航：`03-剧情/卷大纲.md`。
 > 工作流：卷大纲 → 章大纲 → 简写 → 正文。
 > 更新命令：python .agents/skills/chinese-novelist/scripts/build_chapter_index.py --project-dir .
 > 检查漂移：同一命令附加 --check。
@@ -41,11 +41,14 @@ def project_title(root: Path) -> str:
 
 def volume_files(folder: Path):
     result = []
-    for path in folder.glob("第*卷.md"):
-        m = re.fullmatch(r"第(\d+)卷\.md", path.name)
+    candidates = {}
+    for path in folder.glob("第*卷*.md"):
+        m = re.fullmatch(r"第(\d+)卷(-新版)?\.md", path.name)
         if m:
-            result.append((int(m.group(1)), path))
-    return sorted(result, key=lambda item: item[0])
+            number = int(m.group(1))
+            if number not in candidates or m.group(2) == "-新版":
+                candidates[number] = path
+    return sorted(candidates.items())
 
 
 def build(root: Path) -> str:
@@ -55,9 +58,19 @@ def build(root: Path) -> str:
         raise ValueError(f"未找到分卷章纲：{folder}")
     out = [HEADER.format(title=project_title(root))]
     seen = set()
-    for i, path in volumes:
+    volume_map = dict(volumes)
+    for i in range(1, max(volume_map) + 1):
         numeral = NUMERALS[i - 1] if 1 <= i <= len(NUMERALS) else str(i)
+        path = volume_map.get(i)
+        if path is None:
+            out.append(f"\n## 第{numeral}卷：现行章纲缺失（章数待定）")
+            out.append("\n> 已删除停用旧稿；需依据现行卷纲重新编写并审核章纲。")
+            continue
         content = path.read_text(encoding="utf-8")
+        if path.stem.endswith("-新版"):
+            out.append(f"\n## 第{numeral}卷：新版章纲待审（章数待定）")
+            out.append("\n> 已有新版逐章候选，尚未分配全书连续章号；待审核和正式编号后纳入索引。")
+            continue
         # 旧七卷起因合卷而停用；不让仍保留的候选行重新进入现行索引。
         if "本旧稿的卷次、章号、人物在场及衔接须逐项复核，暂停作为新简写或正文依据" in content:
             out.append(f"\n## 第{numeral}卷：旧章纲暂停使用（章数待定）")

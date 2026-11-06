@@ -82,8 +82,17 @@ def classify(rel: str) -> str:
 
 def parse_chapters(content: str) -> tuple[list[tuple[int, int]], list[int]]:
     rows = []
+    new_outline = "新版章大纲" in content.splitlines()[0] if content.splitlines() else False
+    in_chapters = False
     for line_no, line in enumerate(content.splitlines(), 1):
+        if new_outline and line.startswith("## 逐章章纲"):
+            in_chapters = True
+            continue
+        if new_outline and in_chapters and line.startswith("## "):
+            in_chapters = False
         match = CHAPTER_OLD.match(line) or CHAPTER_NEW.match(line)
+        if new_outline and in_chapters:
+            match = match or re.match(r"^(\d+)\.\s+\*\*", line)
         if match:
             rows.append((int(match.group(1)), line_no))
     seen: set[int] = set()
@@ -98,7 +107,8 @@ def parse_chapters(content: str) -> tuple[list[tuple[int, int]], list[int]]:
 def planned_count(content: str) -> int | None:
     match = COUNT.search(content)
     if not match:
-        return None
+        newer = re.search(r"^## 逐章章纲（卷内拟定\s*(\d+)\s*章）", content, re.M)
+        return int(newer.group(1)) if newer else None
     # 不把“另5篇插章”误判成常规章节数。
     text = match.group(1).replace("**", "")
     exact = re.fullmatch(r"\s*(\d+)\s*", text)
@@ -140,9 +150,15 @@ def scan(root: Path, expected_volumes: int | None = None, terms: list[str] | Non
     volume_records: list[dict] = []
     nav_path = root / VOLUME_NAV
     nav_text = nav_path.read_text(encoding="utf-8") if nav_path.is_file() else ""
-    nav_numbers = {int(m) for m in re.findall(r"章大纲/第(\d{1,2})卷\.md", nav_text)}
-    found_volumes = {int(m.group(1)): p for p in (root / OUTLINE_DIR).glob("第*卷.md")
-                     if (m := re.fullmatch(r"第(\d+)卷\.md", p.name))} if (root / OUTLINE_DIR).is_dir() else {}
+    nav_numbers = {int(m) for m in re.findall(r"章大纲/第(\d{1,2})卷(?:-新版)?\.md", nav_text)}
+    found_volumes = {}
+    if (root / OUTLINE_DIR).is_dir():
+        for p in sorted((root / OUTLINE_DIR).glob("第*卷*.md")):
+            m = re.fullmatch(r"第(\d+)卷(-新版)?\.md", p.name)
+            if m:
+                number = int(m.group(1))
+                if number not in found_volumes or m.group(2) == "-新版":
+                    found_volumes[number] = p
     if expected_volumes is not None:
         target_volumes = set(range(1, expected_volumes + 1))
     else:
@@ -153,7 +169,7 @@ def scan(root: Path, expected_volumes: int | None = None, terms: list[str] | Non
         issues.append({"severity": "error", "code": "MISSING_BOOK_OUTLINE", "path": MAIN_OUTLINE, "message": "缺失全书主线"})
     for vol in sorted(target_volumes):
         path = found_volumes.get(vol)
-        expected_path = f"{OUTLINE_DIR}/第{vol:02d}卷.md"
+        expected_path = f"{OUTLINE_DIR}/第{vol:02d}卷.md（或第{vol:02d}卷-新版.md）"
         if path is None:
             issues.append({"severity": "error", "code": "MISSING_CHAPTER_OUTLINE", "path": expected_path,
                            "volume": vol, "message": "章纲不存在；不能声称已覆盖该卷"})
