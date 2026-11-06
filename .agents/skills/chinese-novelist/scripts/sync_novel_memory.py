@@ -178,6 +178,8 @@ def compile_views(project_dir: Path) -> dict:
     if mem_summary_path.exists():
         with open(mem_summary_path, 'r', encoding='utf-8') as f:
             sum_text = f.read()
+        # 源文件在一级子目录，镜像位于根目录；将指向项目内的上一级相对链接重定位。
+        sum_text = re.sub(r'(\]\()\.\./([^\s)]+)(\))', r'\1\2\3', sum_text)
         with open(legacy_summary_path, 'w', encoding='utf-8') as f:
             f.write("# 章节摘要（只读镜像视图）\n\n> 权威源位于 `07-创作记忆/章节摘要.md`。\n\n" + sum_text)
 
