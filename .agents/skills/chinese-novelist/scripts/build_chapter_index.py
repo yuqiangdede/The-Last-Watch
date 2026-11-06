@@ -16,7 +16,7 @@ NUMERALS = [
 
 HEADER = """# 《{title}》章节规划总表（自动生成索引）
 
-> **只读生成文件，严禁手改。** 逐章规划来源：`03-剧情/章大纲/第NN卷.md`（第07—10卷另有 `第NN卷-新版.md`）；卷级导航：`03-剧情/卷大纲.md`。
+> **只读生成文件，严禁手改。** 逐章规划来源：`03-剧情/章大纲/第NN卷.md`（第07—10卷另有 `第NN卷-新版.md`）；卷级导航：`03-剧情/卷纲/卷大纲.md`。
 > 工作流：卷大纲 → 章大纲 → 简写 → 正文。
 > 更新命令：python .agents/skills/chinese-novelist/scripts/build_chapter_index.py --project-dir .
 > 检查漂移：同一命令附加 --check。
