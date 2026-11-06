@@ -62,7 +62,13 @@ def read_author_confirmations(root: Path) -> dict[int, dict]:
 
 def stage_file(root: Path, volume: int, stage: str, unit: str, files: dict) -> Path | None:
     if stage == "卷纲":
-        return root / "03-剧情/卷纲/卷大纲.md"
+        # 用目标卷的现行独立卷纲绑定审核指纹，避免别的卷修改总导航后误判本卷审核失效。
+        # 单一独立卷纲存在时使用它；无文件或候选不唯一时保守地回退总卷纲。
+        outline_dir = root / "03-剧情/卷纲"
+        independent = sorted(p for p in outline_dir.glob(f"{VOLUMES[volume - 1]}-*.md") if p.is_file())
+        if len(independent) == 1:
+            return independent[0]
+        return outline_dir / "卷大纲.md"
     if stage == "章纲":
         return root / files["chapter_outline"]
     if stage == "简写":
