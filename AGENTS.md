@@ -20,6 +20,12 @@
 - **保护边界**：`06-正文/`、`06-正文-TXT/`、`05-写作计划/章节简写/` 只读；`05-写作计划/章节规划总表.md` 只由既有生成脚本更新；`07-创作记忆/作者人工复核进度.md` 不自动修改。可证实安全冲突自动最小修复，重大冲突交作者裁决，逐文件保留真实修订时间与历史。
 - 结构巡检示例：`python .agents/skills/novel-setting-maintenance/scripts/audit_setting_structure.py --project-dir . --expected-volumes 20 --check`。该脚本**只是确定性候选扫描**，必须另行完成逐文件语义审查才可宣称设定冲突审查完成。无需也不得创建PR。
 
+## 全书四阶段进度总表（写作／审核后强制同步）
+
+- [novel-progress-ledger Skill](.agents/skills/novel-progress-ledger/SKILL.md) 维护 `05-写作计划/创作阶段进度.md` 与 `05-写作计划/创作阶段进度.csv`，覆盖全20卷、当前有效章纲里每篇编号章与不编号插章。每篇分别记录**卷纲、章纲、章简写、章正文**的“是否已写、是否有证据已审、最新审核结果/分数/报告”；不从旧章纲、作者定稿或完成写作推断质量审核已经通过。
+- 任何四阶段成果物写入、修订、删除、拆章换版或完成正式审核报告后都必须更新阶段审核事件源（真实审核才登记）并重新生成/校验进度表：`python .agents/skills/novel-progress-ledger/scripts/update_progress_ledger.py --project-dir .`，随后附加 `--check` 验证。
+- 现有 `08-审稿/章节最终审核总表.csv`／XLSX 是正文终审权威，不能用阶段台账取代；`07-创作记忆/作者人工复核进度.md` 是作者专属人工复核表，禁止自动更改。历史审核若无最终受审版本验证须显示版本待核，未运行脚本则如实报告未完成。
+
 ## 四阶段成果物独立审核入口（2026-11-02）
 
 - 由 .agents/skills/chinese-novelist/SKILL.md 第0.1节自动分流：**全书大纲**执行 .agents/skills/chinese-novelist/references/guides/review-prompt-01-book-outline.md；**分卷章纲**执行 review-prompt-02-volume-chapter-outline.md；**章节简写**执行 review-prompt-03-chapter-brief.md；**正式正文**执行 review-prompt-04-chapter-prose.md 和 chapter-review-default.md。
