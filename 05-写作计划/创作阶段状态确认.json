@@ -153,6 +153,36 @@
         "review_result": null,
         "review_score": null
       }
+    },
+    "6": {
+      "卷纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 80.8
+      },
+      "章纲": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 80.8
+      },
+      "简写": {
+        "written": true,
+        "reviewed": true,
+        "basis": "author_confirmation",
+        "review_result": "通过",
+        "review_score": 83.5
+      },
+      "正文": {
+        "written": true,
+        "reviewed": false,
+        "basis": "author_confirmation",
+        "review_result": null,
+        "review_score": null
+      }
     }
   }
 }

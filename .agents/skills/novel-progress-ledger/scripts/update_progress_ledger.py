@@ -39,7 +39,7 @@ def read_events(root: Path) -> list[dict]:
     file = root / EVENTS_FILE
     if not file.exists():
         return []
-    payload = json.loads(file.read_text(encoding="utf-8"))
+    payload = json.loads(file.read_text(encoding="utf-8-sig"))
     return payload.get("reviews", [])
 
 
@@ -48,7 +48,7 @@ def read_author_confirmations(root: Path) -> dict[int, dict]:
     file = root / AUTHOR_CONFIRMATIONS_FILE
     if not file.is_file():
         return {}
-    payload = json.loads(file.read_text(encoding="utf-8"))
+    payload = json.loads(file.read_text(encoding="utf-8-sig"))
     confirmations = {}
     for key, stages in payload.get("volumes", {}).items():
         vol = int(key)
