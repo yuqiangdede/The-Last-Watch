@@ -58,6 +58,12 @@
 - 正文、TXT及章节简写**只读不改**；章节规划总表只能从章纲生成。安全且有确认依据的旧设定允许最小修复；无法裁决的重大冲突交作者决定。**只手动执行，不配置定时计划，也不建PR。**
 - 只读机械巡检：`python .agents/skills/novel-setting-maintenance/scripts/audit_setting_structure.py --project-dir . --expected-volumes 20 --check`；关键词证据可重复附加 `--term 人物或势力`。它只能提供结构/链接/版本元数据候选，**AI仍需逐份语义审查**。测试：`python -m unittest discover -s .agents/skills/novel-setting-maintenance/scripts -p "test_*.py"`。
 
+## 全书四阶段创作进度表
+
+- [按卷／按章创作阶段进度（Markdown）](05-写作计划/创作阶段进度.md)：20卷总览、现行章纲每篇编号章和不编号插章的**卷纲、章纲、章简写、章正文**状态，以及最新有证据的审核结果、评分和版本提示。另有 [CSV 机器镜像](05-写作计划/创作阶段进度.csv)。
+- [novel-progress-ledger Skill](.agents/skills/novel-progress-ledger/SKILL.md) 在写作、改稿、审核、换纲后更新两个生成文件；有正式报告才记录有效阶段审核到 `05-写作计划/阶段审核记录.json`，并校验源稿SHA256。正文审查继续优先维护已有最终审核总表，人工复核表不受自动化影响。
+- 重新生成：`python .agents/skills/novel-progress-ledger/scripts/update_progress_ledger.py --project-dir .`；只读检查：同命令加 `--check`。从章节规划总表获取前6卷有效章位，第7—10卷优先使用现行新版章纲；未拆章或旧章纲暂停使用的卷不虚构篇目。
+
 ## 四阶段成果物审核提示词
 
 只需指定审核对象，Skill 自动按成果物类别选择对应提示词；四阶段评分不能混用。
