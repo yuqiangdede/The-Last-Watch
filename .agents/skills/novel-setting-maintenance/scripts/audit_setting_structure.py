@@ -3,7 +3,7 @@
 """小说设定工程：只读巡检材料覆盖、分卷章纲结构、旧路径及关键词证据。
 
 本脚本只提供确定性候选，不会宣称完成剧情/人物/世界观的语义审阅。
-用法：python .agents/skills/novel-setting-maintenance/scripts/audit_setting_structure.py --project-dir . --expected-volumes 20 --check
+用法：python .agents/skills/novel-setting-maintenance/scripts/audit_setting_structure.py --project-dir . --expected-volumes 18 --check
 """
 from __future__ import annotations
 
