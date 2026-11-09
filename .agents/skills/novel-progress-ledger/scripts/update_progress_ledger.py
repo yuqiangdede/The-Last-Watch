@@ -329,7 +329,7 @@ def build(root: Path) -> tuple[str, str]:
             if vol <= 4 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "四阶段审核均已完成（作者确认；未关联的分数及报告待核）"
             elif vol == 5 and author:
-                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）"
+                last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）；简写有43篇历史初审报告，修订后版本待核"
             elif vol == 6 and author:
                 last = (last + "；" if last != "无正式审核记录" else "") + "卷纲、章纲、简写已审；正文待审（作者确认）"
             elif vol == 7 and author:
@@ -353,6 +353,8 @@ def build(root: Path) -> tuple[str, str]:
                 "正文路径": files["prose"],
                 "终审报告": (existing or {}).get("审核报告", ""),
             })
+            if vol == 5 and not reviews["简写"] and author.get("简写", {}).get("reviewed") is True:
+                rows[-1]["简写"] = rows[-1]["简写"].replace("已审（作者确认；报告待关联）", "已审（作者确认；历史初审已关联，现版本待核）")
         stats.append((vol, volume_exists, vol_audit, counters, len(chapters), outline))
     title = (json.loads((root / "novel.project.json").read_text(encoding="utf-8"))
              .get("title", "小说") if (root / "novel.project.json").exists() else "小说")
@@ -395,6 +397,7 @@ def build(root: Path) -> tuple[str, str]:
               f"- 最新逐章清单：{CSV_FILE}；真实审稿报告事件：{EVENTS_FILE}；作者流程状态确认：{AUTHOR_CONFIRMATIONS_FILE}。",
               f"- 未完成正文初审的进展及源稿指纹：{WORK_IN_PROGRESS_FILE}，不作为正式审核事件。",
               f"- 正文终审来源：{REVIEW_REGISTER}（含正式报告路径和旧版本说明）。",
+              "- 第五卷简写历史证据：[43篇逐章初审](../08-审稿/第五卷-43篇逐章简写剧情质量审核-20261106.md)；[审后定向修订与复核](../08-审稿/第五卷-简写定向修订与正文约束复核-20261106.md)。初审覆盖全部43篇；其后37篇修订，复核报告保留R03 P1，未作逐篇重新评分。历史证据不等于现行版本审核通过。",
               "- 有效审核需真实报告文件和受审稿源的SHA256；修改源稿不抹旧分数，但自动提示需复审。",
               "- 更新：python .agents/skills/novel-progress-ledger/scripts/update_progress_ledger.py --project-dir .",
               "- 校验：同命令加 --check。每次完成写作、审核、阶段跨越或章纲重排后必须更新。",
