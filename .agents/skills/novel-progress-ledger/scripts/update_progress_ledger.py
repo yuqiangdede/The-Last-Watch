@@ -228,6 +228,13 @@ def prose_reviews(root: Path) -> dict[str, dict]:
             report = row.get("审核报告", "")
             if not path or not report or not (root / report).is_file():
                 continue
+            # 纯文本终审CSV可直接编辑；若登记了正文SHA256，必须与当前源稿一致。
+            source_hash = (row.get("正文SHA256") or "").strip()
+            source_file = root / path
+            if source_hash and source_file.is_file() and source_hash != digest(source_file):
+                row["stale"] = True
+            elif not source_hash:
+                row["version_unknown"] = True
             old = result.get(path)
             if old is None or row.get("日期", "") >= old.get("日期", ""):
                 result[path] = row
@@ -253,7 +260,13 @@ def state(exists: bool, audit: dict | None, author: dict | None = None,
         reviewed = audit_label(audit)
     elif official:
         score = official.get("最终总分", "")
-        reviewed = "有终审登记（" + (str(score) + "分；" if score else "") + "当前版本待核）"
+        if official.get("stale"):
+            reviewed = "需复审（终审CSV所记SHA256与当前正文不一致）"
+        elif official.get("正文SHA256"):
+            result = official.get("审核结论") or "待核实"
+            reviewed = "已审:" + str(result) + (f"({score}分)" if score else "")
+        else:
+            reviewed = "有终审登记（" + (str(score) + "分；" if score else "") + "历史版本待核）"
     elif author.get("reviewed") is True:
         reviewed = "已审（作者确认；报告待关联）"
     elif author.get("reviewed") is False:
@@ -271,8 +284,16 @@ def latest_review(staged: list[tuple[str, dict | None]], csv_row: dict | None) -
         lit = csv_row.get("文学质量") or "待核实"
         ai = csv_row.get("AI专项") or "待核实"
         eng = csv_row.get("工程") or "未验收"
+        result = csv_row.get("审核结论") or "待核实"
+        acceptance = csv_row.get("总体验收状态") or "待核实"
+        if csv_row.get("stale"):
+            version = "源稿SHA256不匹配，需复审"
+        elif csv_row.get("正文SHA256"):
+            version = "源稿SHA256已核"
+        else:
+            version = "历史版本待核"
         candidates.append((csv_row.get("日期", ""),
-                           f"正文:{score}分；文学{lit}；AI味{ai}；工程{eng}（原记录，版本待核）"))
+                           f"正文:{score}分；审核{result}；文学{lit}；AI味{ai}；工程{eng}；总体验收{acceptance}（{version}）"))
     return sorted(candidates)[-1][1] if candidates else "无正式审核记录"
 
 
@@ -361,7 +382,7 @@ def build(root: Path) -> tuple[str, str]:
     lines = [
         f"# 《{title}》四阶段创作进度台账（自动生成）",
         "",
-        "> 本表由现行章纲、稿件、实际审核报告、历史正文终审CSV及作者明确确认的流程状态生成；禁止手改。",
+        "> 本表由现行章纲、稿件、实际审核报告、正文终审CSV（唯一文本权威）及作者明确确认的流程状态生成；生成视图禁止手改。",
         "> 作者确认“审核完成”只证明流程状态，**不等于取得正式报告、具体成绩或本次版本复审通过**；未知结论、分数和源稿路径不补造。",
         "> 正文初审进行中仅表示已开展部分工作，不计入已审数量，也不代表正式审核通过。",
         "> 旧章纲停用不计新章，未分章卷仅显示卷级进度；作者人工复核进度表独立且绝不自动修改。",
@@ -396,7 +417,7 @@ def build(root: Path) -> tuple[str, str]:
     lines += ["", "## 三、数据与使用", "",
               f"- 最新逐章清单：{CSV_FILE}；真实审稿报告事件：{EVENTS_FILE}；作者流程状态确认：{AUTHOR_CONFIRMATIONS_FILE}。",
               f"- 未完成正文初审的进展及源稿指纹：{WORK_IN_PROGRESS_FILE}，不作为正式审核事件。",
-              f"- 正文终审来源：{REVIEW_REGISTER}（含正式报告路径和旧版本说明）。",
+              f"- 正文终审唯一文本来源：{REVIEW_REGISTER}（含报告路径、最终分数、审核结论及正文SHA256）。",
               "- 第五卷简写历史证据：[43篇逐章初审](../08-审稿/第五卷-43篇逐章简写剧情质量审核-20261106.md)；[审后定向修订与复核](../08-审稿/第五卷-简写定向修订与正文约束复核-20261106.md)。初审覆盖全部43篇；其后37篇修订，复核报告保留R03 P1，未作逐篇重新评分。历史证据不等于现行版本审核通过。",
               "- 有效审核需真实报告文件和受审稿源的SHA256；修改源稿不抹旧分数，但自动提示需复审。",
               "- 更新：python .agents/skills/novel-progress-ledger/scripts/update_progress_ledger.py --project-dir .",
@@ -472,7 +493,7 @@ def main() -> int:
             parser.error("--record-review 需要 --volume/--stage/--result/--report")
         record(root, args)
     markdown, machine_csv = build(root)
-    # CSV 需要 UTF-8 BOM，否则 Windows Excel 可能将中文按系统编码误读；--check 同时校验 BOM。
+    # CSV 保留 UTF-8 BOM，便于常见文本编辑器和表格软件识别中文；--check 同时校验编码标记。
     expected = {MD_FILE: markdown, CSV_FILE: "\ufeff" + machine_csv}
     if args.check:
         out_of_date = [p for p, body in expected.items()
