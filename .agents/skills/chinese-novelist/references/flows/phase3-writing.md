@@ -1,4 +1,4 @@
-# 第三阶段：章节简写与正式正文
+# 第三至第四阶段：章节简写与正式正文
 
 > 本流程负责写作顺序、备料与落盘。新写作准入以 [stage-entry-gate.md](../guides/stage-entry-gate.md) 为准；质量判定以 [review-core.md](../guides/review-core.md) 为准；具体用语以 [中文自然表达指南](../guides/chinese-natural-expression.md) 为参考。不在此重复37项原表、23项及六组检查细则，也不叠加旧 G1–G4、S/F、TR/PAM 关卡。
 
