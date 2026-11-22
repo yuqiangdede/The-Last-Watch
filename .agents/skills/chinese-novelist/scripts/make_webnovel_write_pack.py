@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 import re
 import sys
-from project_config import load_project_config, project_file
+from project_config import project_file
 
 
 def checksum(text):
@@ -104,9 +104,8 @@ def run():
     add(7, "99-章节摘要.md", tail=5000)
     add(8, "04-文风/文风总规范.md")
     add(8, "04-文风/原创文风样例.md", tail=6000)
-    brief_size = load_project_config(root)["writing"]["brief_target_han"]
     data[8].append(
-        f"【人工必查】本章大纲和约{brief_size}字简写是否已完成；人物是否建档；"
+        "【人工必查】对应章纲当前版本是否有正式审核通过记录；人物是否建档；"
         "重要物资伤势与知情范围是否连续；需不需要战斗协同专项。\n"
         f"【历史审批文字信号】{'有记录' if approved_text_signal else '无记录'}（不作为正文写作门槛）"
     )
