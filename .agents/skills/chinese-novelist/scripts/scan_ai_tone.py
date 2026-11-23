@@ -443,7 +443,7 @@ CHAPTER_RE = re.compile(r"第\s*(\d{1,4})\s*章")
 def detect_project_dir(chapter_path):
     cur = chapter_path.resolve().parent
     for _ in range(6):
-        if (cur / "02-写作计划.json").exists() or (cur / "08-审稿").is_dir():
+        if (cur / "辅助文件/02-写作计划.json").exists() or (cur / "08-审稿").is_dir():
             return cur
         if cur.parent == cur:
             break

@@ -101,7 +101,7 @@ def run():
         add(7, previous, tail=1200)
     else:
         data[6].append("【未定位上一实写章节；主控须按时序核对，不得猜测】")
-    add(7, "99-章节摘要.md", tail=5000)
+    add(7, "辅助文件/99-章节摘要.md", tail=5000)
     add(8, "04-文风/文风总规范.md")
     add(8, "04-文风/原创文风样例.md", tail=6000)
     data[8].append(

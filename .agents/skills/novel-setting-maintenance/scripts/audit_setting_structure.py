@@ -17,7 +17,7 @@ from pathlib import Path
 
 SOURCE_DIRS = ("01-世界观", "02-人物", "03-剧情", "04-文风", "05-写作计划", "07-创作记忆")
 SOURCE_EXTENSIONS = {".md", ".json", ".yaml", ".yml"}
-ROOT_CONTEXT = ("AGENTS.md", "README.md", "novel.project.json", "02-写作计划.json", "03-文风基准.md", "99-章节摘要.md")
+ROOT_CONTEXT = ("AGENTS.md", "README.md", "novel.project.json", "辅助文件/02-写作计划.json", "辅助文件/03-文风基准.md", "辅助文件/99-章节摘要.md")
 PROTECTED_DIRS = ("06-正文", "06-正文-TXT", "09-归档")
 BRIEF_PREFIX = "05-写作计划/章节简写/"
 INDEX_FILE = "05-写作计划/章节规划总表.md"

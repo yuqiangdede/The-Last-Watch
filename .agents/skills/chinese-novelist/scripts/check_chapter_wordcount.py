@@ -9,7 +9,7 @@
   python check_chapter_wordcount.py --all <目录路径> [最小字数] [--json]
 
 退出码: 0=全部达标  1=有章节不达标  2=文件/目录/参数错误
---json: 输出机器可读 JSON（供 Agent 解析写回 02-写作计划.json）；
+--json: 输出机器可读 JSON（供 Agent 解析写回 辅助文件/02-写作计划.json）；
         出错时输出 {"error": "..."}；summary.errors 为文件缺失数
 """
 

@@ -112,7 +112,7 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
    - 身体变化、位置移动、获得/损毁装备、最新关系变化回写至 `人物实时状态.md`
    - 新发生的大事回写至 `事件时间线.md`
    - 本章兑现或埋下的线索回写至 `伏笔兑现记录.md`
-4. 运行 `sync_novel_memory.py` 刷新 `00-人物档案.md` 与 `99-章节摘要.md` 兼容索引。
+4. 运行 `sync_novel_memory.py` 刷新 `00-人物档案.md` 与 `辅助文件/99-章节摘要.md` 兼容索引。
 """
     write_file_if_not_exists(target_dir / "AGENTS.md", agents_md)
 
@@ -141,9 +141,9 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
 ## 兼容视图
 - `00-人物档案.md` — 从 `02-人物/` 自动提取生成的只读速查表（按主角/配角/辅助角色+章节自动分类）
 - `01-大纲.md` — 汇集全书与分卷剧情的总索引
-- `02-写作计划.json` — 机器可读调度状态核心
-- `03-文风基准.md` — 从 `04-文风/` 提取的上下文锚点
-- `99-章节摘要.md` — 逐章连贯性追踪摘要
+- `辅助文件/02-写作计划.json` — 机器可读调度状态核心
+- `辅助文件/03-文风基准.md` — 从 `04-文风/` 提取的上下文锚点
+- `辅助文件/99-章节摘要.md` — 逐章连贯性追踪摘要
 """
     write_file_if_not_exists(target_dir / "README.md", readme_md)
 
@@ -412,13 +412,13 @@ def init_deep_workspace(target_dir: Path, title: str, genre: str = "通用"):
             }
         ]
     }
-    write_file_if_not_exists(target_dir / "02-写作计划.json", json.dumps(plan_json, ensure_ascii=False, indent=2))
+    write_file_if_not_exists(target_dir / "辅助文件/02-写作计划.json", json.dumps(plan_json, ensure_ascii=False, indent=2))
 
-    # 编译生成 00-人物档案.md, 01-大纲.md, 03-文风基准.md, 99-章节摘要.md
+    # 编译生成 00-人物档案.md, 01-大纲.md, 辅助文件/03-文风基准.md, 辅助文件/99-章节摘要.md
     write_file_if_not_exists(target_dir / "00-人物档案.md", f"# 《{title}》人物速查（只读索引）\n\n> ⚠️ 本文件由系统自动从 `02-人物/` 提取生成，请勿在此直接修改。\n\n- 主角：见 [02-人物/主角/主角.md](02-人物/主角/主角.md)\n")
     write_file_if_not_exists(target_dir / "01-大纲.md", f"# 《{title}》总纲与分卷索引\n\n> 详细情节请参阅 `03-剧情/` 与 `05-写作计划/`。\n\n## 主线索引\n- 全书主线：[03-剧情/全书主线.md](03-剧情/全书主线.md)\n- 第一卷：[03-剧情/卷纲/第一卷-启程.md](03-剧情/卷纲/第一卷-启程.md)\n")
-    write_file_if_not_exists(target_dir / "03-文风基准.md", f"# 文风基准\n\n> 权威源见 `04-文风/`。\n\n## 核心锚点\n- 参见 [04-文风/原创文风样例.md](04-文风/原创文风样例.md)\n")
-    write_file_if_not_exists(target_dir / "99-章节摘要.md", "# 章节摘要\n\n> 镜像自 `07-创作记忆/章节摘要.md`。\n")
+    write_file_if_not_exists(target_dir / "辅助文件/03-文风基准.md", f"# 文风基准\n\n> 权威源见 `04-文风/`。\n\n## 核心锚点\n- 参见 [04-文风/原创文风样例.md](04-文风/原创文风样例.md)\n")
+    write_file_if_not_exists(target_dir / "辅助文件/99-章节摘要.md", "# 章节摘要\n\n> 镜像自 `07-创作记忆/章节摘要.md`。\n")
 
     # 11. 生成 10-人物插画 与 11-剧情音频 目录说明
     write_file_if_not_exists(target_dir / "10-人物插画" / "README.md", f"""# 《{title}》人物插画库说明
@@ -521,8 +521,8 @@ def init_standard_workspace(target_dir: Path, title: str, genre: str = "通用")
 - **性格与底线**：
 """)
     write_file_if_not_exists(target_dir / "01-大纲.md", f"# 《{title}》大纲\n\n## 基本信息\n- 题材：{genre}\n- 预计章节数：10-20 章\n\n## 章节规划\n| 章节 | 标题 | 核心事件 | 承接上章 | 悬念钩子 | 出场人物 | 场景列表 |\n")
-    write_file_if_not_exists(target_dir / "03-文风基准.md", "# 文风基准\n\n## 文风指纹\n- 对话占比：35%-45%\n\n## 基准段落\n")
-    write_file_if_not_exists(target_dir / "99-章节摘要.md", "# 章节摘要\n\n每章完成后追加 300-500 字摘要，供连贯性参考。\n")
+    write_file_if_not_exists(target_dir / "辅助文件/03-文风基准.md", "# 文风基准\n\n## 文风指纹\n- 对话占比：35%-45%\n\n## 基准段落\n")
+    write_file_if_not_exists(target_dir / "辅助文件/99-章节摘要.md", "# 章节摘要\n\n每章完成后追加 300-500 字摘要，供连贯性参考。\n")
 
     plan_json = {
         "version": 1,
@@ -547,7 +547,7 @@ def init_standard_workspace(target_dir: Path, title: str, genre: str = "通用")
             }
         ]
     }
-    write_file_if_not_exists(target_dir / "02-写作计划.json", json.dumps(plan_json, ensure_ascii=False, indent=2))
+    write_file_if_not_exists(target_dir / "辅助文件/02-写作计划.json", json.dumps(plan_json, ensure_ascii=False, indent=2))
     print(f"✅ 成功初始化标准小说工程: {target_dir} (书名: {title}, 模式: standard)")
 
 

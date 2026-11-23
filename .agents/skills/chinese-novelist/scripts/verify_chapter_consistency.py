@@ -110,7 +110,7 @@ def locate_project_dir(chapter_path: Path, explicit_project_dir: str = None) -> 
     current = chapter_path.resolve().parent
     for _ in range(5):
         if (
-            (current / "02-写作计划.json").exists() or
+            (current / "辅助文件/02-写作计划.json").exists() or
             (current / "07-创作记忆").exists() or
             (current / "01-大纲.md").exists() or
             (current / "AGENTS.md").exists()

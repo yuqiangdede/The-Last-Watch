@@ -417,7 +417,7 @@ def main():
         possible_refs = [
             project_path / "04-文风" / "原创文风样例.md",
             project_path / "04-文风" / "文风总规范.md",
-            project_path / "03-文风基准.md"
+            project_path / "辅助文件/03-文风基准.md"
         ]
         for pr in possible_refs:
             if pr.exists():

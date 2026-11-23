@@ -142,7 +142,7 @@ def extract_character_summary(char_file: Path, project_dir: Path) -> dict:
 
 
 def compile_views(project_dir: Path) -> dict:
-    """从权威源编译生成辅助视图：03-文风基准.md, 99-章节摘要.md"""
+    """从权威源编译生成辅助视图：辅助文件/03-文风基准.md, 辅助文件/99-章节摘要.md"""
     char_dir = project_dir / "02-人物"
     summary_list = []
 
@@ -172,9 +172,9 @@ def compile_views(project_dir: Path) -> dict:
 
     # 人物不再生成根目录重复快照；直接维护 02-人物/ 独立档案与人物总表。
 
-    # 同步 07-创作记忆/章节摘要.md 到 99-章节摘要.md
+    # 同步 07-创作记忆/章节摘要.md 到 辅助文件/99-章节摘要.md
     mem_summary_path = project_dir / "07-创作记忆" / "章节摘要.md"
-    legacy_summary_path = project_dir / "99-章节摘要.md"
+    legacy_summary_path = project_dir / "辅助文件/99-章节摘要.md"
     if mem_summary_path.exists():
         with open(mem_summary_path, 'r', encoding='utf-8') as f:
             sum_text = f.read()
@@ -183,7 +183,7 @@ def compile_views(project_dir: Path) -> dict:
         with open(legacy_summary_path, 'w', encoding='utf-8') as f:
             f.write("# 章节摘要（只读镜像视图）\n\n> 权威源位于 `07-创作记忆/章节摘要.md`。\n\n" + sum_text)
 
-    # 编译 03-文风基准.md（双源动态加权文风演进视图）
+    # 编译 辅助文件/03-文风基准.md（双源动态加权文风演进视图）
     style_res = compile_style_view(project_dir)
 
     return {
@@ -197,10 +197,10 @@ def compile_views(project_dir: Path) -> dict:
 
 
 def compile_style_view(project_dir: Path) -> dict:
-    """从 04-文风/ 权威源与已写正文编译生成 03-文风基准.md (双源动态加权文风演进视图)"""
+    """从 04-文风/ 权威源与已写正文编译生成 辅助文件/03-文风基准.md (双源动态加权文风演进视图)"""
     style_dir = project_dir / "04-文风"
     body_dir = project_dir / "06-正文"
-    legacy_style_file = project_dir / "03-文风基准.md"
+    legacy_style_file = project_dir / "辅助文件/03-文风基准.md"
 
     # 1. 扫描正文统计篇幅
     chapter_files = []
@@ -302,7 +302,7 @@ def compile_style_view(project_dir: Path) -> dict:
                 except Exception:
                     pass
 
-    # 若未找到独立规范，尝试读取现有 03-文风基准.md 的核心内容
+    # 若未找到独立规范，尝试读取现有 辅助文件/03-文风基准.md 的核心内容
     if not spec_text and legacy_style_file.exists():
         try:
             old_c = legacy_style_file.read_text(encoding='utf-8', errors='replace')
@@ -313,7 +313,7 @@ def compile_style_view(project_dir: Path) -> dict:
         except Exception:
             pass
 
-    # 4. 组装 03-文风基准.md 内容
+    # 4. 组装 辅助文件/03-文风基准.md 内容
     lines = [
         f"# 文风与叙事基准（只读编译视图）\n",
         f"> ⚠️ **重要规则**：本文件由 `sync_novel_memory.py` 自动编译更新，**严禁手动在此处修改**！",
@@ -360,7 +360,7 @@ def compile_style_view(project_dir: Path) -> dict:
         with open(legacy_style_file, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
     except Exception as e:
-        print(f"⚠️ 写入 03-文风基准.md 失败: {e}", file=sys.stderr)
+        print(f"⚠️ 写入 辅助文件/03-文风基准.md 失败: {e}", file=sys.stderr)
 
     return {
         "status": "success",
@@ -416,7 +416,7 @@ def check_conflicts(project_dir: Path) -> dict:
             issues.append(f"解析 时间轴总账.json 失败: {str(e)}")
 
     # 检查写作计划与正文文件匹配
-    plan_file = project_dir / "02-写作计划.json"
+    plan_file = project_dir / "辅助文件/02-写作计划.json"
     if plan_file.exists():
         try:
             with open(plan_file, 'r', encoding='utf-8') as f:
@@ -427,7 +427,7 @@ def check_conflicts(project_dir: Path) -> dict:
                 if ch.get("status") == "completed" and not fpath.exists():
                     issues.append(f"第 {ch.get('chapterNumber')} 章标记为 completed，但文件不存在: {ch.get('filePath')}")
         except Exception as e:
-            issues.append(f"解析 02-写作计划.json 失败: {str(e)}")
+            issues.append(f"解析 辅助文件/02-写作计划.json 失败: {str(e)}")
 
     return {
         "status": "error" if issues else ("warning" if warnings else "pass"),

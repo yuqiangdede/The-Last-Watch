@@ -16,7 +16,7 @@ SOURCES = {
     "计划": "05-写作计划", "正文": "06-正文", "记忆": "07-创作记忆",
     "审稿": "08-审稿"
 }
-REQUIRED = ["AGENTS.md", "02-写作计划.json", "06-正文", "07-创作记忆"]
+REQUIRED = ["AGENTS.md", "辅助文件/02-写作计划.json", "06-正文", "07-创作记忆"]
 EXCLUDE = {".git", ".novel-work", "__pycache__", ".venv", "node_modules"}
 
 def files_under(root, name, suffixes=(".md", ".json")):
@@ -63,7 +63,7 @@ def doctor(root):
     for d in ("01-世界观", "02-人物", "03-剧情", "04-文风", "05-写作计划", "08-审稿"):
         if not (root / d).is_dir():
             findings.append({"severity": "WARN", "path": d, "message": "约定目录不存在"})
-    for p in [root / "02-写作计划.json", *files_under(root, "07-创作记忆", (".json",))]:
+    for p in [root / "辅助文件/02-写作计划.json", *files_under(root, "07-创作记忆", (".json",))]:
         if p.is_file():
             try:
                 json.loads(read(p))
